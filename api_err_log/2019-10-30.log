@@ -1,0 +1,60 @@
+2019-10-30 09:36:25
+error =>1054:Unknown column '3jia1' in 'where clause'
+ [ SQL语句 ] : SELECT `address_id` FROM `s_driver` WHERE ( id = 3jia1 ) LIMIT 1  
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1054:Unknown co...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(946): Think\Db\Driver->query('SELECT `address...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(762): Think\Db\Driver->select(Array)
+#4 /www/Application/Common/Common/function.php(1894): Think\Model->find()
+#5 /www/Application/Home/Controller/AppdataController.class.php(235): removeDriverFromAwaitPoints('3jia1')
+#6 [internal function]: Home\Controller\AppdataController->homePage()
+#7 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home\Controller\AppdataController))
+#8 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home\Controller\AppdataController), 'homePage')
+#9 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#10 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#11 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#12 /www/index.php(28): require('/www/ThinkPHP/T...')
+#13 {main}
+2019-10-30 09:42:15
+error =>1054:Unknown column '3jia1' in 'where clause'
+ [ SQL语句 ] :     select s_driver.card,s_driver.name,d_bankinfo.banknum,d_bankinfo.banktype,d_bankinfo.bankaddress,d_bankinfo.typememb,s_driver.lits,s_driver.all_amount,s_driver.phone,s_car.carcolor,s_car.car_type,s_car.carnum,ifnull(s_avatar_verify.verify,'N') verify,ifnull(s_avatar_verify.file,'') avatar,round(ifnull((select AVG(point) from d_point where d_id=3jia1),5),1) point,s_driver.idcard,if(datediff(s_driver.maturity_date,NOW())>0,datediff(s_driver.maturity_date,NOW()),0) userdate,s_driver.amount,s_driver.service_fee_now 
+        from s_driver 
+        left join s_car on s_car.d_id = s_driver.id 
+        left join s_avatar_verify on s_avatar_verify.d_id = s_driver.id 
+        left join d_bankinfo on d_bankinfo.d_id = s_driver.id 
+        where s_driver.id=3jia1 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1054:Unknown co...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('    select s_dr...')
+#3 /www/Application/Home/Controller/AppdataController.class.php(1000): Think\Model->query('    select s_dr...')
+#4 [internal function]: Home\Controller\AppdataController->get_drive_info()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home\Controller\AppdataController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home\Controller\AppdataController), 'get_drive_info')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-30 09:42:16
+error =>1054:Unknown column '3jia1' in 'where clause'
+ [ SQL语句 ] : SELECT `address_id` FROM `s_driver` WHERE ( id = 3jia1 ) LIMIT 1  
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1054:Unknown co...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(946): Think\Db\Driver->query('SELECT `address...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(762): Think\Db\Driver->select(Array)
+#4 /www/Application/Common/Common/function.php(1894): Think\Model->find()
+#5 /www/Application/Home/Controller/AppdataController.class.php(235): removeDriverFromAwaitPoints('3jia1')
+#6 [internal function]: Home\Controller\AppdataController->homePage()
+#7 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home\Controller\AppdataController))
+#8 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home\Controller\AppdataController), 'homePage')
+#9 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#10 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#11 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#12 /www/index.php(28): require('/www/ThinkPHP/T...')
+#13 {main}

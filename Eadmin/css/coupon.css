@@ -1,0 +1,106 @@
+.laytable-cell-1-headimgurl {
+	width: 100px ! important;
+	height: 100px;
+	line-height: 100px;
+}
+
+.laytable-cell-2-headimgurl {
+	width: 180px ! important;
+	height: 80px ! important;
+	line-height: 80px;
+}
+
+/*锁屏*/
+.admin-header-lock {
+	width: 320px;
+	height: 190px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+}
+
+.admin-header-lock-img {
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+.admin-header-lock-img img {
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	box-shadow: 0 0 30px #44576b;
+}
+
+.admin-header-lock-name {
+	color: #009688;
+	margin: 8px 0 15px 0;
+}
+
+.input_btn {
+	overflow: hidden;
+	margin: 20px auto;
+	width: 60%;
+	height: 40px;
+}
+
+.admin-header-lock-input {
+	width: 170px;
+	color: #fff;
+	background-color: #009688;
+	float: left;
+	margin: 0 10px 0 40px;
+	border: none;
+}
+
+.admin-header-lock-input::-webkit-input-placeholder {
+	color: #fff;
+}
+
+.admin-header-lock-input::-moz-placeholder {
+	color: #fff;
+}
+
+.admin-header-lock-input:-ms-input-placeholder {
+	color: #fff;
+}
+
+.admin-header-lock-input:-moz-placeholder {
+	color: #fff;
+}
+
+#unlock {
+	float: left;
+}
+
+#lock-box p {
+	color: #e60000;
+}
+
+.layui-btn1 {
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 18px;
+	background-color: #009688;
+	color: #fff;
+	white-space: nowrap;
+	text-align: center;
+	font-size: 14px;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	width: 60%;
+	margin-top: 20%;
+	margin-left: 20%;
+}
+
+.radio {
+	width: 20px;
+	height: 20px;
+}
+.day-a{
+	    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+}

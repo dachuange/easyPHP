@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="__PUBLIC__/home/css/coupon.css" media="all">
+		<title>我的优惠券</title>
+	</head>
+
+	<body>
+		<div class="contenter">
+			<if condition="count($coupon) eq 0">
+				<div class="kong">
+					<image src="__PUBLIC__/home/images/cnull.png" class="null"></image>
+					<div class="sorry">暂无优惠券</div>
+				</div>
+				<else />
+				<!-- <div class="list">
+					<volist name="coupon" id="vo" >
+						<div class="couponlist" style="background-image: url('__PUBLIC__/home/images/cbj.png');background-size:100% 100%;margin-bottom:3%;">
+							<div class="content">
+								<div class="left">
+									微信公众号优惠券
+								</div>
+								<div class="right">
+									<span class="small"> ¥</span>
+									<span class="big">{$vo.amount}</span>
+								</div>
+							</div>
+							<div class="date">{$vo.use_date}</div>
+							<div class="commit">{$vo.sdate}-{$vo.edate}</div>
+						</div>
+					</volist>
+				</div> -->
+				<volist name="coupon" id="vo">
+					<div class="list">
+						<div class="couponlist" style="background:url(__PUBLIC__/home/images/cbj.png);background-size:100% 100%;">
+							<div class="content">
+								{$vo.val}
+							</div>
+							<div class="content1">
+								<div class="zuo">
+									<image src="__PUBLIC__/home/images/che.png" class="che"></image>
+								</div>
+								<div class="zhong">
+									<span class="small"> ¥</span>
+									<span class="big">{$vo.amount}</span>
+								</div>
+								<div class="you">现金券</div>
+							</div>
+						</div>
+						<div class="content2">
+							<div class="left">
+								<div class="commit">{$vo.sdate}至{$vo.edate}</div>
+							</div>
+							<div class="right">未使用</div>
+						</div>
+					</div>
+				</volist>
+			</if>
+		</div>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+	<script type="text/javascript">
+	</script>
+
+</html>

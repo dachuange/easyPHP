@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<link rel="stylesheet" href="__PUBLIC__/home/css/orderinfo_detil.css" media="all">
+		<title>订单支付</title>
+	</head>
+
+	<body>
+		<!-- 订单信息 -->
+		<input id="appId" name="appId" type="hidden" value="{$order.appId}">
+		<input id="nonceStr" name="nonceStr" type="hidden" value="{$order.nonceStr}">
+		<input id="package" name="package" type="hidden" value="{$order.package}">
+		<input id="signType" name="signType" type="hidden" value="{$order.signType}">
+		<input id="timeStamp" name="timeStamp" type="hidden" value="{$order.timeStamp}">
+		<input id="paySign" name="paySign" type="hidden" value="{$order.paySign}">
+		<input id="state" name="state" type="hidden" value="{$info.state}">
+		<!-- 司机信息 -->
+		<div class="total1">
+			<div class="total-driver">
+				<div class="driver-info">
+					<if condition="$info['avatar']  neq '' ">
+					   <div class="driver-img">
+							<image style="width: 75px;height: 75px;" src="{$info.avatar}" />
+					   </div>
+					<else />
+					    <div class="driver-img">
+							<image style="width: 75px;height: 75px;" src="__PUBLIC__/home/images/driver.png" />
+					   </div>
+					</if>
+					<div class="driver-detailed">
+						<div class="detailed-name">{$info.name}
+							<!-- <image class="star" style="width: 18px;height: 18px;display: inline-block;" src="__PUBLIC__/home/images/star.png">
+							<div class="orderTotal">{$info.name}</div> -->
+						</div>
+						<div class="detailed-Cartnumber">{$info.carnum}</div>
+						<div class="detailed-cart">{$info.car_type}</div>
+					</div>
+				</div>
+				<div class="driver-message">
+					<!-- <div class="mas">
+						<image style="width: 35px;height: 35px;" src="__PUBLIC__/home/images/msm.png" />
+					</div> -->
+					<a href="tel:{$info.phone}">
+						<div class="phone">
+							<image style="width: 35px;height: 35px;" src="__PUBLIC__/home/images/phone.png" />
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="recommend">
+			<span>订单详情</span>
+		</div>
+		<div class="orderDetail">
+			<div class="money">
+				<span class="price">{$info.amount}</span>
+				<span clss="danwei" >元</span>
+				<!-- <span clss="danwei" style="padding-left:25px;">元</span> -->
+			</div>
+			<div class="detail">
+				<div class="left">
+					订单编号
+				</div>
+				<div class="right">
+					{$info.order_num}
+				</div>
+			</div>
+			<div class="detail">
+				<div class="left">
+					订单状态
+				</div>
+				<div class="right">
+					{$info.state_c}
+				</div>
+			</div>
+			<div class="detail">
+				<div class="left">
+					起点
+				</div>
+				<div class="right">
+					{$info.saddress}
+				</div>
+			</div>
+			<div class="detail">
+				<div class="left">
+			          终点
+				</div>
+				<div class="right">
+					{$info.eaddress}
+				</div>
+			</div>
+			<div class="detail">
+				<div class="left">
+					里程
+				</div>
+				<div class="right">
+					{$info.distance}公里
+				</div>
+			</div>
+			<div class="detail">
+				<div class="left">
+					里程费
+				</div>
+				<div class="right">
+					{$info.mileage_fee}元
+				</div>
+			</div>
+			<div class="detail">
+				<div class="left">
+					时长
+				</div>
+				<div class="right">
+					{$info.duration}
+				</div>
+			</div>
+			<div class="detail">
+				<div class="left">
+					时长费
+				</div>
+				<div class="right">
+					{$info.duration_fee}元
+				</div>
+			</div>
+		   <if condition="$info['s_coupon_amount']  neq 0 ">
+				<div class="detail">
+					<div class="left">
+						优惠券
+					</div>
+					<div class="right"  style="color:red;">
+						-{$info.s_coupon_amount}元
+					</div>
+				</div>
+			</if>
+			<!--
+			<div class="detail">
+				<div class="left">
+					其他费用
+				</div>
+				<div class="right">
+					{$orderdetil.nickname}元
+				</div>
+			</div>
+			<div class="detail1">
+				<div class="left">
+					优惠券
+				</div>
+				<div class="right">
+					{$orderdetil.nickname}元
+				</div>
+			</div> -->
+		</div>
+		<div class="wode_out" onclick="pay()" id="zhifu">支付</div>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		function onBridgeReady(){
+		   WeixinJSBridge.invoke(
+			  'getBrandWCPayRequest', {
+				 "appId":$('#appId').val(),     //公众号名称，由商户传入     
+				 "timeStamp":$('#timeStamp').val(),         //时间戳，自1970年以来的秒数     
+				 "nonceStr":$('#nonceStr').val(), //随机串     
+				 "package":$('#package').val(),     
+				 "signType":$('#signType').val(),         //微信签名方式：     
+				 "paySign":$('#paySign').val() //微信签名 
+			  },
+			  function(res){
+			  if(res.err_msg == "get_brand_wcpay_request:ok" ){
+			      WeixinJSBridge.call('closeWindow');
+			  } 
+		   }); 
+		}
+		function pay(){
+			if (typeof WeixinJSBridge == "undefined"){
+			   if( document.addEventListener ){
+				   document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+			   }else if (document.attachEvent){
+				   document.attachEvent('WeixinJSBridgeReady', onBridgeReady); 
+				   document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+			   }
+			}else{
+			   onBridgeReady();
+			}
+		}
+		 $(function () {
+			var state =$('#state').val();
+			console.log(state);
+			if(state=="wait_pay"){
+				$('#zhifu').show()
+			}else{
+				$('#zhifu').hide()
+			}
+		})
+	</script>
+</html>

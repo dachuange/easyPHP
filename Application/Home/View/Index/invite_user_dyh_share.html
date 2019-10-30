@@ -1,0 +1,168 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="__PUBLIC__/home/css/invite_user.css" media="all">
+		<link rel="stylesheet" href="__PUBLIC__/home/css/alert.css" media="all">
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+		<title>关注有礼</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<input id="appId" name="appId" type="hidden" value="{$config.appId}">
+			<input id="timestamp" name="timestamp" type="hidden" value="{$config.timestamp}">
+			<input id="nonceStr" name="nonceStr" type="hidden" value="{$config.nonceStr}">
+			<input id="signature" name="signature" type="hidden" value="{$config.signature}">
+			<input id="title" name="timestamp" type="hidden" value="{$qrinfo.title}">
+			<input id="link" name="nonceStr" type="hidden" value="{$qrinfo.link}">
+			<input id="imgUrl" name="imgUrl" type="hidden" value="{$qrinfo.imgUrl}">
+			<input id="pd" name="pd" type="hidden" value="{$qrinfo.pd}">
+			<div class="page-content">
+				<div class="test">
+					<div class="photo">
+						<img id="" src="{$qrinfo.headimgurl}" class="touxiang">
+					</div>
+					<div class="nicheng">{$qrinfo.nickname}</div>
+					<div class="wenzi">#遇见生活#e达是一种生活方式</div>
+					<div class="code-area">
+						<img id="qrimg" src="{$qrinfo.qrcode}">
+					</div>
+					<div class="bg-text">
+						<h6 class="text-center">
+							邀请码：<span id="copyMy" class="copyMy">{$qrinfo.invitcode}</span>
+						</h6>
+						<button class="copy" onClick="copyFn()">复制邀请码</button>
+						<!-- <img class="bg-left" src="__PUBLIC__/home/images/qrcode-left.png" />
+						<img class="bg-right" src="__PUBLIC__/home/images/qrcode-right.png" /> -->
+					</div>
+					<div class="bg-rule">
+						<div class="rule-title">邀请规则：</div>
+						<div class="rule-content close">
+							<div>{$qrinfo.invitext}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 遮罩 -->
+		<!-- <div class="zhezhao" id="zhezhao" onclick="zhezhao()">
+			<img src="__PUBLIC__/home/images/top.png" class="top" />
+			<img src="__PUBLIC__/home/images/di.png" class="di" />
+		</div> -->
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+	<script type="text/javascript">
+// 		var pd = $('#pd').val();//判断是否显示遮罩层
+// 		if(pd==1){
+// 		  $('#zhezhao').show();	
+// 		}else{
+// 		  $('#zhezhao').hide();	
+// 		}
+// 		function zhezhao() {
+// 			$('#zhezhao').hide();
+// 		}
+		/* 微信配置 */
+		var appId = $('#appId').val();
+		var timestamp = $('#timestamp').val();
+		var nonceStr = $('#nonceStr').val();
+		var signature = $('#signature').val();
+		var title = $('#title').val();
+		var link = $('#link').val();
+		var imgUrl = $('#imgUrl').val();
+		wx.config({
+			debug: false, //调试模式   当为tru时，开启调试模式 
+			appId: appId,
+			timestamp: timestamp.toString(), //签名时间戳
+			nonceStr: nonceStr, //生成签名的随机串 
+			signature: signature, //签名                    
+			jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage'],
+			success: function() {
+				alert("配置成功")
+			},
+			fail: function() {
+				alert("配置失败")
+			}
+		});
+		wx.ready(function() { //需在用户可能点击分享按钮前就先调用
+			//新版
+			// 			wx.updateTimelineShareData({
+			// 				title: title, // 分享标题
+			// 				link: link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+			// 				imgUrl: imgUrl, // 分享图标
+			// 				success: function() {
+			// 					// 设置成功
+			// 					//alert(link)
+			// 				}
+			// 			})
+			//分享朋友圈新版
+			// 			wx.updateAppMessageShareData({
+			// 				title: title, // 分享标题
+			// 				link: link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+			// 				imgUrl: imgUrl, // 分享图标
+			// 				success: function() {
+			// 					// 设置成功
+			// 					//alert(link)
+			// 				}
+			// 			})
+			//老版
+			wx.onMenuShareTimeline({
+				title: title, // 分享标题
+				link: link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+				imgUrl: imgUrl, // 分享图标
+				success: function() {
+					// 设置成功
+					//alert(link)
+				}
+			})
+			//分享朋友圈老版
+			wx.onMenuShareAppMessage({
+				title: title, // 分享标题
+				desc: '', // 分享描述
+				link: link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+				imgUrl: imgUrl, // 分享图标
+				type: '', // 分享类型,music、video或link，不填默认为link
+				dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+				success: function() {
+					// 用户点击了分享后执行的回调函数
+				}
+			});
+		});
+
+		function copyFn() {
+			//弹框
+			var toast = function(params) {
+				var el = document.createElement("div");
+				el.setAttribute("id", "toast");
+				el.innerHTML = params.message;
+				document.body.appendChild(el);
+				el.classList.add("fadeIn");
+				setTimeout(function() {
+					el.classList.remove("fadeIn");
+					el.classList.add("fadeOut");
+					el.addEventListener("animationend", function() {
+						el.classList.add("hide");
+					});
+				}, params.time);
+			};
+			var val = document.getElementById('copyMy');
+			window.getSelection().selectAllChildren(val);
+			document.execCommand("Copy");
+			//alert("复制成功");
+			toast({
+				message: "复制成功",
+				time: 1500
+			});
+		}
+	</script>
+</html>

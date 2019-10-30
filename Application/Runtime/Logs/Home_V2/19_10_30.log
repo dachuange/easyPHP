@@ -1,0 +1,277 @@
+[ 2019-10-30T09:13:20+08:00 ] 111.163.136.247 /Home_V2/pr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`state`,`available`,`address_id` FROM `s_driver` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 13 AND `edate` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `s_driver` SET `state`='stand' WHERE ( id = 13 ) [ RunTime:0.0002s ]
+SQL: INSERT INTO `d_online_record` (`sdate`,`edate`,`d_id`,`line_time`) VALUES ('1572398000','0','13','0') [ RunTime:0.0001s ]
+
+[ 2019-10-30T09:13:20+08:00 ] 111.163.136.247 /Home_V2/tr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-30T09:13:21+08:00 ] 111.163.136.247 /Home_V2/dgol
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address_config` [ RunTime:0.0004s ]
+SQL: SELECT `broadcasting_kilometers` FROM `m_address_config` WHERE ( address_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-30T09:13:26+08:00 ] 111.163.136.247 /Home_V2/dgol
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address_config` [ RunTime:0.0004s ]
+SQL: SELECT `broadcasting_kilometers` FROM `m_address_config` WHERE ( address_id = 3 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-10-30T09:13:26+08:00 ] 111.163.136.247 /Home_V2/tr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0008s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-30T09:13:31+08:00 ] 111.163.136.247 /Home_V2/dgol
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address_config` [ RunTime:0.0004s ]
+SQL: SELECT `broadcasting_kilometers` FROM `m_address_config` WHERE ( address_id = 3 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-10-30T09:13:31+08:00 ] 111.163.136.247 /index.php/Home_V2/pceo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `b_order` WHERE ( u_id = 762 and state not in ('end','cannal') ) LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2019-10-30T09:13:33+08:00 ] 111.163.136.247 /Home_V2/tr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-30T09:13:34+08:00 ] 111.163.136.247 /index.php/Home_V2/pceo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `b_order` WHERE ( u_id = 762 and state not in ('end','cannal') ) LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2019-10-30T09:13:36+08:00 ] 111.163.136.247 /Home_V2/dgol
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address_config` [ RunTime:0.0004s ]
+SQL: SELECT `broadcasting_kilometers` FROM `m_address_config` WHERE ( address_id = 3 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-10-30T09:13:37+08:00 ] 111.163.136.247 /Home_V2/po
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `b_order` WHERE ( u_id = 762 and state not in ('end','cannal') ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `m_address_config` [ RunTime:0.0004s ]
+SQL: SELECT `nearby_kilometers` FROM `m_address_config` WHERE ( address_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `reservation_time` FROM `m_address_config` WHERE ( address_id = 3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `b_order_reservation` [ RunTime:0.0004s ]
+SQL: INSERT INTO `b_order_reservation` (`u_id`,`driversDataIn10`,`assign_d_id`,`reservation_no`,`address_id`,`longitude_destination`,`latitude_destination`,`appellation_destination`,`longitude_origin`,`latitude_origin`,`appellation_origin`,`initiation_time`,`state`) VALUES ('762','[[\"13\",\"0.9171\",[\"117.1484103798866272\",\"39.11693854503170087\"]]]','13','13:762:bd3d7afc8b8440954a1d3b3a08d501e1','3','','','','117.14137213272','39.110761334328','南开区桂荷园(天拖北道北50米)','2019-10-30 09:13:35','active') [ RunTime:0.0042s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+
+[ 2019-10-30T09:13:39+08:00 ] 111.163.136.247 /Home_V2/dao15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `b_order_reservation` [ RunTime:0.0005s ]
+SQL: UPDATE `b_order_reservation` SET `state`='success' WHERE ( reservation_no = '13:762:bd3d7afc8b8440954a1d3b3a08d501e1' ) [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0006s ]
+SQL: UPDATE `s_driver` SET `state`='running' WHERE ( id = 13 ) [ RunTime:0.0020s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_order` WHERE `u_id` = 762 AND `state` IN ('new','on','active','wait_pay') LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wx_info` [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `wx_info` WHERE `public_id` = null LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `operation` FROM `s_driver` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+SQL: INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES ('762','13','76213157239801954','0','2019-10-30 09:13:39','39.110761334328','117.14137213272','南开区桂荷园(天拖北道北50米)','','','','0','new','No_public',NULL,'3','taxi') [ RunTime:0.0002s ]
+SQL: UPDATE `b_order` SET `state`='on' WHERE `id` = 26795 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `b_order_site` [ RunTime:0.0004s ]
+SQL: INSERT INTO `b_order_site` (`o_id`,`s_lat`,`s_lng`,`d_lat`,`d_lng`,`distance`) VALUES ('26795','39.110761334328','117.14137213272','39.11693953821','117.14840983705','0.92') [ RunTime:0.0001s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,s_user.phone u_phone,b_order.sdate,b_order.operation,s_user.headimgurl,b_order.address_id,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration,
+            s_car.car_type,s_car.carcolor,s_car.carnum,if(s_avatar_verify.verify="Y",s_avatar_verify.file,'') avatar,s_driver.card,s_driver.name,s_driver.nickname,s_driver.phone d_phone,s_driver.lits,
+                ifnull((select FORMAT(AVG(point),1) from d_point where d_id=b_order.d_id),5) point,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=b_order.d_id),0) complaint,
+                (CASE b_order.state 
+    WHEN 'on' THEN '尚未接驾' 
+    WHEN 'active' THEN '行程中' 
+    WHEN 'wait_pay' THEN '待支付' 
+    WHEN 'end' THEN '订单结束' 
+    WHEN 'cannal' THEN '订单被取消' 
+    END)  state_cn,b_order.state 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+        left join s_driver on s_driver.id = b_order.d_id 
+        left join s_car on b_order.d_id = s_car.d_id 
+        left join s_avatar_verify on s_avatar_verify.d_id = b_order.d_id 
+         WHERE b_order.id = '26795'  [ RunTime:0.0020s ]
+NOTIC: [2] A non-numeric value encountered /www/Application/Common/Common/function.php 第 401 行.
+NOTIC: [2] A non-numeric value encountered /www/Application/Common/Common/function.php 第 401 行.
+NOTIC: [2] A non-numeric value encountered /www/Application/Common/Common/function.php 第 401 行.
+NOTIC: [2] atan2() expects parameter 1 to be float, string given /www/Application/Common/Common/function.php 第 402 行.
+NOTIC: [2] A non-numeric value encountered /www/Application/Common/Common/function.php 第 402 行.
+SQL: UPDATE `b_order_reservation` SET `state`='success' WHERE ( reservation_no = '13:762:bd3d7afc8b8440954a1d3b3a08d501e1' ) [ RunTime:0.0036s ]
+
+[ 2019-10-30T09:13:39+08:00 ] 111.163.136.247 /Home_V2/tr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0008s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-30T09:13:43+08:00 ] 111.163.136.247 /Home_V2/pceo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `b_order` WHERE ( u_id = 762 and state not in ('end','cannal') ) LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2019-10-30T09:13:45+08:00 ] 111.163.136.247 /Home_V2/tr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-30T09:13:56+08:00 ] 111.163.136.247 /Home_V2/tr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-30T09:14:02+08:00 ] 111.163.136.247 /Home_V2/tr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-30T09:14:09+08:00 ] 111.163.136.247 /Home_V2/tr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-30T09:14:15+08:00 ] 111.163.136.247 /Home_V2/tr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0008s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-30T09:14:22+08:00 ] 111.163.136.247 /Home_V2/tr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0006s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+

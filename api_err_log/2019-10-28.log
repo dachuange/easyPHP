@@ -1,0 +1,883 @@
+2019-10-28 04:20:22
+error =>无法加载控制器:Captcha
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 05:13:54
+error =>无法加载控制器:Nmaplowercheck1572210834
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 05:13:54
+error =>无法加载控制器:Sdk
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 05:13:55
+error =>无法加载控制器:Evox
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 05:13:55
+error =>无法加载控制器:HNAP1
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 09:30:30
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'961','961157222623030','0','2019-10-28 09:30:30',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '961', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '961', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 09:31:37
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'884','884157222629747','0','2019-10-28 09:31:37',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '884', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '884', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 10:13:16
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'884','884157222879672','0','2019-10-28 10:13:16',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '884', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '884', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 10:14:41
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'961','961157222888111','0','2019-10-28 10:14:41',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '961', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '961', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 10:16:34
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'884','884157222899434','0','2019-10-28 10:16:34',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '884', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '884', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 10:20:43
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'884','884157222924318','0','2019-10-28 10:20:43',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '884', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '884', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 10:21:38
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'13','13157222929865','0','2019-10-28 10:21:38',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '13', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '13', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 10:28:30
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'884','884157222971021','0','2019-10-28 10:28:30',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '884', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '884', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 10:30:05
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'884','884157222980541','0','2019-10-28 10:30:05',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '884', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '884', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 10:33:08
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'884','884157222998848','0','2019-10-28 10:33:08',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '884', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '884', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 10:35:02
+error =>无法加载控制器:Eadmin
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 10:51:41
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'961','961157223110199','0','2019-10-28 10:51:41',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '961', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '961', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 11:23:48
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'961','961157223302827','0','2019-10-28 11:23:48',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '961', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '961', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 11:28:30
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'884','884157223331099','0','2019-10-28 11:28:30',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '884', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '884', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 13:38:27
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'884','884157224110778','0','2019-10-28 13:38:27',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '884', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '884', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 13:51:59
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'884','884157224191934','0','2019-10-28 13:51:59',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(263): creat_order(NULL, '884', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(466): Home_V2\Controller\DispatchController->save2Mysql(NULL, '884', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 14:21:18
+error =>无法加载控制器:Eadmin
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 15:44:01
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 15:47:32
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 15:47:44
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 15:48:47
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 15:48:47
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 15:48:49
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 15:48:49
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 15:48:49
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 15:48:49
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 15:48:54
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 15:49:31
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 15:50:00
+error =>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id ' at line 3
+ [ SQL语句 ] :         select a.d_id,b_order_site.billing_start_time,b_order_site.billing_end_time 
+                from b_order_site 
+                left join (select id,d_id from b_order where id = ) as a on a.id=b_order_site.o_id 
+                     WHERE b_order_site.o_id = '' 
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1064:You have a...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(180): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Model.class.php(1385): Think\Db\Driver->query('        select ...')
+#3 /www/Application/Admin/Controller/OrderController.class.php(250): Think\Model->query('        select ...', true)
+#4 [internal function]: Admin\Controller\OrderController->order_trajectory()
+#5 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Admin\Controller\OrderController))
+#6 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Admin\Controller\OrderController), 'order_trajector...')
+#7 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#8 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#9 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#10 /www/index.php(28): require('/www/ThinkPHP/T...')
+#11 {main}
+2019-10-28 16:10:04
+error =>无法加载控制器:Dns-query
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 16:10:04
+error =>无法加载控制器:Dns-query
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 17:20:02
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'749','749157225440254','0','2019-10-28 17:20:02',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(277): creat_order(NULL, '749', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(493): Home_V2\Controller\DispatchController->save2Mysql(NULL, '749', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 17:41:21
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'749','749157225568178','0','2019-10-28 17:41:21',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(277): creat_order(NULL, '749', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(493): Home_V2\Controller\DispatchController->save2Mysql(NULL, '749', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 17:43:04
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'749','749157225578433','0','2019-10-28 17:43:04',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(277): creat_order(NULL, '749', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(493): Home_V2\Controller\DispatchController->save2Mysql(NULL, '749', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 17:48:38
+error =>无法加载控制器:Eadmin
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 17:58:52
+error =>无法加载控制器:Eadmin
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 17:59:46
+error =>无法加载控制器:Eadmin
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 18:27:51
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'749','749157225847188','0','2019-10-28 18:27:51',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(277): creat_order(NULL, '749', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(515): Home_V2\Controller\DispatchController->save2Mysql(NULL, '749', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 18:37:21
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'749','749157225904117','0','2019-10-28 18:37:21',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(277): creat_order(NULL, '749', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(531): Home_V2\Controller\DispatchController->save2Mysql(NULL, '749', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 18:41:37
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'749','749157225929774','0','2019-10-28 18:41:37',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(277): creat_order(NULL, '749', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(532): Home_V2\Controller\DispatchController->save2Mysql(NULL, '749', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 18:44:55
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'749','749157225949562','0','2019-10-28 18:44:55',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(277): creat_order(NULL, '749', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(532): Home_V2\Controller\DispatchController->save2Mysql(NULL, '749', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 18:47:09
+error =>1048:Column 'u_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `b_order` (`u_id`,`d_id`,`order_num`,`amount`,`sdate`,`s_lat`,`s_lng`,`saddress`,`e_lat`,`e_lng`,`eaddress`,`distance`,`state`,`source`,`publicid`,`address_id`,`operation`) VALUES (NULL,'749','749157225962947','0','2019-10-28 18:47:09',NULL,NULL,NULL,NULL,NULL,NULL,'0','new',NULL,NULL,NULL,'car')
+/www/ThinkPHP/Library/Think/Db/Driver.class.php
+350
+#0 /www/ThinkPHP/Library/Think/Db/Driver.class.php(350): E('1048:Column 'u_...')
+#1 /www/ThinkPHP/Library/Think/Db/Driver.class.php(237): Think\Db\Driver->error()
+#2 /www/ThinkPHP/Library/Think/Db/Driver.class.php(824): Think\Db\Driver->execute('INSERT INTO `b_...', false)
+#3 /www/ThinkPHP/Library/Think/Model.class.php(323): Think\Db\Driver->insert(Array, Array, false)
+#4 /www/Application/Common/Common/function.php(491): Think\Model->add(Array)
+#5 /www/Application/Home_V2/Controller/DispatchController.class.php(277): creat_order(NULL, '749', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 /www/Application/Home_V2/Controller/DispatchController.class.php(532): Home_V2\Controller\DispatchController->save2Mysql(NULL, '749', NULL)
+#7 [internal function]: Home_V2\Controller\DispatchController->driverAcceptOrder_90()
+#8 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\DispatchController))
+#9 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\DispatchController), 'driverAcceptOrd...')
+#10 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#11 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#12 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#13 /www/index.php(28): require('/www/ThinkPHP/T...')
+#14 {main}
+2019-10-28 21:37:22
+error =>无法加载控制器:Xxxxx
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 21:37:22
+error =>无法加载控制器:Captcha
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 21:37:22
+error =>无法加载控制器:Static
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 21:37:22
+error =>无法加载控制器:Themes
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-28 21:37:22
+error =>无法加载模块:Checkcode
+/www/ThinkPHP/Library/Think/Dispatcher.class.php
+178
+#0 /www/ThinkPHP/Library/Think/Dispatcher.class.php(178): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\xA8\xA1...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(38): Think\Dispatcher::dispatch()
+#2 /www/ThinkPHP/Library/Think/App.class.php(195): Think\App::init()
+#3 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#4 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#5 /www/index.php(28): require('/www/ThinkPHP/T...')
+#6 {main}

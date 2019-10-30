@@ -1,0 +1,400 @@
+<include file="Public:head" /> <include file="Public:logo" /> <include file="Public:up" /> <include file="Public:left" />
+<div id="content">
+    <div id="content-header">
+        <div id="breadcrumb"> 
+            <a href="#" title="首页" class="tip-bottom"><i class="icon-home"></i>首页</a> 
+            <a href="#" class="current">分类</a> 
+        </div>
+        <h1>分类列表</h1>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="search_box">
+
+            <button onclick="button_href(this)" class="layui-btn layui-btn-small" id="addlist_rule" type="button" href='{:U("add_class")}'>新增分类</button>
+            <!--<button onclick="button_href(this)" class="layui-btn layui-btn-small layui-btn-warm" id="addlist_rule" type="button" href="__APP__/admin/Member/family">家族列表</button>-->
+
+        <div class="row-fluid">
+            <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+                        <h5>客户列表</h5>
+                </div>
+                    <link rel="stylesheet" href="__ROOT__/Public/Admin/static/ztree/zTreeStyle/zTreeStyle.css" type="text/css">
+                    <div class="cf" style="margin-top: 3%;margin-bottom: 3%;text-align: center;">  	
+                            <button type="button" class="layui-btn layui-btn-normal layui-btn-small" id="expandAllBtn" onclick="return false;" >全部展开</button>
+                            <button type="button" class="layui-btn layui-btn-danger layui-btn-small" id="resetBtn" onclick="return false;" >全部折叠</button>
+                    </div>
+                    <div id="ztree_min" style="margin-left: 3%;margin-right: 3%;text-align: center;background-color: #EDEDED;border: 1px solid #9C9C9C">
+                            <div class="widget-box" style="margin-left: 5%;margin-right: 5%;min-height: 400px">
+                                    <ul id="treeDemo" class="ztree"></ul>
+                            </div>
+                    </div> 
+
+                    <script type="text/javascript" src="__ROOT__/Public/Admin/static/ztree/zTreeJs/jquery.ztree.core.js"></script>
+
+                    <script type="text/javascript" src="__ROOT__/Public/Admin/static/ztree/zTreeJs/jquery.ztree.excheck.js"></script>
+
+                    <script type="text/javascript" src="__ROOT__/Public/Admin/static/ztree/zTreeJs/jquery.ztree.exedit.js"></script>
+
+                    <SCRIPT type="text/javascript">
+    $(function(){
+                var demoMsg = {
+
+                        async:"正在进行异步加载，请等一会儿再点击...",
+
+                        expandAllOver: "全部展开完毕",
+
+                        asyncAllOver: "后台异步加载完毕",
+
+                        asyncAll: "已经异步加载完毕，不再重新加载",
+
+                        expandAll: "已经异步加载完毕，使用 expandAll 方法"
+
+                }
+
+                var setting = {
+                    view: {
+                        addDiyDom: addDiyDom,
+                    },
+                    async: {
+
+                            enable: true,
+
+                            url:"__ROOT__/admin/Type/tree_json/pid/{$pid}",
+
+                            autoParam:["id", "count"],
+
+                            otherParam:{"otherParam":"zTreeAsyncTest"},
+
+                            dataFilter: filter,
+
+                            type: "get"
+
+                    },
+                    check:{
+                            enable: true,
+                            chkStyle: "radio",
+                            radioType: "all"
+                    },
+                    callback: {
+                            onClick: zTreeOnClick,
+
+                            beforeAsync: beforeAsync,
+
+                            onAsyncSuccess: onAsyncSuccess,
+
+                            onAsyncError: onAsyncError
+
+                    }
+
+                };
+                function addDiyDom(treeId, treeNode) {
+                    var aObj = $("#" + treeNode.tId + "_a");
+                    if ($("#diyBtn_"+treeNode.id).length>0) return;
+                    var rgb;
+                    var open_rgb = '#7FFF00';
+                    var close_rgb = '#CD0000';
+                    var msg;
+                    var url_go;
+                    var new_rgb;
+                    if (treeNode.state=="Y") {
+                      rgb = open_rgb;
+                      new_rgb = close_rgb;
+                      msg = '其所属分类及商品都将禁用/下架，是否确定禁用？';
+                      url_go = '{:U("close")}';
+                    }else{
+                      rgb = close_rgb;
+                      new_rgb = open_rgb;
+                      msg = '其父级分类也将启用，是否确定启用？';
+                      url_go = '{:U("open")}';
+                    }
+                    var editStr = "<button type='button' class='diyBtn1' id='diyBtn_" + treeNode.id
+                      + "' title='"+treeNode.name+"' onfocus='this.blur();' style='border:0px;background-color:white;'><i id='diyBtn_space_" +treeNode.id+ "' class='layui-icon' style='color:"+rgb+";font-weight:bold;'>&#xe610;</i></button>";
+                    aObj.before(editStr);
+                    var btn = $("#diyBtn_"+treeNode.id);
+                    if (btn) btn.bind("click", function(){
+                      layer.confirm(msg, function(index){
+                        $.ajax({
+                          url: url_go,
+                          type: 'post',
+                          dataType: 'json',
+                          data: {'id':treeNode.id},
+                          success:function(data){
+                            if (data=="ok") {
+                              ajax_alert('操作成功',1,false);
+                              $.each(data.changes,function(i,n){
+                                $('#diyBtn_space_'+n).css('color',new_rgb);
+                              });
+                            }else{
+                              ajax_alert('操作失败',2,true);
+                            }
+                          }
+                        })
+                        layer.close(index);
+                      });
+                    });
+              }
+                function zTreeOnClick(event,treeId,treeNode,msg) {
+                        // $('#order_load').load('{:U("order_load")}',{},function(){});
+                    // alert(treeNode.notPeople);
+                };
+
+                function filter(treeId, parentNode, childNodes) {
+
+                        if (!childNodes) return null;
+
+                        for (var i=0, l=childNodes.length; i<l; i++) {
+
+                                childNodes[i].name = childNodes[i].name.replace(/\.n/g, '.');
+
+                        }
+
+                        return childNodes;
+
+                }
+
+
+
+                function beforeAsync() {
+
+                        curAsyncCount++;
+
+                }
+                function onAsyncSuccess(event, treeId, treeNode, msg) {
+                        curAsyncCount--;
+
+                        if (curStatus == "expand") {
+
+                                expandNodes(treeNode.children);
+
+                        } else if (curStatus == "async") {
+
+                                asyncNodes(treeNode.children);
+
+                        }
+
+
+
+                        if (curAsyncCount <= 0) {
+
+                                if (curStatus != "init" && curStatus != "") {
+
+                                        $("#demoMsg").text((curStatus == "expand") ? demoMsg.expandAllOver : demoMsg.asyncAllOver);
+
+                                        asyncForAll = true;
+
+                                }
+
+                                curStatus = "";
+
+                        }
+
+                }
+
+
+
+                function onAsyncError(event, treeId, treeNode, XMLHttpRequest, textStatus, errorThrown) {
+
+                        curAsyncCount--;
+
+
+
+                        if (curAsyncCount <= 0) {
+
+                                curStatus = "";
+
+                                if (treeNode!=null) asyncForAll = true;
+
+                        }
+
+                }
+
+
+
+                var curStatus = "init", curAsyncCount = 0, asyncForAll = false,
+
+                goAsync = false;
+
+                function expandAll() {
+                    var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+                    
+                        if (!check()) {
+
+                                return;
+
+                        }
+                        if (asyncForAll) {
+
+                                $("#demoMsg").text(demoMsg.expandAll);
+
+                                zTree.expandAll(true);
+
+                        } else {
+
+                                expandNodes(zTree.getNodes());
+
+                                if (!goAsync) {
+
+                                        $("#demoMsg").text(demoMsg.expandAll);
+
+                                        curStatus = "";
+
+                                }
+
+                        }
+
+                }
+
+                function expandNodes(nodes) {
+                        if (!nodes) return;
+                        curStatus = "expand";
+                        var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+                        for (var i=0, l=nodes.length; i<l; i++) {
+                                zTree.expandNode(nodes[i], true, false, false);
+                                if (nodes[i].isParent && nodes[i].zAsync) {
+                                        expandNodes(nodes[i].children);
+                                } else {
+                                        goAsync = true;
+                                }
+                        }
+                }
+                function asyncAll() {
+
+                        if (!check()) {
+
+                                return;
+
+                        }
+
+                        var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+
+                        if (asyncForAll) {
+
+                                $("#demoMsg").text(demoMsg.asyncAll);
+
+                        } else {
+
+                                asyncNodes(zTree.getNodes());
+
+                                if (!goAsync) {
+
+                                        $("#demoMsg").text(demoMsg.asyncAll);
+
+                                        curStatus = "";
+
+                                }
+
+                        }
+
+                }
+
+                function asyncNodes(nodes) {
+
+                        if (!nodes) return;
+
+                        curStatus = "async";
+
+                        var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+
+                        for (var i=0, l=nodes.length; i<l; i++) {
+
+                                if (nodes[i].isParent && nodes[i].zAsync) {
+
+                                        asyncNodes(nodes[i].children);
+
+                                } else {
+
+                                        goAsync = true;
+
+                                        zTree.reAsyncChildNodes(nodes[i], "refresh", true);
+
+                                }
+
+                        }
+
+                }
+                function reset() {
+                        if (!check()) {
+                                return;
+                        }
+                        asyncForAll = false;
+                        goAsync = false;
+                        $("#demoMsg").text("");
+                        $.fn.zTree.init($("#treeDemo"), setting);
+                }
+                function check() {
+                        if (curAsyncCount > 0) {
+                                $("#demoMsg").text(demoMsg.async);
+                                return false;
+                        }
+                        return true;
+                }
+                $(document).ready(function(){
+                        $.fn.zTree.init($("#treeDemo"), setting);
+                        $("#expandAllBtn").bind("click", expandAll);
+                        $("#asyncAllBtn").bind("click", asyncAll);
+                        $("#resetBtn").bind("click", reset);
+                });
+
+
+
+                $('#getid').on('click',function(){
+                        var parent_id = "";
+                        var treeObj = $.fn.zTree.getZTreeObj("treeDemo");
+                        var nodes = treeObj.getCheckedNodes(true);
+                        var id = "";
+                        var name = "";
+                        var isParent = "";
+                        console.log(nodes);
+                        if(nodes.length==0){
+                            alert("请选择要禁用的分类");
+                            return false;
+                        }
+                        $.each(nodes,function(i,n){
+
+                            if (n.check_Child_State==-1 || n.check_Child_State==0) {
+                                    //赋予ID与Name
+                                    id = n.id;
+                                    name = n.name;
+                                    isParent = n.isParent;
+                            }
+
+                        })
+                        layer.confirm('是否禁用选中商品属性？', {icon: 3, title:'禁用'}, function(index){
+                            alert(1111);
+                            //禁用
+//                                                $.ajax({
+//                                                    async:false,
+//                                                    url: '__APP__/Admin/Cards/batch_json',
+//                                                    type: 'post',
+//                                                    dataType: 'json',
+//                                                    data: {'id':id},
+//                                                    success:function(data){
+//                                                        window.parent.$("#pro_batch").empty();
+//                                                        window.parent.$("#pro_batch").append("<option value='0'>请选择批次</option>");
+//                                                        for(var i=1;i<=data;i++){
+//                                                            window.parent.$("#pro_batch").append("<option value='"+i+"'>第"+i+"批</option>");
+//                                                        }                                
+//                                                    }
+//                                                })
+                            layer.close(index);
+                        });
+                })
+})
+
+                    </SCRIPT>
+
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+//  $('#submit').on('click',function(){
+//      alert(1111);
+//    location.href="__APP__/admin/goods/index?key="+$('#account').val()+"&departid="+$('#tree_min_pro_rule').data("id")+"&state="+$('#state').val()+"&pro_batch="+$('#pro_batch').val();
+//  })
+  
+</script>
+
+<include file="Public:foot" /> 

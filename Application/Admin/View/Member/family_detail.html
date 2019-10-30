@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="__PUBLIC__/Admin/css/bootstrap.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Admin/layui/css/layui.css">
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/layui/layui.js"></script>
+    <table class="table">
+        <thead>
+            <th style="vertical-align:middle;text-align: center;">姓名</th>
+            <th style="vertical-align:middle;text-align: center;">身份证号</th>
+            <th style="vertical-align:middle;text-align: center;">录入时间</th>
+        </thead>
+
+        <tbody>
+        <volist name="s_user" id="vo">
+            <td style="vertical-align:middle;text-align: center;">{$vo.name}</td>
+            <th style="vertical-align:middle;text-align: center;">{$vo.card}</th>
+            <td style="vertical-align:middle;text-align: center;">{$vo.sdate}</td>
+        </volist>
+
+        </tbody>
+    </table>

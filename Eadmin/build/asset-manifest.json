@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Eadmin/build/static/css/main.2caf9f7d.chunk.css",
+    "main.js": "/Eadmin/build/static/js/main.95a11fbc.chunk.js",
+    "main.js.map": "/Eadmin/build/static/js/main.95a11fbc.chunk.js.map",
+    "runtime-main.js": "/Eadmin/build/static/js/runtime-main.6bf064ea.js",
+    "runtime-main.js.map": "/Eadmin/build/static/js/runtime-main.6bf064ea.js.map",
+    "static/css/2.cc82b09a.chunk.css": "/Eadmin/build/static/css/2.cc82b09a.chunk.css",
+    "static/js/2.a9acccfe.chunk.js": "/Eadmin/build/static/js/2.a9acccfe.chunk.js",
+    "static/js/2.a9acccfe.chunk.js.map": "/Eadmin/build/static/js/2.a9acccfe.chunk.js.map",
+    "index.html": "/Eadmin/build/index.html",
+    "precache-manifest.30f3383f86de69122ee52a764656d043.js": "/Eadmin/build/precache-manifest.30f3383f86de69122ee52a764656d043.js",
+    "service-worker.js": "/Eadmin/build/service-worker.js",
+    "static/css/2.cc82b09a.chunk.css.map": "/Eadmin/build/static/css/2.cc82b09a.chunk.css.map",
+    "static/css/main.2caf9f7d.chunk.css.map": "/Eadmin/build/static/css/main.2caf9f7d.chunk.css.map",
+    "static/media/end.png": "/Eadmin/build/static/media/end.e9ff461f.png",
+    "static/media/logo.svg": "/Eadmin/build/static/media/logo.25bf045c.svg",
+    "static/media/str.png": "/Eadmin/build/static/media/str.31848986.png"
+  }
+}

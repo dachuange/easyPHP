@@ -1,0 +1,209 @@
+{
+	"contentManagement": [{
+			"title": "电话叫单",
+			"icon": "icon-text",
+			"href": "page/phoneorder/phoneorder.html",
+			"spread": false
+		},
+		{
+			"title": "司机管理",
+			"icon": "&#xe770;",
+			"href": "",
+			"spread": false,
+			"children": [{
+					"title": "司机列表",
+					"icon": "&#xe60a;",
+					"href": "page/driver/driverList.html",
+					"spread": false
+				},
+				{
+					"title": "临时修改运营方式",
+					"icon": "&#xe60a;",
+					"href": "build/index.html#/driverlist",
+					"spread": false
+				},
+			
+				{
+					"title": "司机审核",
+					"icon": "&#xe60a;",
+					"href": "page/driver/driversList.html",
+					"spread": false
+				},
+
+		
+			
+				{
+					"title": "司机头像审核",
+					"icon": "&#xe60a;",
+					"href": "build/index.html#/driveravatar",
+					"spread": false
+				},
+				{
+					"title": "司机提现管理",
+					"icon": "&#xe609;",
+					"href": "page/driver/dwithdrawList.html",
+					"spread": false
+				},
+
+				{
+					"title": "微信提现管理",
+					"icon": "&#xe609;",
+					"href": "page/driver/wcwithdrawList.html",
+					"spread": false
+				},
+				{
+					"title": "司机在岗统计",
+					"icon": "&#xe609;",
+					"href": "page/driver/ddutyList.html",
+					"spread": false
+				},
+				{
+					"title": "司机提现设置",
+					"icon": "&#xe609;",
+					"href": "page/driver/dwithdrawSet.html",
+					"spread": false
+				},
+				{
+					"title": "司机订单管理",
+					"icon": "&#xe609;",
+					"href": "page/driver/Dispatch.html",
+					"spread": false
+				}
+			]
+		},
+		{
+			"title": "用户中心",
+			"icon": "&#xe60a;",
+			"href": "",
+			"spread": false,
+			"children": [{
+					"title": "用户列表",
+					"icon": "&#xe612;",
+					"href": "page/user/userList.html",
+					"spread": false
+				},
+			
+				{
+					"title": "等待金设置",
+					"icon": "icon-vip",
+					"href": "page/user/userAward.html",
+					"spread": false
+				},
+			
+				{
+					"title": "等待金统计",
+					"icon": "icon-vip",
+					"href": "page/user/awardList.html",
+					"spread": false
+				}
+			]
+		},
+		{
+			"title": "通用设置",
+			"icon": "&#xe630;",
+			"href": "",
+			"spread": false,
+			"children": [{
+					"title": "派单设置",
+					"icon": "&#xe612;",
+					"href": "page/carfee/orderSet.html",
+					"spread": false
+				},
+			
+				{
+					"title": "车费设置",
+					"icon": "&#xe612;",
+					"href": "page/carfee/carfee.html",
+					"spread": false
+				},
+			
+			
+				{
+					"title": "车费区域展示",
+					"icon": "&#xe612;",
+					"href": "page/carfee/rangeList.html",
+					"spread": false
+				}
+			
+			]
+		},
+		{
+			"title": "红包管理",
+			"icon": "&#xe630;",
+			"href": "",
+			"spread": false,
+			"children": [{
+					"title": "红包设置",
+					"icon": "&#xe612;",
+					"href": "page/coupon/couponList.html",
+					"spread": false
+				},
+				{
+					"title": "红包发放",
+					"icon": "icon-vip",
+					"href": "page/coupon/userList.html",
+					"spread": false
+				},
+				{
+					"title": "红包发放记录",
+					"icon": "icon-vip",
+					"href": "page/coupon/usergiveList.html",
+					"spread": false
+				}
+			]
+		},
+	
+		{
+			"title": "奖励金设置",
+			"icon": "&#xe612;",
+			"href": "page/reward/rewardList.html",
+			"spread": false
+		},
+		{
+			"title": "奖励金设置2",
+			"icon": "&#xe612;",
+			"href": "build/index.html#/rewardlist",
+			"spread": false
+		},
+		{
+			"title": "订单列表",
+			"icon": "icon-vip",
+			"href": "page/order/orderList.html",
+			"spread": false
+		},
+		{
+			"title": "订单列表2",
+			"icon": "icon-vip",
+			"href": "build/index.html#/orderlist",
+			"spread": false
+		},
+	
+		{
+			"title": "流水管理",
+			"icon": "&#xe630;",
+			"href": "",
+			"spread": false,
+			"children": [
+				{
+					"title": "订单流水",
+					"icon": "&#xe60a;",
+					"href": "build/index.html#/orderflow",
+					"spread": false
+				},
+		
+				{
+					"title": "平台流水",
+					"icon": "&#xe60a;",
+					"href": "build/index.html#/totalflow",
+					"spread": false
+				}
+			]
+		},
+		{
+			"title": "投诉管理",
+			"icon": "&#xe630;",
+			"href": "build/index.html#/complaint",
+			"spread": false
+		}
+	]
+}

@@ -1,0 +1,149 @@
+<include file="Public:head" /> <include file="Public:logo" /> <include file="Public:up" /> <include file="Public:left" />
+<div id="content">
+    <div id="content-header">
+        <div id="breadcrumb"> 
+            <a href="#" title="首页" class="tip-bottom"><i class="icon-home"></i>首页</a> 
+            <a href="#" class="current">礼品卡新增</a> 
+        </div>
+        <h1>礼品卡新增</h1>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="search_box">
+            <button onclick="button_href(this)" class="layui-btn layui-btn-small" type="button" href="__APP__/admin/Cards/index">返回</button>
+            <span style="float: right;text-align: right;width: 50%">
+                
+                <button class="layui-btn layui-btn-warm layui-btn-small" type="button" id="tree_min" style="margin-bottom: 5px" data-id="0">
+                    组织架构
+                    <i class="layui-icon" style="font-size: 30px; color: white;margin-left: 3px;">&#xe61f;</i>
+                </button>
+
+                <select name="pro_type" id="pro_batch" style="margin: 0px;width: 21%">
+                    <option value="0">请选择批次</option>
+                </select>
+                
+                <input type="number" id='card_nums' name="card_nums"   placeholder="新增卡片数量" style="margin:0px;text-align: center;width: 21%">&nbsp;      
+                <input type="text" id='card_text' name="card_text"   placeholder="备注(可不填)" style="margin:0px;text-align: center;width: 21%">
+                <!--<i class="layui-icon" id="submit" style="font-size: 150%;cursor:pointer;vertical-align: middle;">&#xe615;</i>-->
+                <if condition='$_SESSION["admin"]["level"] eq "1"'>
+                    <button class="layui-btn layui-btn-small add_sub" type="button">新增</button>
+                </if>
+        <!-- <button class="btn" id="submit" type="button" >查询</button> -->
+            </span>
+        </div>
+        <div class="row-fluid">
+            <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+                        <h5>商品列表</h5>
+                </div>
+                <div class="widget-content nopadding">
+                    <div class='dataTables_wrapper'>
+                        <table class='table table-bordered data-table'>
+                            <!-- 表头 -->
+                            <thead>
+                                <tr>
+                                    <th class="row-selected row-selected"> <input class="check-all" type="checkbox"/>
+                                    </th>
+                                    <th class="sql">卡ID</th>
+                                    <th class="sql">卡号</th>
+                                    <th>密码</th>
+                                    <th>申请部门</th>
+                                    <th>批次</th>
+                                    <th>创建时间</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <!-- 列表 -->
+                            <tbody>
+                                <if condition="$db eq null">
+                                    <tr><td class="text-center" colspan="14"> aOh! 暂时还没有内容!</td></tr>
+                                <else />           
+                                    <volist name="db" id="db">              
+                                        <tr>
+                                            <td class="text-center" style="vertical-align:middle"><input class="ids" type="checkbox" value="{$db.id}" name="id"></td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.id}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.account}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.pwd}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.name}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.batch}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.date}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.state}</td>
+                                            <!--<td class="text-center change_s" style="vertical-align:middle;cursor:pointer;">{$db.state}</td>-->
+                                            <td class="text-center" style="vertical-align:middle">
+                                                <button class="layui-btn layui-btn-mini layui-btn-primary detail_go" data-id="{$db.id}">查看</button>
+                                                <button class="layui-btn layui-btn-mini layui-btn-danger del_go" data-id="{$db.id}">删除</button>
+                                            </td>
+                                        </tr>
+                                    </volist>
+                                </if>
+                            </tbody>
+                        </table>
+                        <div class="page">
+                            {$page}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        $('#tree_min').on('click',function(){
+            layer.open({
+              title:'组织架构',
+              type: 2, 
+              content: '{:U("tree_min")}',
+              area: ['300px', '500px'],
+              skin:'layui-layer-lan'
+            });
+        })
+        
+        $(".add_sub").click(function(){
+            var depart = $("#tree_min").data("id");
+            var batch = $("#pro_batch").val();
+            var nums = $("#card_nums").val();
+            var card_text = $("#card_text").val();
+            if(depart=="0"){
+                alert("请选择部门");
+                return false;
+            }
+            if(batch=="0"){
+                alert("请选择批次");
+                return false;
+            }
+            if(Number(nums)<Number(1)){
+                alert("数量不可小于1");
+                return false;
+            }
+            $.ajax({
+                async:false,
+                url: '__APP__/Admin/Cards/card_creat',
+                type: 'post',
+                dataType: 'json',
+                data: {'depart':depart,"batch":batch,"nums":nums,"card_text":card_text},
+                success:function(data){
+                    if(data=="ok"){
+                        location.href="__APP__/Admin/Cards/index";
+                    }
+                    console.log(data);
+                }
+            })
+        })
+        $("#pro_product").click(function(){
+            var obj = mousePos();
+            console.log(obj);
+        })
+        
+        function mousePos(e){
+            var x,y; 
+            var e = e||window.event; 
+            return { 
+              x:e.clientX+document.body.scrollLeft + document.documentElement.scrollLeft, 
+              y:e.clientY+document.body.scrollTop + document.documentElement.scrollTop 
+            }; 
+        }; 
+    })
+</script>
+<include file="Public:foot" /> 

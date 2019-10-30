@@ -1,0 +1,297 @@
+<html>
+	<head>
+		<title>一键叫车</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<link rel="stylesheet" href="__PUBLIC__/home/css/callingcar.css" media="all">
+		<link rel="stylesheet" href="__PUBLIC__/home/css/alert.css" media="all">
+		<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=X5JBZ-YS53I-5FFG2-5YZ72-HNS46-CQBBW"></script>
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script type="text/javascript" src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script> -->
+		<style>
+		</style>
+	</head>
+	<body>
+		<div id="content" class="content">
+			<input id="appId" name="appId" type="hidden" value="{$config.appId}">
+			<input id="timestamp" name="timestamp" type="hidden" value="{$config.timestamp}">
+			<input id="nonceStr" name="nonceStr" type="hidden" value="{$config.nonceStr}">
+			<input id="signature" name="signature" type="hidden" value="{$config.signature}">
+			<input id="openid" name="openid" type="hidden" value="{$user.openid}">
+			<input id="phone" name="phone" type="hidden" value="{$user.phone}">
+			<input id="u_id" name="u_id" type="hidden" value="{$user.u_id}">
+			<input id="s_lat" name="s_lat" type="hidden" value="">
+			<input id="s_lng" name="s_lng" type="hidden" value="">
+			<input id="e_lat" name="e_lat" type="hidden" value="">
+			<input id="e_lng" name="e_lng" type="hidden" value="">
+			<input id="biaoshi" name="biaoshi" type="hidden" value="false">
+			<div class="kuai-content">
+				<div class="left">
+					<div class="circle-str2"></div>
+				</div>
+				<div class="right">
+					<input type="text" class="name" id="s_local" name="s_local" placeholder="正在获取上车地点..." readonly="true" onclick="map()"
+					 onfocus="test()">
+				</div>
+			</div>
+			<div class="kuai-content">
+				<div class="left">
+					<div class="circle-str1"></div>
+				</div>
+				<div class="right">
+					<input type="text" class="name" id="e_local" name="e_local" placeholder="终点(选填,建议输入方便司机导航)" readonly="true"
+					 onclick="map1()" onfocus="test()">
+				</div>
+			</div>
+			<button id="jcwy" class="xiugai" onclick="tankuang()">呼叫</button>
+		</div>
+		<div id="map" style="width: 100%;height:100%;">
+		</div>
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+		<script>
+			function test() {
+				event.currentTarget.blur()
+			}
+			$(function() {
+				$('#map').hide();
+				$('#mapPage').hide();
+				$('#content').show();
+			})
+			/* 微信配置 */
+			var appId = $('#appId').val();
+			var timestamp = $('#timestamp').val();
+			var nonceStr = $('#nonceStr').val();
+			var signature = $('#signature').val();
+			wx.config({
+				debug: false, //调试模式   当为tru时，开启调试模式 
+				appId: appId,
+				timestamp: timestamp.toString(), //签名时间戳
+				nonceStr: nonceStr, //生成签名的随机串 
+				signature: signature, //签名                    
+				jsApiList: ['openLocation', 'getLocation'],
+				success: function(res) {
+					if (res.checkResult.getLocation == false) {
+						alert('你的微信版本太低，不支持微信JS接口，请升级到最新的微信版本！');
+						return;
+					}
+					alert("配置成功")
+				},
+				fail: function() {
+					alert("配置失败")
+				}
+			});
+			wx.ready(function() {
+				wx.getLocation({
+					type: "gcj02",
+					success: function(res) {
+						console.log(res)
+						latitude = res.latitude;
+						longitude = res.longitude;
+						$('#s_lat').val(latitude);
+						$('#s_lng').val(longitude);
+						document.getElementById("map").innerHTML =
+							'<iframe id="mapPage" width="100%" height="100%" frameborder=0 scrolling="no" src="https://apis.map.qq.com/tools/locpicker?search=1&type=1&key=X5JBZ-YS53I-5FFG2-5YZ72-HNS46-CQBBW&referer=myapp&coordtype=5&coord=' +
+							latitude + ',' + longitude + '"></iframe>'
+						//alert(latitude+","+longitude);
+						geocoder(latitude, longitude);
+					},
+					cancel: function(res) {
+						alert('用户拒绝授权获取地理位置'); //用户拒绝授权
+					},
+				});
+			});
+			//将经纬度解析为详细的地址
+			function geocoder(latitude, longitude) {
+				var ll = latitude + "," + longitude;
+				$.ajax({
+					type: 'get',
+					url: 'https://apis.map.qq.com/ws/geocoder/v1',
+					dataType: 'jsonp',
+					data: {
+						key: "X5JBZ-YS53I-5FFG2-5YZ72-HNS46-CQBBW", //开发密钥
+						location: ll,
+						//位置坐标
+						get_poi: "0", //是否返回周边POI列表：1.返回；0不返回(默认)
+						//coord_type: "5", //输入的locations的坐标类型,1 火星坐标
+						parameter: {
+							"scene_type": "tohome",
+							"poi_num": 20
+						}, //附加控制功能
+						output: "jsonp"
+					},
+					success: function(data, textStatus) {
+						console.log("data", data)
+						var formatted_addresses = data.result.formatted_addresses;
+						console.log("formatted_addresses", formatted_addresses);
+						var recommend = formatted_addresses.recommend;
+						console.log("recommend", recommend);
+						if (data.status == 0) {
+							var address = data.result.address;
+							//$('#s_local').val(address);//显示街道
+							$('#s_local').val(recommend); //显示名称
+						} else {
+							alert("系统错误，请联系管理员！")
+						}
+					},
+					error: function() {
+						alert("系统错误，请联系管理员！")
+					}
+				});
+			}
+			//搜索
+			window.addEventListener('message', function(event) {
+				// 接收位置信息，用户选择确认位置点后选点组件会触发该事件，回传用户的位置信息
+				var loc = event.data;
+				if (loc && loc.module == 'locationPicker') {
+					console.log('location', loc);
+					if (loc != null && loc != undefined) {
+						setTimeout(function() {
+							$('#content').show();
+							$('#map').hide();
+							$('#mapPage').hide();
+							var biaoshi = localStorage.getItem("name")
+							console.log('biaoshi', biaoshi);
+							if (biaoshi == 1) {
+								var s_lat = loc.latlng.lat;
+								var s_lng = loc.latlng.lng;
+								var s_local = loc.poiaddress;
+								var poiname = loc.poiname;
+								if (poiname == '我的位置') {
+									$('#s_local').val(s_local);
+								} else {
+									$('#s_local').val(poiname);
+								}
+								$('#s_lat').val(s_lat);
+								$('#s_lng').val(s_lng);
+
+							} else if (biaoshi == 2) {
+								var e_lat = loc.latlng.lat;
+								var e_lng = loc.latlng.lng;
+								var e_local = loc.poiaddress;
+								var poiname = loc.poiname;
+								if (poiname == '我的位置') {
+									$('#e_local').val(e_local);
+								} else {
+									$('#e_local').val(poiname);
+								}
+								$('#e_lat').val(e_lat);
+								$('#e_lng').val(e_lng);
+							}
+						}, 300); //延迟5000毫米
+					}
+				}
+			}, false);
+			//开始
+			function map() {
+				$('#mapPage').attr('src', $('#mapPage').attr('src'));
+				localStorage.setItem("name", "1")
+				$('#map').show();
+				$('#mapPage').show();
+				$('#content').hide();
+			}
+			//结束
+			function map1() {
+				$('#mapPage').attr('src', $('#mapPage').attr('src'));
+				localStorage.setItem("name", "2")
+				$('#map').show();
+				$('#mapPage').show();
+				$('#content').hide();
+			}
+			//跳转等待页面
+			function tankuang() {
+				//弹框
+				var toast = function(params) {
+					var el = document.createElement("div");
+					el.setAttribute("id", "toast");
+					el.innerHTML = params.message;
+					document.body.appendChild(el);
+					el.classList.add("fadeIn");
+					setTimeout(function() {
+						el.classList.remove("fadeIn");
+						el.classList.add("fadeOut");
+						el.addEventListener("animationend", function() {
+							el.classList.add("hide");
+						});
+					}, params.time);
+				};
+				//$("#jcwy").removeAttr("onclick");
+				//建立接单参数
+				var s_local = $('#s_local').val();
+				if(s_local==''){
+					toast({
+						message: '正在定位起点,请稍等~',
+						time: 1500
+					});
+					return false;
+					//$("#jcwy").attr("onclick", "tankuang()");
+				}
+				var s_lat = $('#s_lat').val();
+				var s_lng = $('#s_lng').val();
+				var e_local = $('#e_local').val();
+				var e_lat = $('#e_lat').val();
+				var e_lng = $('#e_lng').val();
+				var u_id = $('#u_id').val();
+				if(s_local==e_local){
+					toast({
+						message: '起点和终点不能相同',
+						time: 1500
+					});
+					return false;
+				}
+				localStorage.setItem("u_id", u_id)
+				localStorage.setItem("s_local", s_local)
+				localStorage.setItem("s_lat", s_lat)
+				localStorage.setItem("s_lng", s_lng)
+				localStorage.setItem("e_local", e_local)
+				localStorage.setItem("e_lat", e_lat)
+				localStorage.setItem("e_lng", e_lng)
+				//是否在区域内
+				$.ajax({
+					url: '__ROOT__/User/addressid_check', //不跨域调取url
+					type: 'post',
+					data: {
+				      lat:s_lat,
+					  lng:s_lng
+					},
+					
+					success: function(data) {
+						console.log('data', data)
+						var code=data.error_code;
+						if(code==0){
+							//在区域内
+							window.location.href = '__APP__/Index/wait'
+						}else if(code==-1){
+							//不在区内
+							toast({
+								message: data.message,
+								time: 1500
+							});
+						}
+					},
+				})
+			}
+		</script>
+		<script>
+			$(function() {
+				pushHistory();
+				window.addEventListener("popstate", function(e) {
+					//alert("我监听到了浏览器的返回按钮事件啦"); //根据自己的需求实现自己的功能
+				    window.location.href = "__ROOT__/Index/index" //跳转到首页
+				}, false);
+
+				function pushHistory() {
+					var state = {
+						title: "title",
+						url: "#"
+					};
+					window.history.pushState(state, "title", "#");
+				}
+			});
+		</script>
+	</body>
+</html>

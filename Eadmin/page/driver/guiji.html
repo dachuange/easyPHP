@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>司机轨迹</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+		<style type="text/css">
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				margin: 0;
+				font-family: "微软雅黑";
+			}
+
+			#allmap {
+				position: absolute;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				margin: 0;
+				font-family: "微软雅黑";
+			}
+		</style>
+		<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=Cg6GIDFs6h0NAan5CA5GxIDScopVviOg"></script>
+		<script type="text/javascript" src="../../js/Url.js"></script>
+		<script type="text/javascript" src="../../layui/layui.js"></script>
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	</head>
+	<body>
+		<blockquote class="layui-elem-quote quoteBox">
+			<form class="layui-form">
+				<div class="layui-inline">
+					<div class="layui-inline">
+						<label class="layui-form-label">开始时间</label>
+						<div class="layui-input-inline">
+							<input type="text" class="layui-input" id="test1" placeholder="默认今天">
+						</div>
+					</div>
+					<div class="layui-inline">
+						<label class="layui-form-label">结束时间</label>
+						<div class="layui-input-inline">
+							<input type="text" class="layui-input" id="test2" placeholder="默认今天">
+						</div>
+					</div>
+					<a class="layui-btn search_btn" id="search">搜索</a>
+				</div>
+			</form>
+		</blockquote>
+		<div id="allmap"></div>
+		<script type="text/javascript">
+			/* 页面加载 */
+			var url1=window.globalConfig.api;//接口地址
+			var id = localStorage.getItem("userid");
+			var token = localStorage.getItem("token");
+			//获取当前url
+			var url = window.location.href;
+			GetRequest(url);
+			//获取订单id
+			function GetRequest(url) {
+				// var url = location.search; //获取url中"?"符后的字串 
+				var theRequest = {};
+				if (url.indexOf("?") != -1) {
+					var str = url.substring(url.indexOf("?") + 1);
+					// var str = str.substr(1); 
+					console.log(str);
+					strs = str.split("&");
+					console.log(strs);
+					for (var i = 0; i < strs.length; i++) {
+						theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+					}
+				}
+				//console.log(theRequest);
+				var d_id = theRequest.d_id;
+				console.log('d_id', d_id)
+				//return theRequest;
+                /* ajax*/
+				$.ajax({
+					url: url1+'/admin/Driver/driver_trajectory',
+					type: "POST",
+					data: {
+						id: id,
+						token:token,
+						d_id:d_id,
+						sear_time_s: $("#test1").val(),
+						sear_time_e: $("#test2").val()
+					},
+					dataType: "json",
+					success: function(data) {
+						console.log('guiji', data)
+						/* 轨迹展示开始 */
+						var list = data;
+						console.log('list', list)
+						if(list==null){
+							alert("里程太短,没有轨迹~");
+							return false;
+						}
+						var listLast = list.length - 1;
+						// 百度地图API功能
+						var map = new BMap.Map("allmap"); // 创建Map实例
+						map.centerAndZoom(new BMap.Point(list[0].Long, list[0].Lat), 16); // 初始化地图,设置中心点坐标和地图级别
+						map.addControl(new BMap.MapTypeControl()); //添加地图类型控件
+						map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+						
+						setTimeout(drawIcon, 500);
+						var carMk;
+						var myBeginIcon = new BMap.Icon("../../images/str.png", new BMap.Size(28, 28), {
+							imageOffset: new BMap.Size(0, 0)
+						}); //起点
+						var myEndIcon = new BMap.Icon("../../images/end.png", new BMap.Size(28, 28), {
+							imageOffset: new BMap.Size(0, 0)
+						}); //终点
+						
+						function drawGreenLine(i) {
+							var polyline = new BMap.Polyline([
+								new BMap.Point(list[i].Long, list[i].Lat), //起始点的经纬度
+								new BMap.Point(list[i + 1].Long, list[i + 1].Lat) //终点的经纬度
+							], {
+								strokeColor: "green", //设置颜色
+								strokeWeight: 4, //宽度
+								strokeOpacity: 1
+							}); //透明度
+							map.addOverlay(polyline);
+						}
+						
+						function drawIcon() {
+							if (carMk) {
+								map.removeOverlay(carMk);
+							}
+							carMk2 = new BMap.Marker(
+								new BMap.Point(list[0].Long, list[0].Lat), //起始点的经纬度
+								{
+									icon: myBeginIcon
+								});
+							map.addOverlay(carMk2);
+						
+							carMk = new BMap.Marker(
+								new BMap.Point(list[listLast].Long, list[listLast].Lat), //终点的经纬度
+								{
+									icon: myEndIcon
+								});
+							map.addOverlay(carMk);
+						
+							for (var i = 0; i < list.length - 1; i++) {
+								drawGreenLine(i);
+							}
+						}
+						/* 轨迹展示结束 */
+					},
+				})
+				/*ajaxend*/
+			}
+			/* 页面加载end */
+			//搜索
+			var windowComeback = document.getElementById('search');
+			windowComeback.addEventListener('click', function () {
+				
+				var url1=window.globalConfig.api;//接口地址
+				var id = localStorage.getItem("userid");
+				var token = localStorage.getItem("token");
+				//获取当前url
+				var url = window.location.href;
+				GetRequest(url);
+				//获取订单id
+				function GetRequest(url) {
+					// var url = location.search; //获取url中"?"符后的字串 
+					var theRequest = {};
+					if (url.indexOf("?") != -1) {
+						var str = url.substring(url.indexOf("?") + 1);
+						// var str = str.substr(1); 
+						console.log(str);
+						strs = str.split("&");
+						console.log(strs);
+						for (var i = 0; i < strs.length; i++) {
+							theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+						}
+					}
+					//console.log(theRequest);
+					var d_id = theRequest.d_id;
+					console.log('d_id', d_id)
+					//return theRequest;
+				    /* ajax*/
+					$.ajax({
+						url: url1+'/admin/Driver/driver_trajectory',
+						type: "POST",
+						data: {
+							id: id,
+							token:token,
+							d_id:d_id,
+							sear_time_s: $("#test1").val(),
+							sear_time_e: $("#test2").val()
+						},
+						dataType: "json",
+						success: function(data) {
+							console.log('guiji', data)
+							/* 轨迹展示开始 */
+							var list = data;
+							console.log('list', list)
+							if(list==null){
+								alert("里程太短,没有轨迹~");
+								return false;
+							}
+							var listLast = list.length - 1;
+							// 百度地图API功能
+							var map = new BMap.Map("allmap"); // 创建Map实例
+							map.centerAndZoom(new BMap.Point(list[0].Long, list[0].Lat), 16); // 初始化地图,设置中心点坐标和地图级别
+							map.addControl(new BMap.MapTypeControl()); //添加地图类型控件
+							map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+							
+							setTimeout(drawIcon, 500);
+							var carMk;
+							var myBeginIcon = new BMap.Icon("../../images/str.png", new BMap.Size(28, 28), {
+								imageOffset: new BMap.Size(0, 0)
+							}); //起点
+							var myEndIcon = new BMap.Icon("../../images/end.png", new BMap.Size(28, 28), {
+								imageOffset: new BMap.Size(0, 0)
+							}); //终点
+							
+							function drawGreenLine(i) {
+								var polyline = new BMap.Polyline([
+									new BMap.Point(list[i].Long, list[i].Lat), //起始点的经纬度
+									new BMap.Point(list[i + 1].Long, list[i + 1].Lat) //终点的经纬度
+								], {
+									strokeColor: "green", //设置颜色
+									strokeWeight: 4, //宽度
+									strokeOpacity: 1
+								}); //透明度
+								map.addOverlay(polyline);
+							}
+							
+							function drawIcon() {
+								if (carMk) {
+									map.removeOverlay(carMk);
+								}
+								carMk2 = new BMap.Marker(
+									new BMap.Point(list[0].Long, list[0].Lat), //起始点的经纬度
+									{
+										icon: myBeginIcon
+									});
+								map.addOverlay(carMk2);
+							
+								carMk = new BMap.Marker(
+									new BMap.Point(list[listLast].Long, list[listLast].Lat), //终点的经纬度
+									{
+										icon: myEndIcon
+									});
+								map.addOverlay(carMk);
+							
+								for (var i = 0; i < list.length - 1; i++) {
+									drawGreenLine(i);
+								}
+							}
+							/* 轨迹展示结束 */
+						},
+					})
+					/*ajaxend*/
+				}
+				
+			});
+			
+		</script>
+		<script>
+			layui.use('laydate', function(){
+				  var laydate = layui.laydate;
+				  //常规用法
+				  laydate.render({
+					elem: '#test1',
+					type: 'datetime',
+					trigger: 'click',
+					format: "yyyy-MM-dd HH:mm:ss"
+				  });
+			 });
+			 layui.use('laydate', function(){
+			 	  var laydate = layui.laydate;
+			 	  //常规用法
+			 	  laydate.render({
+			 		elem: '#test2',
+					type: 'datetime',
+					trigger: 'click',
+					format: "yyyy-MM-dd HH:mm:ss"
+			 	  });
+			  });
+		</script>
+	</body>
+</html>

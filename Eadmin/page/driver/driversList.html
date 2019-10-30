@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>司机审核</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../../css/public.css" media="all" />
+	</head>
+	<body class="childrenBody">
+		<form class="layui-form">
+			<blockquote class="layui-elem-quote quoteBox">
+				<form class="layui-form">
+					<div class="layui-inline">
+						<div class="layui-input-inline">
+							<input type="text" class="layui-input searchVal" id="search" placeholder="请输入司机工号,司机姓名或者司机手机号"  style="width:300px;"/>
+						</div>
+						<!-- <div class="layui-input-inline">
+							<div style="width: 150px;display: inline-block;">
+								<select name="state" id="state">
+									  <option value="Y">通过审核</option>
+									  <option value="N">驳回审核</option>
+								</select>
+							</div>
+						</div> -->
+						<a class="layui-btn search_btn" data-type="reload">搜索</a>
+						<a class="layui-btn search_btn reset" data-type="reload">重置</a>
+					</div>
+					<!-- <div class="layui-inline">
+						<a class="layui-btn layui-btn-normal addNews_btn" href="driverAdd.html">添加司机</a>
+					</div>
+					<div class="layui-inline">
+						<a class="layui-btn layui-btn-danger layui-btn-normal delAll_btn">批量删除</a>
+					</div> -->
+				</form>
+			</blockquote>
+			<table id="driverList" lay-filter="driverList"></table>
+
+			<!--操作-->
+			<script type="text/html" id="driverListBar">
+				<a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>
+		<!-- <a class="layui-btn layui-btn-xs layui-btn-warm" lay-event="usable">已启用</a>
+		<a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a> -->
+	</script>
+		</form>
+		<script type="text/javascript" src="../../js/Url.js"></script>
+		<script type="text/javascript" src="../../layui/layui.js"></script>
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="driversList.js"></script>
+		<script>
+		</script>
+	</body>
+</html>

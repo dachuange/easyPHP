@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>打车</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="__PUBLIC__/home/css/person.css" media="all">
+		<style>
+		</style>
+	</head>
+	<body>
+		<div class="weui_cell">
+			<div class="weui_cell_bd">
+				<div class="weui_cell_bd_p">头像</div>
+			</div>
+			<div>
+				<if condition="$user['headimgurl']  neq '' ">
+					<image src="{$user.headimgurl}" class="photo"></image>
+					<else />
+					<image src="__PUBLIC__/home/images/driver.png"  class="photo"/>
+				</if>
+			</div>
+		</div>
+		<div class="weui_cell">
+			<div class="weui_cell_bd">
+				<div class="weui_cell_bd_p">昵称</div>
+			</div>
+			<div class="with_arrow1">
+				{$user.nickname}
+			</div>
+		</div>
+			<div class="weui_cell" onclick="upphone()">
+				<div class="weui_cell_bd">
+					<div class="weui_cell_bd_p">修改手机号</div>
+				</div>
+				<div>
+					<image src="__PUBLIC__/home/images/icon-arrow.png" class="with_arrow"></image>
+				</div>
+			</div>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		function upphone(){
+			window.location.href = "__APP__/User/upuser_phone"
+		}
+	</script>
+</html>

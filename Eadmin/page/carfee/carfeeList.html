@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>宝坻车费设置</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../../css/public.css" media="all" />
+	</head>
+	<body class="childrenBody">
+		<div class="layui-form">
+			<table class="layui-table mag0">
+				<colgroup>
+					<col width="25%">
+					<col width="25%">
+					<col width="25%">
+					<col width="25%">
+				</colgroup>
+				<thead>
+					<!-- <tr>
+						<th>参数说明</th>
+						<th>参数值</th>
+						<th pc>变量名</th>
+						<th pc>变量名</th>
+					</tr> -->
+				</thead>
+				<tbody>
+					<tr>
+						<td>早高峰开始时间</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test4" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+						<td>早高峰结束时间</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test5" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>晚高峰开始时间</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test6" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+						<td>晚高峰结束时间</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test7" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>早高峰加价</td>
+						<td><input type="number" step="0.01" min="0" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" class="layui-input cmsName" id="early_peak"></td>
+						<td>晚高峰加价</td>
+						<td><input type="number" step="0.01" min="0" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" class="layui-input cmsName" id="late_peak"></td>
+					</tr>
+					<tr>
+						<td>夜间第一段开始时间</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test8" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+						<td>夜间第一段结束时间</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test9"  placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>夜间第二段开始时间</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test10" onclick="add();" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+						<td>夜间第二段结束时间</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test11" onclick="add();" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>夜间第一段出行加价</td>
+						<td><input type="number" step="0.01" min="0" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" class="layui-input cmsName" id="night_driving_first"></td>
+						<td>夜间第二段出行加价</td>
+						<td><input type="number" step="0.01" min="0" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" class="layui-input cmsName" id="night_driving_second"></td>
+					</tr>
+					<tr>
+						<td>起步价</td>
+						<td><input type="number" step="0.01" min="0" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" class="layui-input cmsName" id="start_fee"></td>
+						<td>2公里以上每公里里程费</td>
+						<td><input type="number" step="0.01" min="0" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" class="layui-input cmsName" id="first_mileage"></td>
+					</tr>
+					<tr>
+					    <td>5公里以上每公里里程费</td>
+					    <td><input type="number" step="0.01" min="0" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" class="layui-input cmsName" id="second_mileage"></td>
+						<td>恶劣天气加价</td>
+						<td><input type="number" step="0.01" min="0" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" class="layui-input cmsName" id="bad_weather"></td>
+					
+					</tr>
+					<tr>
+						<td>红色边缘内加价</td>
+						<td><input type="number" step="0.01" min="0" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" class="layui-input cmsName" id="edge_town"></td>
+						<td>红色边缘外加价</td>
+						<td><input type="number" step="0.01" min="0" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" class="layui-input cmsName" id="edge_town_second"></td>
+					</tr>
+					<tr>
+						<td>出城加价</td>
+						<td><input type="number" step="0.01" min="0" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" class="layui-input cmsName" id="out_town"></td>
+						<td>第一时段出城加价变动值</td>
+						<td><input type="number" step="0.01" class="layui-input cmsName" id="out_town_first_add"></td>
+					</tr>
+					<tr>
+						<td>出城加价变动第一时段开始</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test12" onclick="add();" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+						<td>出城加价变动第一时段结束</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test13" onclick="add();" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>出城加价变动第二时段开始</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test14" onclick="add();" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+						<td>出城加价变动第二时段结束</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test15" onclick="add();" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>第二时段出城加价变动值</td>
+						<td><input type="number" step="0.01" class="layui-input cmsName" id="out_town_second_add"></td>
+						<td>(时段-公里数)出城变动公里数判断</td>
+						<td><input type="number" step="0.01" class="layui-input cmsName" id="out_town_killmeter"></td>
+					</tr>
+					<tr>
+						<td>(时段-公里数)出城变动时段开始</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test16" onclick="add();" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+						<td>(时段-公里数)出城变动时段结束</td>
+						<td>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test17" onclick="add();" placeholder="请选择时间" style="width: 251px;">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>(时段-公里数)出城变动值</td>
+						<td><input type="number" step="0.01" class="layui-input cmsName" id="out_town_killmeter_add"></td>
+						<td>其他类型加价</td>
+						<td><input type="number" step="0.01" class="layui-input cmsName" id="other"></td>
+					</tr>
+					<tr>
+						<td>其他文字类型描述</td>
+						<td><input type="text" class="layui-input cmsName" id="othertext"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="magt10 layui-right">
+				<div class="layui-input-block">
+					<button class="layui-btn" onclick="submenu()">立刻设置</button>
+					<button type="reset" class="layui-btn layui-btn-primary">取消</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/Url.js"></script>
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../layui/layui.js"></script>
+		<script type="text/javascript" src="carfeeList.js"></script>
+		<script>
+			function add(){
+				window.scrollTo(0, document.documentElement.clientHeight);
+			}
+			layui.use('laydate', function() {
+				var laydate = layui.laydate;
+				//时间选择器
+				laydate.render({
+					elem: '#test4',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test5',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test6',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test7',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test8',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test9',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test10',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test11',
+					type: 'time',
+					trigger: 'click'
+				});
+						//时间选择器
+				laydate.render({
+					elem: '#test12',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test13',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test14',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test15',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test16',
+					type: 'time',
+					trigger: 'click'
+				});
+				//时间选择器
+				laydate.render({
+					elem: '#test17',
+					type: 'time',
+					trigger: 'click'
+				});
+			});
+		</script>
+	</body>
+</html>

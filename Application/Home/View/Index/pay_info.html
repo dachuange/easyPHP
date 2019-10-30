@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+		<link rel="stylesheet" href="__PUBLIC__/home/css/pay_info1.css" media="all">
+		<title>计价规则</title>
+	</head>
+	<body>
+		<div class="content">
+			<p style="margin-bottom: 15px;">在运行范围内：</p>
+			<p style="margin: 10px auto;">
+				1. 2公里范围内起步价{$billing.start_fee}元。<br/>
+				2. 2-5公里每1公里{$billing.first_mileage}元。<br/>
+				3. 超过5公里每公里{$billing.first_mileage}元。<br/>
+				4. 终点在边缘区内区：起步价加{$billing.edge_town}元，<br/>
+				5. 终点在边缘区外区：起步价加{$billing.edge_town_second}元，<br/>
+				6. 终点跨出城区：起步价加{$billing.out_town}元。 （城外回城内订单，按照跨出城区计算）<br/>
+				7. 早高峰：{$billing.early_peak_time_start}-{$billing.early_peak_time_end}点，起步价加{$billing.early_peak}元。<br/>
+			    8. 晚高峰：{$billing.late_peak_time_start}-{$billing.late_peak_time_end}点，起步价加{$billing.late_peak}元。<br/>
+				9. 夜间运行：{$billing.night_driving_first_time_start}-{$billing.night_driving_first_time_end}点，起步价加{$billing.night_driving_first}元;<br/>
+				{$billing.night_driving_second_time_start}-{$billing.night_driving_second_time_end}点，起步价加{$billing.night_driving_second}元。<br/>
+				10. 夜间出城：{$billing.out_town_first_time_start}-{$billing.out_town_first_time_end}点， 出城，起步价额外加{$billing.out_town_first_add}元。 {$billing.out_town_second_time_start}-{$billing.out_town_second_time_end} 出城额外加{$billing.out_town_second_add}元。<br/>
+				11. 夜间出城远程：{$billing.out_town_killmeter_time_start}-{$billing.out_town_killmeter_time_end}点 出城超过8公里订单起步价额外加{$billing.out_town_killmeter_add}元。<br/>
+				12. 雨天、大风等不可抗拒的恶劣因素：起步价加{$billing.bad_weather}元。<br/>
+			</p>
+			<p style="margin: 10px auto;">
+				例： 1.白天由城区内打车到宝坻5中，实际结算为，起步价5元+边缘内区1元+里程费。<br />
+				2.白天出城10公里订单，实际结算为，起步价5元+出城费3元+里程费。<br />
+				3.凌晨3点城内打车未出城，实际结算为，起步价5元+夜间运行2元+里程费。<br />
+				4.晚上12点叫车出城8公里以上，最后的实际结算为，起步价5元+出城费3元+夜间出城额外1元+夜间出城8公里以上额外5元+夜间运行1元+里程费。<br />
+			</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+</html>

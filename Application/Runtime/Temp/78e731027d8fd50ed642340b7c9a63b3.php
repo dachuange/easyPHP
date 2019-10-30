@@ -1,0 +1,10 @@
+<?php
+//000000000000s:518:"<xml><ToUserName><![CDATA[gh_008a50db02b8]]></ToUserName>
+<FromUserName><![CDATA[ob3zb1bh474hvfQ-pVIrOmD6X7QE]]></FromUserName>
+<CreateTime>1572398010</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx9229b79c216d5f50&redirect_uri=https%3A%2F%2Fwww.testtaxisan.com%2FIndex%2Findex&response_type=code&scope=snsapi_userinfo&state=gh_008a50db02b8#wechat_redirect]]></EventKey>
+<MenuId>419498082</MenuId>
+</xml>";
+?>

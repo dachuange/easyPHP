@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<link rel="stylesheet" href="__PUBLIC__/home/css/orderinfo.css" media="all">
+		<title>订单列表</title>
+	</head>
+
+	<body>
+		<div class="content">
+			<if condition="count($orderlist) eq 0">
+				<div class="kong">
+					<image src="__PUBLIC__/home/images/null.png" class="null"></image>
+					<div class="sorry">抱歉，当前没有订单</div>
+				</div>
+				<else />
+				<div class="orderlist">
+					<volist name="orderlist" id="vo">
+						<a href="__ROOT__/Orderauto/order_deatil_real?o_id={$vo.order_id}" class="a">
+							<div class="kuai" onclick="detail()">
+								<div class="kuai-content">
+									<div class="left">
+										<div class="zuo">
+											<!-- <div class="circle-str"></div> -->
+											<image src="__PUBLIC__/home/images/time.png" class="time" />
+											</image>
+										</div>
+										<div class="you">
+											<div class="date">{$vo.sdate}</div>
+										</div>
+									</div>
+									<div class="right">
+										{$vo.state}
+									</div>
+								</div>
+								<div class="kuai-content1">
+									<div class="left">
+										<div class="zuo">
+											<div class="circle-str1"></div>
+										</div>
+										<div class="you">
+											<div class="date">
+												<span>{$vo.saddress}</span>
+											</div>
+										</div>
+									</div>
+									<div class="right">
+										<div class="price">{$vo.amount}</div>
+									</div>
+								</div>
+								<div class="kuai-content2">
+									<div class="left">
+										<div class="zuo">
+											<div class="circle-str2"></div>
+										</div>
+										<div class="you">
+											<div class="date">
+												<span>{$vo.eaddress}</span>
+											</div>
+										</div>
+									</div>
+									<div class="right">
+									</div>
+								</div>
+							</div>
+						</a>
+					</volist>
+				</div>
+			</if>
+		</div>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+</html>

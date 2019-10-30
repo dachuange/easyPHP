@@ -1,0 +1,140 @@
+<include file="Public:head" /> <include file="Public:logo" /> <include file="Public:up" /> <include file="Public:left" />
+<div id="content">
+    <div id="content-header">
+        <div id="breadcrumb"> 
+            <a href="#" title="首页" class="tip-bottom"><i class="icon-home"></i>首页</a> 
+            <a href="#" class="current">家族</a> 
+        </div>
+        <h1>家族列表</h1>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="search_box">
+
+            <button onclick="button_href(this)" class="layui-btn layui-btn-small" id="addlist_rule" type="button" href="__APP__/admin/Member/family_add_class">新增家族</button>
+            <input type="text" id='start' name="begintime" class="lay_date" readonly value="" placeholder="请选择有效时限" style="padding: 0px;margin: 0px;height: 30px;width: 160px;display: none;">
+            <button  class="layui-btn layui-btn-small sub_card_pro" type="button" style="display: none;">确认添加商品</button>
+            <span style="float: right;text-align: right;width: 50%">
+                
+                <input type="text" id='account' name="pro_name" class="text "  value="{$_GET.key}" placeholder="家族名" style="margin:0px;text-align: center;width: 21%">&nbsp;      
+                <i class="layui-icon" id="submit" style="font-size: 150%;cursor:pointer;vertical-align: middle;">&#xe615;</i>
+        <!-- <button class="btn" id="submit" type="button" >查询</button> -->
+            </span>
+       
+        </div>
+<!--        <div class="msg_box" style="margin-top: 10px;">
+            <button  class="layui-btn layui-btn-small layui-btn-danger msg_go" type="button" style="display: block;">设置缺货提示语</button>
+        </div>-->
+        <div class="row-fluid">
+            <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+                        <h5>商品列表</h5>
+                </div>
+                <div class="widget-content nopadding">
+                    <div class='dataTables_wrapper'>
+                        <table class='table table-bordered data-table'>
+                            <!-- 表头 -->
+                            <thead>
+                                <tr>
+                                    <th class="row-selected row-selected"> <input class="check-all" type="checkbox" title="选中当页所有卡"/>
+                                    </th>
+                                    <th class="sql">卡ID</th>
+                                    <th class="sql">家族</th>
+                                    <th class="sql">操作</th>
+                                </tr>
+                            </thead>
+                            <!-- 列表 -->
+                            <tbody>
+                                <if condition="$db eq null">
+                                    <tr><td class="text-center" colspan="14"> aOh! 暂时还没有内容!</td></tr>
+                                <else />           
+                                    <volist name="db" id="db">              
+                                        <tr>
+                                            <td class="text-center" style="vertical-align:middle"><input class="ids" type="checkbox" value="{$db.id}" name="id"></td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.id}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.f_name}</td>
+                                            <!--<td class="text-center change_s" style="vertical-align:middle;cursor:pointer;">{$db.state}</td>-->
+                                            <td class="text-center" style="vertical-align:middle">
+                                                <button class="layui-btn layui-btn-mini layui-btn-primary detail_go" data-id="{$db.id}">查看</button>
+                                                <button class="layui-btn layui-btn-mini layui-btn-danger del_go del_go_rule" data-id="{$db.id}">删除</button>
+                                            </td>
+                                        </tr>
+                                    </volist>
+                                </if>
+                            </tbody>
+                        </table>
+                        <div class="page">
+                            {$page}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        
+            $('.detail_go').on('click',function(){   //查看详情
+                layer.open({
+                  title:'家族成员',
+                  type: 2, 
+                  content: '__URL__/family_detail/id/'+$(this).data('id'),
+                  area: ['900px', '500px'],
+                  skin:'layui-layer-molv',
+                  anim: '1',
+                  maxmin: true,
+                  end: function(index, layero){
+                    location.reload();
+                  } 
+                });
+            })
+            $("#submit").click(function(){   //查询提交
+                location.href="__APP__/Admin/Member/family?key="+$('#account').val();
+            })
+            $(".del_go").click(function(){   //删除卡
+                var id = $(this).data("id");
+                layer.confirm('是否删除选中商品属性？', {icon: 3, title:'删除'}, function(index){
+                    $.ajax({
+                      url: '{:U("del_card")}',
+                      type: 'post',
+                      dataType: 'json',
+                      data: {id:id},
+                      success:function(data){
+                          if(data=="ok"){
+                            layer.alert('删除成功', {icon:1,title:'成功'},function(index){
+                                location.reload();
+                            });
+                          }else{
+                              layer.alert(data, {icon:2,title:'失败'},function(index){
+                                location.reload();
+                            });
+                          }
+                        
+                      }
+                    })
+                    layer.close(index);
+                });
+            })
+            layui.use('laydate', function(){
+                var laydate = layui.laydate;
+                laydate.render({
+                  elem: '#start',
+                  type:'datetime'
+                });
+                laydate.render({
+                  elem: '#end',
+                  type:'datetime'
+                });
+            });
+        })
+</script>
+<script type="text/javascript">
+//  $('#submit').on('click',function(){
+//      alert(1111);
+//    location.href="__APP__/admin/goods/index?key="+$('#account').val()+"&departid="+$('#tree_min_pro_rule').data("id")+"&state="+$('#state').val()+"&pro_batch="+$('#pro_batch').val();
+//  })
+  
+</script>
+
+<include file="Public:foot" /> 

@@ -1,0 +1,2649 @@
+[ 2019-10-29T17:24:55+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:24:55" 
+        GROUP BY b_order_funding.method [ RunTime:0.0655s ]
+
+[ 2019-10-29T17:27:20+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:27:20" 
+        GROUP BY b_order_funding.method [ RunTime:0.0651s ]
+
+[ 2019-10-29T17:28:43+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:28:42" 
+        GROUP BY b_order_funding.method [ RunTime:0.0663s ]
+
+[ 2019-10-29T17:29:49+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:29:49" 
+        GROUP BY b_order_funding.method [ RunTime:0.0665s ]
+
+[ 2019-10-29T17:30:29+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:30:29" 
+        GROUP BY b_order_funding.method [ RunTime:0.0656s ]
+
+[ 2019-10-29T17:32:42+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:32:42" 
+        GROUP BY b_order_funding.method [ RunTime:0.0657s ]
+
+[ 2019-10-29T17:32:46+08:00 ] 111.163.136.247 /admin/Index/getadmin_area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address` [ RunTime:0.0003s ]
+SQL: SELECT id address_id,`area_name` FROM `m_address` WHERE `id` < 10  [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:32:47+08:00 ] 111.163.136.247 /admin/Coup/getcoupnew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `m_coupon_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_coupon_set` WHERE `address_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:32:55+08:00 ] 111.163.136.247 /admin/Index/getadmin_area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address` [ RunTime:0.0004s ]
+SQL: SELECT id address_id,`area_name` FROM `m_address` WHERE `id` < 10  [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:32:56+08:00 ] 111.163.136.247 /admin/Coup/getcoupnew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `m_coupon_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_coupon_set` WHERE `address_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:33:14+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:33:14" 
+        GROUP BY b_order_funding.method [ RunTime:0.0650s ]
+
+[ 2019-10-29T17:33:22+08:00 ] 111.163.136.247 /admin/Index/getadmin_area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address` [ RunTime:0.0003s ]
+SQL: SELECT id address_id,`area_name` FROM `m_address` WHERE `id` < 10  [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:33:46+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:33:46" 
+        GROUP BY b_order_funding.method [ RunTime:0.0659s ]
+
+[ 2019-10-29T17:33:54+08:00 ] 111.163.136.247 /admin/Index/getadmin_area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address` [ RunTime:0.0003s ]
+SQL: SELECT id address_id,`area_name` FROM `m_address` WHERE `id` < 10  [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:33:54+08:00 ] 111.163.136.247 /admin/Coup/getcoupnew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `m_coupon_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_coupon_set` WHERE `address_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:34:08+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:34:08" 
+        GROUP BY b_order_funding.method [ RunTime:0.0661s ]
+
+[ 2019-10-29T17:34:17+08:00 ] 111.163.136.247 /admin/Index/getadmin_area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address` [ RunTime:0.0003s ]
+SQL: SELECT id address_id,`area_name` FROM `m_address` WHERE `id` < 10  [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:34:17+08:00 ] 111.163.136.247 /admin/Coup/getcoupnew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `m_coupon_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_coupon_set` WHERE `address_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:34:44+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:34:44" 
+        GROUP BY b_order_funding.method [ RunTime:0.0681s ]
+
+[ 2019-10-29T17:34:47+08:00 ] 111.163.136.247 /admin/Index/getadmin_area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address` [ RunTime:0.0004s ]
+SQL: SELECT id address_id,`area_name` FROM `m_address` WHERE `id` < 10  [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:34:47+08:00 ] 111.163.136.247 /admin/Coup/getcoupnew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `m_coupon_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_coupon_set` WHERE `address_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:34:48+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:34:48" 
+        GROUP BY b_order_funding.method [ RunTime:0.0658s ]
+
+[ 2019-10-29T17:35:14+08:00 ] 111.163.136.247 /admin/Phone/getudsekinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable:  /www/Application/Admin/Common/function.php 第 48 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/1fad3b90910ef42191e639a3f67261e6.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 58 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 58 行.
+
+[ 2019-10-29T17:35:14+08:00 ] 111.163.136.247 /admin/Index/admin_verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2019-10-29T17:36:20+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:36:20" 
+        GROUP BY b_order_funding.method [ RunTime:0.0655s ]
+
+[ 2019-10-29T17:36:57+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:36:57" 
+        GROUP BY b_order_funding.method [ RunTime:0.0660s ]
+
+[ 2019-10-29T17:37:18+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:37:18" 
+        GROUP BY b_order_funding.method [ RunTime:0.0666s ]
+
+[ 2019-10-29T17:40:01+08:00 ] 111.163.136.247 /admin/Index/getadmin_area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address` [ RunTime:0.0004s ]
+SQL: SELECT id address_id,`area_name` FROM `m_address` WHERE `id` < 10  [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:40:02+08:00 ] 111.163.136.247 /admin/Coup/getcoupnew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `m_coupon_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_coupon_set` WHERE `address_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:41:05+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:41:05" 
+        GROUP BY b_order_funding.method [ RunTime:0.0660s ]
+
+[ 2019-10-29T17:41:34+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:41:34" 
+        GROUP BY b_order_funding.method [ RunTime:0.0663s ]
+
+[ 2019-10-29T17:41:38+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:41:38" 
+        GROUP BY b_order_funding.method [ RunTime:0.0656s ]
+
+[ 2019-10-29T17:43:00+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:43:00" 
+        GROUP BY b_order_funding.method [ RunTime:0.0655s ]
+
+[ 2019-10-29T17:43:07+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:43:06" 
+        GROUP BY b_order_funding.method [ RunTime:0.0673s ]
+
+[ 2019-10-29T17:44:00+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:44:00" 
+        GROUP BY b_order_funding.method [ RunTime:0.0660s ]
+
+[ 2019-10-29T17:44:13+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:44:13" 
+        GROUP BY b_order_funding.method [ RunTime:0.0658s ]
+
+[ 2019-10-29T17:44:17+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:44:17" 
+        GROUP BY b_order_funding.method [ RunTime:0.0664s ]
+
+[ 2019-10-29T17:44:42+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:44:42" 
+        GROUP BY b_order_funding.method [ RunTime:0.0652s ]
+
+[ 2019-10-29T17:45:11+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:45:11" 
+        GROUP BY b_order_funding.method [ RunTime:0.0660s ]
+
+[ 2019-10-29T17:48:43+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:48:43" 
+        GROUP BY b_order_funding.method [ RunTime:0.0661s ]
+
+[ 2019-10-29T17:48:59+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:48:58" 
+        GROUP BY b_order_funding.method [ RunTime:0.0659s ]
+
+[ 2019-10-29T17:49:37+08:00 ] 111.163.136.247 /admin/Index/getadmin_area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address` [ RunTime:0.0004s ]
+SQL: SELECT id address_id,`area_name` FROM `m_address` WHERE `id` < 10  [ RunTime:0.0003s ]
+
+[ 2019-10-29T17:49:37+08:00 ] 111.163.136.247 /admin/Coup/getcoupnew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `m_coupon_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_coupon_set` WHERE `address_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:50:01+08:00 ] 111.163.136.247 /admin/Index/getadmin_area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address` [ RunTime:0.0004s ]
+SQL: SELECT id address_id,`area_name` FROM `m_address` WHERE `id` < 10  [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:50:01+08:00 ] 111.163.136.247 /admin/Coup/getcoupnew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `m_coupon_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_coupon_set` WHERE `address_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:50:13+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:50:13" 
+        GROUP BY b_order_funding.method [ RunTime:0.0666s ]
+
+[ 2019-10-29T17:50:43+08:00 ] 111.163.136.247 /admin/Index/getadmin_area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address` [ RunTime:0.0003s ]
+SQL: SELECT id address_id,`area_name` FROM `m_address` WHERE `id` < 10  [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:50:43+08:00 ] 111.163.136.247 /admin/Coup/getcoupnew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `m_coupon_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_coupon_set` WHERE `address_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T17:52:05+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:52:05" 
+        GROUP BY b_order_funding.method [ RunTime:0.0657s ]
+
+[ 2019-10-29T17:52:13+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:52:13" 
+        GROUP BY b_order_funding.method [ RunTime:0.0649s ]
+
+[ 2019-10-29T17:52:29+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:52:29" 
+        GROUP BY b_order_funding.method [ RunTime:0.0675s ]
+
+[ 2019-10-29T17:54:29+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:54:29" 
+        GROUP BY b_order_funding.method [ RunTime:0.0653s ]
+
+[ 2019-10-29T17:56:22+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 17:56:22" 
+        GROUP BY b_order_funding.method [ RunTime:0.0653s ]
+
+[ 2019-10-29T18:00:13+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 18:00:13" 
+        GROUP BY b_order_funding.method [ RunTime:0.0659s ]
+
+[ 2019-10-29T18:03:44+08:00 ] 111.163.136.247 /admin/Index/getadmin_area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `m_address` [ RunTime:0.0004s ]
+SQL: SELECT id address_id,`area_name` FROM `m_address` WHERE `id` < 10  [ RunTime:0.0002s ]
+
+[ 2019-10-29T18:03:44+08:00 ] 111.163.136.247 /admin/Coup/getcoupnew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `m_coupon_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_coupon_set` WHERE `address_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T18:04:06+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 18:04:06" 
+        GROUP BY b_order_funding.method [ RunTime:0.0655s ]
+
+[ 2019-10-29T18:04:08+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 18:04:08" 
+        GROUP BY b_order_funding.method [ RunTime:0.0664s ]
+
+[ 2019-10-29T18:04:20+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 18:04:20" 
+        GROUP BY b_order_funding.method [ RunTime:0.0662s ]
+
+[ 2019-10-29T18:05:00+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 18:05:00" 
+        GROUP BY b_order_funding.method [ RunTime:0.0657s ]
+
+[ 2019-10-29T18:08:33+08:00 ] 111.163.136.247 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 18:08:33" 
+        GROUP BY b_order_funding.method [ RunTime:0.0648s ]
+
+[ 2019-10-29T18:16:06+08:00 ] 111.163.136.247 /admin/Analysis/driver_onlinetime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: 			select count(s_driver.id) num from s_driver  
+                         WHERE `reviewed` = 'Y'  [ RunTime:0.0007s ]
+SQL: 			select s_driver.id d_id,s_driver.card,s_driver.name,s_driver.phone,
+                    
+                    SEC_TO_TIME(
+                        ifnull((select (1572344166-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate < 0  and d_online_record.edate > 1572344166),0)
+                            +
+                        ifnull((select SUM(d_online_record.line_time) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572344166 and d_online_record.edate between 0 and 1572344166),0)
+                            +
+                        ifnull((select (1572344166-d_online_record.sdate) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572344166 and d_online_record.edate > 1572344166),0)
+                            +
+                        ifnull((select (d_online_record.edate-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.edate between 0 and 1572344166 and d_online_record.sdate < 0),0)
+                                ) line_time 
+                        from s_driver 
+                         WHERE `reviewed` = 'Y' 
+                        order by line_time desc 
+                        limit 0,10  [ RunTime:0.4638s ]
+
+[ 2019-10-29T18:16:38+08:00 ] 111.163.136.247 /admin/Phone/getudsekinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+
+[ 2019-10-29T18:16:47+08:00 ] 111.163.136.247 /admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `account` = 'guwenqing' AND `password` = '6c0dd8bac76d3618040d1a119ea8502f' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-29T18:16:48+08:00 ] 111.163.136.247 /admin/Phone/getudsekinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: '' /www/Application/Admin/Common/function.php 第 48 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/1fad3b90910ef42191e639a3f67261e6.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 58 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 58 行.
+
+[ 2019-10-29T18:16:48+08:00 ] 111.163.136.247 /admin/Index/admin_verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000149s ]
+
+[ 2019-10-29T18:19:10+08:00 ] 111.163.136.247 /admin/Money/withdraw_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: where /www/Application/Admin/Controller/MoneyController.class.php 第 160 行.
+SQL: 			select count(d_withdraw.id) num from d_withdraw 
+                        left join s_driver on s_driver.id = d_withdraw.d_id 
+                          [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: where /www/Application/Admin/Controller/MoneyController.class.php 第 181 行.
+SQL: 			select s_driver.card,s_driver.name,d_withdraw.id withdrawid,d_withdraw.d_id,d_withdraw.banknum,d_withdraw.bankaddress,d_withdraw.banktype,d_withdraw.pename,d_withdraw.bankphone,d_withdraw.amount,d_withdraw.date,d_withdraw.state,d_withdraw.fuse_reason,(case d_withdraw.state 
+        WHEN 'Y' THEN '已打款' 
+        WHEN 'N' THEN '打款失败' 
+        WHEN 'O' THEN '正在处理' 
+        end) state_c  
+                        from d_withdraw 
+                        left join s_driver on s_driver.id = d_withdraw.d_id 
+                         
+                        order by d_withdraw.id desc 
+                        limit 0,10  [ RunTime:0.0003s ]
+
+[ 2019-10-29T18:19:12+08:00 ] 111.163.136.247 /admin/Analysis/driver_onlinetime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: 			select count(s_driver.id) num from s_driver  
+                         WHERE `reviewed` = 'Y'  [ RunTime:0.0008s ]
+SQL: 			select s_driver.id d_id,s_driver.card,s_driver.name,s_driver.phone,
+                    
+                    SEC_TO_TIME(
+                        ifnull((select (1572344351-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate < 0  and d_online_record.edate > 1572344351),0)
+                            +
+                        ifnull((select SUM(d_online_record.line_time) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572344351 and d_online_record.edate between 0 and 1572344351),0)
+                            +
+                        ifnull((select (1572344351-d_online_record.sdate) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572344351 and d_online_record.edate > 1572344351),0)
+                            +
+                        ifnull((select (d_online_record.edate-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.edate between 0 and 1572344351 and d_online_record.sdate < 0),0)
+                                ) line_time 
+                        from s_driver 
+                         WHERE `reviewed` = 'Y' 
+                        order by line_time desc 
+                        limit 0,10  [ RunTime:0.4655s ]
+
+[ 2019-10-29T20:45:06+08:00 ] 218.68.108.161 /admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `account` = 'guwenqing' AND `password` = '6c0dd8bac76d3618040d1a119ea8502f' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-29T20:45:06+08:00 ] 218.68.108.161 /admin/Driver/driver_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+
+[ 2019-10-29T20:45:12+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+
+[ 2019-10-29T20:45:15+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 20:45:15" 
+        GROUP BY b_order_funding.method [ RunTime:0.0667s ]
+
+[ 2019-10-29T20:46:03+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 20:46:03" 
+        GROUP BY b_order_funding.method [ RunTime:0.0681s ]
+
+[ 2019-10-29T20:59:37+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 20:59:37" 
+        GROUP BY b_order_funding.method [ RunTime:0.0657s ]
+
+[ 2019-10-29T21:13:51+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:13:51" 
+        GROUP BY b_order_funding.method [ RunTime:0.0660s ]
+
+[ 2019-10-29T21:22:23+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:22:23" 
+        GROUP BY b_order_funding.method [ RunTime:0.0668s ]
+
+[ 2019-10-29T21:22:26+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:22:26" 
+        GROUP BY b_order_funding.method [ RunTime:0.0666s ]
+
+[ 2019-10-29T21:26:43+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:26:43" 
+        GROUP BY b_order_funding.method [ RunTime:0.0662s ]
+
+[ 2019-10-29T21:28:17+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:28:17" 
+        GROUP BY b_order_funding.method [ RunTime:0.0662s ]
+
+[ 2019-10-29T21:28:46+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:28:46" 
+        GROUP BY b_order_funding.method [ RunTime:0.0675s ]
+
+[ 2019-10-29T21:31:05+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:31:05" 
+        GROUP BY b_order_funding.method [ RunTime:0.0664s ]
+
+[ 2019-10-29T21:31:08+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:31:08" 
+        GROUP BY b_order_funding.method [ RunTime:0.0677s ]
+
+[ 2019-10-29T21:33:30+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:33:30" 
+        GROUP BY b_order_funding.method [ RunTime:0.0654s ]
+
+[ 2019-10-29T21:37:57+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:37:56" 
+        GROUP BY b_order_funding.method [ RunTime:0.0660s ]
+
+[ 2019-10-29T21:39:01+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:39:01" 
+        GROUP BY b_order_funding.method [ RunTime:0.0681s ]
+
+[ 2019-10-29T21:39:37+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:39:37" 
+        GROUP BY b_order_funding.method [ RunTime:0.0665s ]
+
+[ 2019-10-29T21:39:51+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:39:51" 
+        GROUP BY b_order_funding.method [ RunTime:0.0664s ]
+
+[ 2019-10-29T21:40:03+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:40:03" 
+        GROUP BY b_order_funding.method [ RunTime:0.0661s ]
+
+[ 2019-10-29T21:40:56+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:40:56" 
+        GROUP BY b_order_funding.method [ RunTime:0.0665s ]
+
+[ 2019-10-29T21:41:00+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:41:00" 
+        GROUP BY b_order_funding.method [ RunTime:0.0666s ]
+
+[ 2019-10-29T21:41:07+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:41:07" 
+        GROUP BY b_order_funding.method [ RunTime:0.0674s ]
+
+[ 2019-10-29T21:44:40+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:44:40" 
+        GROUP BY b_order_funding.method [ RunTime:0.0661s ]
+
+[ 2019-10-29T21:45:19+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:45:19" 
+        GROUP BY b_order_funding.method [ RunTime:0.0679s ]
+
+[ 2019-10-29T21:47:29+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:47:29" 
+        GROUP BY b_order_funding.method [ RunTime:0.0660s ]
+
+[ 2019-10-29T21:47:38+08:00 ] 218.68.108.161 /admin/Analysis/driver_onlinetime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: 			select count(s_driver.id) num from s_driver  
+                         WHERE `reviewed` = 'Y'  [ RunTime:0.0008s ]
+SQL: 			select s_driver.id d_id,s_driver.card,s_driver.name,s_driver.phone,
+                    
+                    SEC_TO_TIME(
+                        ifnull((select (1572356857-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate < 0  and d_online_record.edate > 1572356857),0)
+                            +
+                        ifnull((select SUM(d_online_record.line_time) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572356857 and d_online_record.edate between 0 and 1572356857),0)
+                            +
+                        ifnull((select (1572356857-d_online_record.sdate) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572356857 and d_online_record.edate > 1572356857),0)
+                            +
+                        ifnull((select (d_online_record.edate-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.edate between 0 and 1572356857 and d_online_record.sdate < 0),0)
+                                ) line_time 
+                        from s_driver 
+                         WHERE `reviewed` = 'Y' 
+                        order by line_time desc 
+                        limit 0,10  [ RunTime:0.4621s ]
+
+[ 2019-10-29T21:47:42+08:00 ] 218.68.108.161 /admin/Analysis/driver_onlinetime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: 			select count(s_driver.id) num from s_driver  
+                         WHERE `reviewed` = 'Y'  [ RunTime:0.0008s ]
+SQL: 			select s_driver.id d_id,s_driver.card,s_driver.name,s_driver.phone,
+                    
+                    SEC_TO_TIME(
+                        ifnull((select (1572356862-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate < 0  and d_online_record.edate > 1572356862),0)
+                            +
+                        ifnull((select SUM(d_online_record.line_time) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572356862 and d_online_record.edate between 0 and 1572356862),0)
+                            +
+                        ifnull((select (1572356862-d_online_record.sdate) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572356862 and d_online_record.edate > 1572356862),0)
+                            +
+                        ifnull((select (d_online_record.edate-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.edate between 0 and 1572356862 and d_online_record.sdate < 0),0)
+                                ) line_time 
+                        from s_driver 
+                         WHERE `reviewed` = 'Y' 
+                        order by line_time desc 
+                        limit 0,10  [ RunTime:0.4589s ]
+
+[ 2019-10-29T21:48:03+08:00 ] 218.68.108.161 /admin/Analysis/driver_onlinetime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: 			select count(s_driver.id) num from s_driver  
+                         WHERE `reviewed` = 'Y'  [ RunTime:0.0008s ]
+SQL: 			select s_driver.id d_id,s_driver.card,s_driver.name,s_driver.phone,
+                    
+                    SEC_TO_TIME(
+                        ifnull((select (1572356882-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate < 0  and d_online_record.edate > 1572356882),0)
+                            +
+                        ifnull((select SUM(d_online_record.line_time) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572356882 and d_online_record.edate between 0 and 1572356882),0)
+                            +
+                        ifnull((select (1572356882-d_online_record.sdate) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572356882 and d_online_record.edate > 1572356882),0)
+                            +
+                        ifnull((select (d_online_record.edate-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.edate between 0 and 1572356882 and d_online_record.sdate < 0),0)
+                                ) line_time 
+                        from s_driver 
+                         WHERE `reviewed` = 'Y' 
+                        order by line_time desc 
+                        limit 0,10  [ RunTime:0.4625s ]
+
+[ 2019-10-29T21:48:09+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:48:09" 
+        GROUP BY b_order_funding.method [ RunTime:0.0672s ]
+
+[ 2019-10-29T21:52:42+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:52:42" 
+        GROUP BY b_order_funding.method [ RunTime:0.0662s ]
+
+[ 2019-10-29T21:53:03+08:00 ] 218.68.108.161 /admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `account` = 'guwenqing' AND `password` = '6c0dd8bac76d3618040d1a119ea8502f' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T21:53:03+08:00 ] 218.68.108.161 /admin/Driver/driver_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-10-29T21:53:27+08:00 ] 218.68.108.161 /admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `account` = 'guwenqing' AND `password` = '6c0dd8bac76d3618040d1a119ea8502f' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-29T21:53:27+08:00 ] 218.68.108.161 /admin/Driver/driver_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-10-29T21:53:33+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+
+[ 2019-10-29T21:53:37+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:53:37" 
+        GROUP BY b_order_funding.method [ RunTime:0.0670s ]
+
+[ 2019-10-29T21:53:57+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:53:57" 
+        GROUP BY b_order_funding.method [ RunTime:0.0664s ]
+
+[ 2019-10-29T21:57:09+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:57:09" 
+        GROUP BY b_order_funding.method [ RunTime:0.0656s ]
+
+[ 2019-10-29T21:57:55+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 21:57:55" 
+        GROUP BY b_order_funding.method [ RunTime:0.0655s ]
+
+[ 2019-10-29T22:02:57+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:02:57" 
+        GROUP BY b_order_funding.method [ RunTime:0.0657s ]
+
+[ 2019-10-29T22:03:09+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "Array" and "Array" 
+        GROUP BY b_order_funding.method [ RunTime:0.0608s ]
+
+[ 2019-10-29T22:03:20+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "Array" and "Array" 
+        GROUP BY b_order_funding.method [ RunTime:0.0593s ]
+
+[ 2019-10-29T22:03:23+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "Array" and "Array" 
+        GROUP BY b_order_funding.method [ RunTime:0.0601s ]
+
+[ 2019-10-29T22:03:27+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:03:27" 
+        GROUP BY b_order_funding.method [ RunTime:0.0665s ]
+
+[ 2019-10-29T22:03:29+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:03:29" 
+        GROUP BY b_order_funding.method [ RunTime:0.0661s ]
+
+[ 2019-10-29T22:03:37+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "Array" and "Array" 
+        GROUP BY b_order_funding.method [ RunTime:0.0591s ]
+
+[ 2019-10-29T22:04:35+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:04:35" 
+        GROUP BY b_order_funding.method [ RunTime:0.0667s ]
+
+[ 2019-10-29T22:04:36+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:04:36" 
+        GROUP BY b_order_funding.method [ RunTime:0.0656s ]
+
+[ 2019-10-29T22:04:43+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "Array" and "Array" 
+        GROUP BY b_order_funding.method [ RunTime:0.0588s ]
+
+[ 2019-10-29T22:04:44+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "Array" and "Array" 
+        GROUP BY b_order_funding.method [ RunTime:0.0598s ]
+
+[ 2019-10-29T22:04:47+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:04:47" 
+        GROUP BY b_order_funding.method [ RunTime:0.0662s ]
+
+[ 2019-10-29T22:04:48+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:04:48" 
+        GROUP BY b_order_funding.method [ RunTime:0.0665s ]
+
+[ 2019-10-29T22:09:20+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:09:20" 
+        GROUP BY b_order_funding.method [ RunTime:0.0662s ]
+
+[ 2019-10-29T22:09:54+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:09:54" 
+        GROUP BY b_order_funding.method [ RunTime:0.0660s ]
+
+[ 2019-10-29T22:10:02+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "Array" and "Array" 
+        GROUP BY b_order_funding.method [ RunTime:0.0606s ]
+
+[ 2019-10-29T22:10:49+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:10:49" 
+        GROUP BY b_order_funding.method [ RunTime:0.0659s ]
+
+[ 2019-10-29T22:10:56+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:10:56" 
+        GROUP BY b_order_funding.method [ RunTime:0.0664s ]
+
+[ 2019-10-29T22:12:11+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:12:11" 
+        GROUP BY b_order_funding.method [ RunTime:0.0661s ]
+
+[ 2019-10-29T22:12:14+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:12:14" 
+        GROUP BY b_order_funding.method [ RunTime:0.0663s ]
+
+[ 2019-10-29T22:12:49+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:12:49" 
+        GROUP BY b_order_funding.method [ RunTime:0.0664s ]
+
+[ 2019-10-29T22:12:57+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "Array" and "Array" 
+        GROUP BY b_order_funding.method [ RunTime:0.0598s ]
+
+[ 2019-10-29T22:21:37+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:21:37" 
+        GROUP BY b_order_funding.method [ RunTime:0.0668s ]
+
+[ 2019-10-29T22:22:36+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:22:36" 
+        GROUP BY b_order_funding.method [ RunTime:0.0657s ]
+
+[ 2019-10-29T22:25:04+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:25:04" 
+        GROUP BY b_order_funding.method [ RunTime:0.0664s ]
+
+[ 2019-10-29T22:25:43+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:25:43" 
+        GROUP BY b_order_funding.method [ RunTime:0.0667s ]
+
+[ 2019-10-29T22:25:51+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+NOTIC: [8] Array to string conversion /www/Application/Admin/Controller/AnalysisController.class.php 第 234 行.
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "Array" and "Array" 
+        GROUP BY b_order_funding.method [ RunTime:0.0590s ]
+
+[ 2019-10-29T22:26:34+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:26:34" 
+        GROUP BY b_order_funding.method [ RunTime:0.0667s ]
+
+[ 2019-10-29T22:27:07+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:27:06" 
+        GROUP BY b_order_funding.method [ RunTime:0.0669s ]
+
+[ 2019-10-29T22:28:19+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:28:19" 
+        GROUP BY b_order_funding.method [ RunTime:0.0660s ]
+
+[ 2019-10-29T22:28:45+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:28:45" 
+        GROUP BY b_order_funding.method [ RunTime:0.0665s ]
+
+[ 2019-10-29T22:29:18+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:29:18" 
+        GROUP BY b_order_funding.method [ RunTime:0.0665s ]
+
+[ 2019-10-29T22:29:40+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:29:40" 
+        GROUP BY b_order_funding.method [ RunTime:0.0661s ]
+
+[ 2019-10-29T22:30:51+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:30:51" 
+        GROUP BY b_order_funding.method [ RunTime:0.0664s ]
+
+[ 2019-10-29T22:31:19+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:31:19" 
+        GROUP BY b_order_funding.method [ RunTime:0.0666s ]
+
+[ 2019-10-29T22:34:37+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:34:37" 
+        GROUP BY b_order_funding.method [ RunTime:0.0662s ]
+
+[ 2019-10-29T22:34:43+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "2019-10-02" and "2019-10-03" 
+        GROUP BY b_order_funding.method [ RunTime:0.0585s ]
+
+[ 2019-10-29T22:35:16+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:35:15" 
+        GROUP BY b_order_funding.method [ RunTime:0.0662s ]
+
+[ 2019-10-29T22:35:22+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "2019-10-24" and "2019-10-25" 
+        GROUP BY b_order_funding.method [ RunTime:0.0593s ]
+
+[ 2019-10-29T22:36:50+08:00 ] 218.68.108.161 /admin/Phone/getudsekinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-10-29T22:36:50+08:00 ] 218.68.108.161 /admin/Index/admin_verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+
+[ 2019-10-29T22:37:02+08:00 ] 218.68.108.161 /admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `account` = 'guwenqing' AND `password` = '7c80020b264df8f5474b796ce8f695c0' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T22:38:46+08:00 ] 218.68.108.161 /admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `account` = 'guwenqing' AND `password` = 'fb1020de088c9bff62c193ff9fd1d0ba' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-29T22:40:21+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:40:21" 
+        GROUP BY b_order_funding.method [ RunTime:0.0658s ]
+
+[ 2019-10-29T22:41:14+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:41:14" 
+        GROUP BY b_order_funding.method [ RunTime:0.0662s ]
+
+[ 2019-10-29T22:42:41+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:42:41" 
+        GROUP BY b_order_funding.method [ RunTime:0.0657s ]
+
+[ 2019-10-29T22:43:20+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "2019-10-03 22:42:42" and "2019-10-05 22:42:46" 
+        GROUP BY b_order_funding.method [ RunTime:0.0589s ]
+
+[ 2019-10-29T22:48:38+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:48:38" 
+        GROUP BY b_order_funding.method [ RunTime:0.0667s ]
+
+[ 2019-10-29T22:48:51+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "2019-10-23 22:48:41" and "2019-10-24 22:48:46" 
+        GROUP BY b_order_funding.method [ RunTime:0.0595s ]
+
+[ 2019-10-29T22:49:17+08:00 ] 218.68.108.161 /admin/Phone/getudsekinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+
+[ 2019-10-29T22:49:17+08:00 ] 218.68.108.161 /admin/Index/admin_verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000132s ]
+
+[ 2019-10-29T22:49:27+08:00 ] 218.68.108.161 /admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `account` = 'guwenqing' AND `password` = '6c0dd8bac76d3618040d1a119ea8502f' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T22:49:28+08:00 ] 218.68.108.161 /admin/Phone/getudsekinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: '' /www/Application/Admin/Common/function.php 第 48 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/1fad3b90910ef42191e639a3f67261e6.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 58 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 58 行.
+
+[ 2019-10-29T22:49:28+08:00 ] 218.68.108.161 /admin/Index/admin_verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000144s ]
+
+[ 2019-10-29T22:49:39+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:49:39" 
+        GROUP BY b_order_funding.method [ RunTime:0.0662s ]
+
+[ 2019-10-29T22:49:52+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "2019-10-08 00:00:00" and "2019-10-15 00:00:00" 
+        GROUP BY b_order_funding.method [ RunTime:0.0591s ]
+
+[ 2019-10-29T22:50:10+08:00 ] 218.68.108.161 /admin/Phone/getudsekinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: '' /www/Application/Admin/Common/function.php 第 48 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/1fad3b90910ef42191e639a3f67261e6.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 58 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 58 行.
+
+[ 2019-10-29T22:50:10+08:00 ] 218.68.108.161 /admin/Index/admin_verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000130s ]
+
+[ 2019-10-29T22:50:14+08:00 ] 218.68.108.161 /admin/Setting/userreward_get
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: where /www/Application/Admin/Controller/SettingController.class.php 第 178 行.
+SQL:                 select m_user_wait_reward_set.free_time,m_user_wait_reward_set.cost_every,m_user_wait_reward_set.every_amount,m_user_wait_reward_set.limit_amount,
+            m_user_wait_reward_set.address_id,m_address.area_name 
+                from m_user_wait_reward_set 
+                left join m_address on m_address.id = m_user_wait_reward_set.address_id 
+                      [ RunTime:0.0003s ]
+
+[ 2019-10-29T22:50:15+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:50:15" 
+        GROUP BY b_order_funding.method [ RunTime:0.0666s ]
+
+[ 2019-10-29T22:50:38+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "2019-10-23 00:00:00" and "2019-10-30 00:00:00" 
+        GROUP BY b_order_funding.method [ RunTime:0.0600s ]
+
+[ 2019-10-29T22:50:49+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:50:49" 
+        GROUP BY b_order_funding.method [ RunTime:0.0661s ]
+
+[ 2019-10-29T22:50:53+08:00 ] 218.68.108.161 /admin/Phone/getudsekinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: '' /www/Application/Admin/Common/function.php 第 48 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/1fad3b90910ef42191e639a3f67261e6.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 58 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 58 行.
+
+[ 2019-10-29T22:50:53+08:00 ] 218.68.108.161 /admin/Index/admin_verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-10-29T22:51:34+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:51:34" 
+        GROUP BY b_order_funding.method [ RunTime:0.0657s ]
+
+[ 2019-10-29T22:51:44+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "2019-10-16 00:00:00" and "2019-10-22 00:00:00" 
+        GROUP BY b_order_funding.method [ RunTime:0.0591s ]
+
+[ 2019-10-29T22:52:28+08:00 ] 218.68.108.161 /admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_admin` WHERE `account` = 'guwenqing' AND `password` = '6c0dd8bac76d3618040d1a119ea8502f' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-29T22:52:28+08:00 ] 218.68.108.161 /admin/Driver/driver_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-10-29T22:52:31+08:00 ] 218.68.108.161 /admin/Driver/driver_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: where /www/Application/Admin/Controller/DriverController.class.php 第 52 行.
+SQL: 			select count(s_driver.id) num from s_driver  
+                          [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: where /www/Application/Admin/Controller/DriverController.class.php 第 86 行.
+SQL: 			select count(s_user.id) as invitCount,s_driver.id d_id,s_driver.card,s_driver.name,s_driver.sdate,s_driver.maturity_date,s_driver.phone,s_driver.operation,s_driver.address_id,(CASE s_driver.reviewed 
+        WHEN 'Y' THEN '审核通过' 
+        WHEN 'O' THEN '审核中' 
+        WHEN 'N' THEN '审核未通过' 
+        END)  reviewed_cn,
+            (CASE s_driver.state 
+        WHEN 'off' THEN '关闭' 
+        WHEN 'stand' THEN '待接单' 
+        WHEN 'running' THEN '行程中' 
+        END)  state_cn,
+            (CASE s_driver.available 
+        WHEN 'Y' THEN '正常' 
+        WHEN 'snap_prohibited' THEN '临时封禁' 
+        WHEN 'lasting_prohibited' THEN '永久分封禁' 
+        END)  available,s_driver.available available_pd,s_car.car_type,s_car.carcolor,s_car.carnum,CONCAT(s_driver.card,s_driver.name,s_driver.phone) search 
+                        from s_driver 
+                        left join s_car on s_driver.id = s_car.d_id 
+						left join s_user on s_driver.id = s_user.din_id 
+                         
+                        group by s_driver.id 
+                        order by s_driver.id desc 
+                        limit 0,10  [ RunTime:0.1191s ]
+
+[ 2019-10-29T22:52:42+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:52:42" 
+        GROUP BY b_order_funding.method [ RunTime:0.0654s ]
+
+[ 2019-10-29T22:52:59+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "2019-10-29 22:52:51" and "2019-10-29 22:52:53" 
+        GROUP BY b_order_funding.method [ RunTime:0.0604s ]
+
+[ 2019-10-29T22:53:17+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 22:53:17" 
+        GROUP BY b_order_funding.method [ RunTime:0.0669s ]
+
+[ 2019-10-29T23:04:22+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 23:04:22" 
+        GROUP BY b_order_funding.method [ RunTime:0.0661s ]
+
+[ 2019-10-29T23:04:37+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "2019-10-17 23:04:23" and "2019-10-29 23:04:27" 
+        GROUP BY b_order_funding.method [ RunTime:0.0588s ]
+
+[ 2019-10-29T23:04:46+08:00 ] 218.68.108.161 /admin/Analysis/user_wait_reward_tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL:             SELECT SUM(b_order.wait_reward) num,b_order_funding.method 
+        FROM  b_order
+        LEFT JOIN b_order_funding ON b_order_funding.order_num = b_order.order_num 
+        LEFT JOIN s_driver ON s_driver.id = b_order.d_id 
+        WHERE b_order.wait_reward <>0 AND b_order_funding.method is not NULL 
+        AND b_order.sdate between "1970-01-01 08:00:00" and "2019-10-29 23:04:46" 
+        GROUP BY b_order_funding.method [ RunTime:0.0667s ]
+
+[ 2019-10-29T23:13:50+08:00 ] 218.68.108.161 /admin/Analysis/driver_onlinetime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: 			select count(s_driver.id) num from s_driver  
+                         WHERE `reviewed` = 'Y'  [ RunTime:0.0008s ]
+SQL: 			select s_driver.id d_id,s_driver.card,s_driver.name,s_driver.phone,
+                    
+                    SEC_TO_TIME(
+                        ifnull((select (1572362030-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate < 0  and d_online_record.edate > 1572362030),0)
+                            +
+                        ifnull((select SUM(d_online_record.line_time) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572362030 and d_online_record.edate between 0 and 1572362030),0)
+                            +
+                        ifnull((select (1572362030-d_online_record.sdate) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.sdate between 0 and 1572362030 and d_online_record.edate > 1572362030),0)
+                            +
+                        ifnull((select (d_online_record.edate-0) from d_online_record where d_online_record.d_id=s_driver.id and d_online_record.edate between 0 and 1572362030 and d_online_record.sdate < 0),0)
+                                ) line_time 
+                        from s_driver 
+                         WHERE `reviewed` = 'Y' 
+                        order by line_time desc 
+                        limit 0,10  [ RunTime:0.4688s ]
+

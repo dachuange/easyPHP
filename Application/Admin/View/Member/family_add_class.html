@@ -1,0 +1,115 @@
+<include file="Public:head" />
+
+<include file="Public:logo" />
+
+<include file="Public:up" />
+
+<include file="Public:left" />
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    $('.form-horizontal').validate({
+
+      rules:{
+
+        name:{required:true},
+
+      },
+
+      messages:{
+
+        name:{required:"请输入家族名"}, 
+
+      },
+
+      errorPlacement: function (error, element) {
+
+        layer.tips(error[0].innerText,element, {
+
+              tips: [2, 'red'],
+
+              time: 4000,
+
+              tipsMore:true,
+
+            })
+
+        },
+
+      onkeyup: false,
+
+    });
+
+  });  
+
+</script> 
+
+<div id="content">
+
+        <div id="content-header">
+
+	    <div id="breadcrumb"> 
+
+	    	<a href="" title="首页" class="tip-bottom"><i class="icon-home"></i>首页</a> 
+
+	    	<a href="#" class="current">新增家族</a> 
+            </div>
+
+	    <h1>新增家族</h1>
+
+        </div>  <hr>
+
+  <div class="container-fluid">
+
+		<div class="widget-box">
+
+		<div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+
+          <h5>新增家族</h5> 
+
+                  </div>
+
+    <script type="text/javascript" src="/Public/Admin/static/uploadify/jquery.uploadify.min.js"></script>
+
+    <form action="{:U('insert')}" method="post" class="form-horizontal">
+    <div class="widget-content nopadding">
+
+        <div class="control-group">
+
+            <label class="control-label">家族名</label>
+
+            <div class="controls">
+
+                <input type="text" name="f_name" value="" class="text input-large"/>       
+
+            </div>
+        </div>
+        <div class="control-group">
+
+            <label class="control-label">关键字（非录入）</label>
+
+            <div class="controls">
+
+                <input type="text" name="post_type" value="family" class="text input-large" readonly="readonly"/>
+            </div>
+        </div>
+
+
+        <div class="form-actions">
+
+            <button class="btn btn-info ajax-post" id="submit" type="submit" target-form="form-horizontal" style="margin-right:10px;">确定</button>
+            <button onclick="javascript:location.href='{:U(\"family\")}';return false;" class="btn btn-danger" style="margin-right:10px;">返回</button>            
+        </div>
+    </div>
+
+    </form>
+
+ </div>
+
+</div>
+
+</div>
+
+<include file="Public:foot" />

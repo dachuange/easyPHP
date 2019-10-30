@@ -1,0 +1,40 @@
+2019-10-25 17:16:49
+error =>无法加载控制器:Eadmin
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-25 17:16:49
+error =>无法加载控制器:Eadmin
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-25 17:16:50
+error =>无法加载控制器:Eadmin
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}
+2019-10-25 17:16:50
+error =>无法加载控制器:Eadmin
+/www/ThinkPHP/Library/Think/App.class.php
+101
+#0 /www/ThinkPHP/Library/Think/App.class.php(101): E('\xE6\x97\xA0\xE6\xB3\x95\xE5\x8A\xA0\xE8\xBD\xBD\xE6\x8E\xA7...')
+#1 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#2 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#3 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#4 /www/index.php(28): require('/www/ThinkPHP/T...')
+#5 {main}

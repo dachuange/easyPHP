@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>这是一个只有js引入的空layout模板</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <link rel="stylesheet" href="__HOME_CSS__/myAlert.css">
+        <script src="__HOME_JS__/jquery-3.0.0.min.js"></script>
+        <style type="text/css">
+        .Allcover{
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            filter:alpha(opacity=50); 
+            -moz-opacity:0.5; 
+            opacity:0.5;
+            z-index: 12;
+            display: none;
+        }
+        .Allcover img{
+            width: 100%;
+            position: fixed;
+            left: 0px;
+            top: 10%;
+        }
+    </style>
+    </head>
+    <body>
+        <script src="__HOME_JS__/myAlert.js"></script>
+        <div class="Allcover center">
+            <img src="__HOME_IMAGES__/loading.jpg">
+        </div>
+        <div style="margin: 0px;padding: 0px;">
+            {__CONTENT__}
+        </div>
+    </body>
+</html>

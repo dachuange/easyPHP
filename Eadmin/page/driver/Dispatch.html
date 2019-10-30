@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>司机订单管理</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../../css/public.css" media="all" />
+		<style>
+			.content{
+				width: 100%;
+				display: flex;
+			}
+			.left{
+				-webkit-flex: 0 0 25%;
+				-webkit-box-flex: 0;
+				flex: 0 0 27%;
+				margin-right: 3%;
+			}
+			.right{
+				-webkit-flex: 0 0 25%;
+				-webkit-box-flex: 0;
+				flex: 0 0 60%;
+			}
+			.layui-table-page {
+				/* position: relative;
+				width: 100%;
+				padding: 7px 7px 0;
+				border-width: 1px 0 0;
+				height: 41px;
+				font-size: 12px; */
+				display: none;
+			}
+		</style>
+	</head>
+	<body class="childrenBody">
+		<form class="layui-form">
+			<blockquote class="layui-elem-quote quoteBox">
+				<form class="layui-form">
+					<div class="layui-inline">
+						<div class="layui-input-inline">
+							<input type="text" class="layui-input searchVal" id="search" placeholder="请输入司机工号,司机姓名或者司机手机号" style="width:300px;" />
+						</div>
+						<!-- <div class="layui-inline">
+							<label class="layui-form-label">开始时间</label>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test1" placeholder="请选择开始时间">
+							</div>
+						</div>
+						<div class="layui-inline">
+							<label class="layui-form-label">结束时间</label>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test2" placeholder="请选择结束时间">
+							</div>
+						</div> -->
+						<a class="layui-btn search_btn" data-type="reload">搜索</a>
+					    <a class="layui-btn search_btn reset" data-type="reload">重置</a>
+					</div>
+					<!-- <div class="layui-inline">
+						<a class="layui-btn layui-btn-danger layui-btn-normal daoAll_btn">导出</a>
+					</div> -->
+				</form>
+			</blockquote>
+			<div class="content">
+				<div class="left">
+					<div class="layui-input-inline">
+						<div style="width: 150px;display: inline-block;">
+							<select name="state" id="state" lay-filter="state" lay-verify="required" style="width: 150px;height: 35px;margin-bottom: 10px;">
+							</select>
+						</div>
+					</div>
+					<table id="driverList" lay-filter="driverList"></table>
+					<!--操作-->
+					<script type="text/html" id="driverListBar">
+						<a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>
+						<!-- <a class="layui-btn layui-btn-xs layui-btn-warm"  lay-event="usable">封禁</a>
+						<a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">解封</a> -->
+					</script>
+				</div>
+				<div class="right">
+					<!-- tab切换-->
+					<div id="you">
+						<div class="layui-tab" lay-filter="test1">
+							<ul class="layui-tab-title" id="orderState">
+							</ul>
+							<div class="layui-tab-content">
+								<div class="layui-tab-item layui-show">
+									<!-- 表格 -->
+									<table id="orderList" lay-filter="orderList"></table>
+									<script type="text/html" id="orderListBar">
+										<a class="layui-btn layui-btn-xs" lay-event="detail1">详情</a>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<script type="text/javascript" src="../../js/Url.js"></script>
+		<script type="text/javascript" src="../../layui/layui.js"></script>
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="Dispatch.js"></script>
+		<script>
+			layui.use('laydate', function() {
+				var laydate = layui.laydate;
+				//常规用法
+				laydate.render({
+					elem: '#test1'
+				});
+			});
+			layui.use('laydate', function() {
+				var laydate = layui.laydate;
+				//常规用法
+				laydate.render({
+					elem: '#test2'
+				});
+			});
+		</script>
+		<!-- <script>
+			layui.use('element', function() {
+				var element = layui.element;
+				//获取hash来切换选项卡，假设当前地址的hash为lay-id对应的值
+				var layid = location.hash.replace(/^#test1=/, '');
+				console.log('layid',layid)
+				element.tabChange('test1', layid); //假设当前地址为：http://a.com#test1=222，那么选项卡会自动切换到“发送消息”这一项
+
+				//监听Tab切换，以改变地址hash值
+				element.on('tab(test1)', function() {
+					location.hash = 'test1=' + this.getAttribute('lay-id');
+					var layid=this.getAttribute('lay-id');
+					console.log('layid',layid)
+				});
+			});
+		</script> -->
+	</body>
+</html>

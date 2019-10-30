@@ -1,0 +1,211 @@
+<include file="Public:head" /> <include file="Public:logo" /> <include file="Public:up" /> <include file="Public:left" />
+<div id="content">
+    <div id="content-header">
+        <div id="breadcrumb"> 
+            <a href="#" title="首页" class="tip-bottom"><i class="icon-home"></i>首页</a> 
+            <a href="#" class="current">礼品卡</a> 
+        </div>
+        <h1>礼品卡列表</h1>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="search_box">
+
+            <button onclick="button_href(this)" class="layui-btn layui-btn-small" id="addlist_rule" type="button" href="__APP__/admin/Cards/add_class">新增保单</button>
+<!--            <buttoni class="layui-btn layui-btn-small layui-btn-danger" id="excel_out" type="button">导出保单</button>-->
+<!--            <button class="layui-btn layui-btn-warm layui-btn-small" type="button" id="tree_min_pro_rule" style="margin-bottom: 0px" data-id="0">
+                    卡>商品
+                    <i class="layui-icon" style="font-size: 30px; color: white;margin-left: 3px;">&#xe61f;</i>
+            </button>-->
+            
+            <button  class="layui-btn layui-btn-small layui-btn-danger excel_out" type="button">导出保单</button>
+            <span style="float: right;text-align: right;width: 50%">
+                <button class="layui-btn layui-btn-warm layui-btn-small" type="button" id="tree_min" style="margin-bottom: 5px" data-id="0">
+                请选择家族或成员
+                </button>
+<!--                <select name="state" id="state" style="margin:0px;width: 21%">
+                    <option value="all">请选择状态</option>
+                    <option value="yes">已领取</option>
+                    <option value="no">未领取</option>
+                </select>
+                <select name="batch" id="pro_batch" style="margin: 0px;width: 21%">
+                    <option value="0">请选择批次</option>
+                </select>-->
+                <input type="text" id='account' name="pro_name" class="text "  value="{$_GET.key}" placeholder="保单名称" style="margin:0px;text-align: center;width: 21%">&nbsp;      
+                <i class="layui-icon" id="submit" style="font-size: 150%;cursor:pointer;vertical-align: middle;">&#xe615;</i>
+        <!-- <button class="btn" id="submit" type="button" >查询</button> -->
+            </span>
+       
+        </div>
+<!--        <div class="msg_box" style="margin-top: 10px;">
+            <button  class="layui-btn layui-btn-small layui-btn-danger msg_go" type="button" style="display: block;">设置缺货提示语</button>
+        </div>-->
+        <div class="row-fluid">
+            <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+                        <h5>商品列表</h5>
+                </div>
+                <div class="widget-content nopadding">
+                    <div class='dataTables_wrapper'>
+                        <table class='table table-bordered data-table'>
+                            <!-- 表头 -->
+                            <thead>
+                                <tr>
+                                    <th class="row-selected row-selected"> <input class="check-all" type="checkbox" title="选中当页所有卡"/>
+                                    </th>
+                                    <th class="sql">保单名称</th>
+                                    <th class="sql">保单类型</th>
+                                    <th>保单开始时间</th>
+                                    <th>投保人</th>
+                                    <th>受益人</th>
+                                    <th>每期金额</th>
+                                    <th>每年缴费日期</th>
+                                    <th>需缴费年限</th>
+                                    <th>银行卡号</th>
+                                    <th>备注</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <!-- 列表 -->
+                            <tbody>
+                                <if condition="$db eq null">
+                                    <tr><td class="text-center" colspan="14"> aOh! 暂时还没有内容!</td></tr>
+                                <else />           
+                                    <volist name="db" id="db">              
+                                        <tr>
+                                            <td class="text-center" style="vertical-align:middle"><input class="ids" type="checkbox" value="{$db.id}" name="id[]"></td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.p_name}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.type_name}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.sdate}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.username}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.beneficiary}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.money}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.money_date}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.age_limit}</td>
+                                            <td class="text-center" style="vertical-align:middle">{$db.bankname}<br>{$db.bankcard}</td>
+                                            <td class="text-center" style="vertical-align:middle">
+                                                <input type="text" name="remark" data-id="{$db.id}" value="{$db.remark}" placeholder="输入后回车保存" class="remark_up" style="width: 160px;margin-bottom: 0px;">
+                                            </td>
+                                            <!--<td class="text-center change_s" style="vertical-align:middle;cursor:pointer;">{$db.state}</td>-->
+                                            <td class="text-center" style="vertical-align:middle">
+                                                <!--<button class="layui-btn layui-btn-mini layui-btn-primary detail_go" data-id="{$db.id}">查看</button>-->
+                                                <button class="layui-btn layui-btn-mini layui-btn-danger del_go del_go_rule" data-id="{$db.id}">删除</button>
+                                            </td>
+                                        </tr>
+                                    </volist>
+                                </if>
+                            </tbody>
+                        </table>
+                        <div class="page">
+                            {$page}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+            
+            function remark(id,text,obj){
+                $.ajax({
+                    url: '{:U("user_remark")}',
+                    type: 'post',
+                    dataType: 'json',
+                    data: {id:id,text:text},
+                    success:function(data){
+                        obj.blur();
+                    }
+                })
+            }
+            $('#tree_min').on('click',function(){
+                layer.open({
+                  title:'家族成员',
+                  type: 2, 
+                  content: '{:U("tree_min")}',
+                  area: ['300px', '500px'],
+                  skin:'layui-layer-lan'
+                });
+            })
+            $('.remark_up').on('change',function(){   //备注保存
+                var id = $(this).data("id");
+                var text = $(this).val();
+                remark(id,text);
+            })
+            $('.remark_up').bind('keypress',function(event){
+                if(event.keyCode == "13")
+                {
+                    var id = $(this).data("id");
+                    var text = $(this).val();
+                    remark(id,text,$(this));
+                }
+            })
+            $(".excel_out").click(function(){
+                var idstr = $("input[name='id[]']:checked").map(function(){
+                   return $(this).val();
+                }).get().join(",");
+                if(idstr.length==0){
+                    layer.alert('请选择要导出的保单', {icon:1,title:'成功'},function(index){
+                        layer.close(index);
+                    });
+                    return false;
+                }
+                //上述验证完成  跳转传送
+                layer.confirm('是否下载保单？', {icon: 3, title:'删除'}, function(index){
+                    setTimeout(dowm_load(idstr),1000);
+                    layer.close(index);
+                });
+            })
+            function dowm_load(idstr){
+                location.href="__APP__/Admin/Cards/export_out_excel?idstr="+idstr;
+            }
+            $("#submit").click(function(){   //查询提交
+                location.href="__APP__/Admin/Cards/index?key="+$('#account').val()+"&departid="+$('#tree_min').data("id")+"&isParent="+$('#tree_min').data("isParent");
+            })
+            $(".del_go").click(function(){   //删除卡
+                var id = $(this).data("id");
+                layer.confirm('是否删除保单？', {icon: 3, title:'删除'}, function(index){
+                    $.ajax({
+                      url: '{:U("del_card")}',
+                      type: 'post',
+                      dataType: 'json',
+                      data: {id:id},
+                      success:function(data){
+                          if(data=="ok"){
+                            layer.alert('删除成功', {icon:1,title:'成功'},function(index){
+                                location.reload();
+                            });
+                          }else{
+                              layer.alert(data, {icon:2,title:'失败'},function(index){
+                                location.reload();
+                            });
+                          }
+                        
+                      }
+                    })
+                    layer.close(index);
+                });
+            })
+            layui.use('laydate', function(){
+                var laydate = layui.laydate;
+                laydate.render({
+                  elem: '#start',
+                  type:'datetime'
+                });
+                laydate.render({
+                  elem: '#end',
+                  type:'datetime'
+                });
+            });
+        })
+</script>
+<script type="text/javascript">
+//  $('#submit').on('click',function(){
+//      alert(1111);
+//    location.href="__APP__/admin/goods/index?key="+$('#account').val()+"&departid="+$('#tree_min_pro_rule').data("id")+"&state="+$('#state').val()+"&pro_batch="+$('#pro_batch').val();
+//  })
+  
+</script>
+
+<include file="Public:foot" /> 

@@ -1,0 +1,408 @@
+[ 2019-10-27T00:17:27+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `b_push_message` [ RunTime:0.0005s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`sendTime`) VALUES ('749','passenger_order','{\"type\":\"passenger_order\",\"driverId\":\"749\",\"cont\":{\"appellation_origin\":\"\\u5929\\u6d25\\u5e02\\u5357\\u5f00\\u533a\\u4eba\\u6c11\\u653f\\u5e9c(\\u7ea2\\u65d7\\u8def\\u4e1c)\",\"appellation_destination\":\"\",\"distance\":\"2.4\",\"time\":\"2019-10-26 13:09:22\",\"key\":\"749:46268:1e2cec24c8c7a2635e2a0f2598577db1\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-26 13:09:23') [ RunTime:0.0026s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`sendTime`) VALUES ('749','passenger_order','{\"type\":\"passenger_order\",\"driverId\":\"749\",\"cont\":{\"appellation_origin\":\"\\u5929\\u6d25\\u5e02\\u5357\\u5f00\\u533a\\u4eba\\u6c11\\u653f\\u5e9c(\\u7ea2\\u65d7\\u8def\\u4e1c)\",\"appellation_destination\":\"\",\"distance\":\"2.4\",\"time\":\"2019-10-26 13:10:33\",\"key\":\"749:46268:4b637a6719d2e15527ddb074291e5036\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-26 13:10:34') [ RunTime:0.0028s ]
+NOTIC: [8] Undefined property: Workerman\Connection\TcpConnection::$client /www/Application/Home_V2/Controller/WebSocketController.class.php 第 93 行.
+
+[ 2019-10-27T11:20:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-10-27T11:20:17+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-10-27T11:20:17+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-10-27T11:20:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-10-27T11:20:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-10-27T11:37:50+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `b_push_message` [ RunTime:0.0006s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`) VALUES ('33','passenger_order','{\"type\":\"passenger_order\",\"driverId\":33,\"cont\":{\"appellation_origin\":1,\"appellation_destination\":2,\"distance\":1.2,\"time\":\"2019-10-27 11:22:53\",\"key\":\"x:y:z\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-27 11:22:54') [ RunTime:0.0024s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:22:56',`resentTimes`='1' WHERE ( id = 154 ) [ RunTime:0.0024s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:22:58',`resentTimes`='1' WHERE ( id = 154 ) [ RunTime:0.0022s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:23:00',`resentTimes`='1' WHERE ( id = 154 ) [ RunTime:0.0022s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:23:02',`resentTimes`='1' WHERE ( id = 154 ) [ RunTime:0.0036s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:23:04',`resentTimes`='1' WHERE ( id = 154 ) [ RunTime:0.0023s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:23:06',`resentTimes`='1' WHERE ( id = 154 ) [ RunTime:0.0022s ]
+
+[ 2019-10-27T11:37:50+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+
+[ 2019-10-27T11:37:50+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+
+[ 2019-10-27T11:37:50+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `b_push_message` [ RunTime:0.0006s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`) VALUES ('33','passenger_order','{\"type\":\"passenger_order\",\"driverId\":33,\"cont\":{\"appellation_origin\":1,\"appellation_destination\":2,\"distance\":1.2,\"time\":\"2019-10-27 11:21:24\",\"key\":\"x:y:z\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-27 11:21:26') [ RunTime:0.0024s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:21:28',`resentTimes`='1' WHERE ( id = 153 ) [ RunTime:0.0216s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:21:30',`resentTimes`='1' WHERE ( id = 153 ) [ RunTime:0.0020s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:21:32',`resentTimes`='1' WHERE ( id = 153 ) [ RunTime:0.0020s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:21:34',`resentTimes`='1' WHERE ( id = 153 ) [ RunTime:0.0021s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:21:36',`resentTimes`='1' WHERE ( id = 153 ) [ RunTime:0.0050s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:21:38',`resentTimes`='1' WHERE ( id = 153 ) [ RunTime:0.0022s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`) VALUES ('33','passenger_order','{\"type\":\"passenger_order\",\"driverId\":33,\"cont\":{\"appellation_origin\":1,\"appellation_destination\":2,\"distance\":1.2,\"time\":\"2019-10-27 11:36:38\",\"key\":\"x:y:z\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-27 11:36:39') [ RunTime:0.0024s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:36:41',`resentTimes`='1' WHERE ( id = 155 ) [ RunTime:0.0026s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:36:43',`resentTimes`='1' WHERE ( id = 155 ) [ RunTime:0.0021s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:36:45',`resentTimes`='1' WHERE ( id = 155 ) [ RunTime:0.0238s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:36:47',`resentTimes`='1' WHERE ( id = 155 ) [ RunTime:0.0023s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:36:49',`resentTimes`='1' WHERE ( id = 155 ) [ RunTime:0.0021s ]
+SQL: UPDATE `b_push_message` SET `lastSendTime`='2019-10-27 11:36:51',`resentTimes`='1' WHERE ( id = 155 ) [ RunTime:0.0024s ]
+
+[ 2019-10-27T11:37:50+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+
+[ 2019-10-27T11:37:50+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+
+[ 2019-10-27T11:37:50+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+
+[ 2019-10-27T11:42:49+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+
+[ 2019-10-27T11:42:49+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+
+[ 2019-10-27T11:42:49+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+
+[ 2019-10-27T11:42:49+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `b_push_message` [ RunTime:0.0006s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`) VALUES ('33','passenger_order','{\"type\":\"passenger_order\",\"driverId\":33,\"cont\":{\"appellation_origin\":1,\"appellation_destination\":2,\"distance\":1.2,\"time\":\"2019-10-27 11:38:25\",\"key\":\"x:y:z\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-27 11:38:26') [ RunTime:0.0026s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 156 ) [ RunTime:0.0021s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 156 ) [ RunTime:0.0020s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 156 ) [ RunTime:0.0027s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 156 ) [ RunTime:0.0019s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 156 ) [ RunTime:0.0025s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 156 ) [ RunTime:0.0035s ]
+
+[ 2019-10-27T11:42:49+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+
+[ 2019-10-27T11:42:49+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+
+[ 2019-10-27T11:42:49+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+
+[ 2019-10-27T13:36:28+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+
+[ 2019-10-27T13:36:28+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+
+[ 2019-10-27T13:36:28+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `b_push_message` [ RunTime:0.0005s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`) VALUES ('33','passenger_order','{\"type\":\"passenger_order\",\"driverId\":33,\"cont\":{\"appellation_origin\":1,\"appellation_destination\":2,\"distance\":1.2,\"time\":\"2019-10-27 11:43:30\",\"key\":\"x:y:z\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-27 11:43:31') [ RunTime:0.0033s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 157 ) [ RunTime:0.0021s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 157 ) [ RunTime:0.0021s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 157 ) [ RunTime:0.0040s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 157 ) [ RunTime:0.0023s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 157 ) [ RunTime:0.0030s ]
+
+[ 2019-10-27T13:36:28+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+
+[ 2019-10-27T13:36:28+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+
+[ 2019-10-27T13:36:28+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+
+[ 2019-10-27T13:36:28+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+
+[ 2019-10-27T18:17:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `b_push_message` [ RunTime:0.0006s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`,`resentInterval`) VALUES ('749','passenger_cancel_existing_order','{\"type\":\"passenger_cancel_existing_order\",\"driverId\":\"749\",\"ascription\":\"user\",\"orderId\":\"26745\",\"reasonId\":\"9\",\"canceltext\":\"\\u65f6\\u95f4\\u592a\\u4e45\\uff0c\\u4e0d\\u613f\\u7b49\\u5f85\",\"time\":\"2019-10-27 05:46:12\"}','2019-10-27 13:46:14','2') [ RunTime:0.0031s ]
+
+[ 2019-10-27T18:17:01+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+
+[ 2019-10-27T18:17:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `b_push_message` [ RunTime:0.0005s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`,`resentInterval`) VALUES ('33','passenger_order','{\"type\":\"passenger_order\",\"driverId\":33,\"cont\":{\"appellation_origin\":1,\"appellation_destination\":2,\"distance\":1.2,\"time\":\"2019-10-27 15:05:46\",\"key\":\"x:y:z\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-27 15:05:47','2') [ RunTime:0.0025s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 1 ) [ RunTime:0.0020s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 1 ) [ RunTime:0.0027s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 1 ) [ RunTime:0.0021s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 1 ) [ RunTime:0.0021s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 1 ) [ RunTime:0.0020s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`,`resentInterval`) VALUES ('749','passenger_cancel_existing_order','{\"type\":\"passenger_cancel_existing_order\",\"driverId\":\"749\",\"ascription\":\"user\",\"orderId\":\"26746\",\"reasonId\":\"9\",\"canceltext\":\"\\u65f6\\u95f4\\u592a\\u4e45\\uff0c\\u4e0d\\u613f\\u7b49\\u5f85\",\"time\":\"2019-10-27 07:08:59\"}','2019-10-27 15:09:00','2') [ RunTime:0.0027s ]
+
+[ 2019-10-27T18:17:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /www/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' /www/ThinkPHP/Library/Think/Dispatcher.class.php 第 191 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `b_push_message` [ RunTime:0.0005s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`,`resentInterval`) VALUES ('33','passenger_order','{\"type\":\"passenger_order\",\"driverId\":33,\"cont\":{\"appellation_origin\":1,\"appellation_destination\":2,\"distance\":1.2,\"time\":\"2019-10-27 13:37:23\",\"key\":\"x:y:z\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-27 13:37:25','2') [ RunTime:0.0031s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 158 ) [ RunTime:0.0025s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 158 ) [ RunTime:0.0023s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 158 ) [ RunTime:0.0020s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 158 ) [ RunTime:0.0022s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 158 ) [ RunTime:0.0106s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`,`resentInterval`) VALUES ('33','passenger_order','{\"type\":\"passenger_order\",\"driverId\":33,\"cont\":{\"appellation_origin\":1,\"appellation_destination\":2,\"distance\":1.2,\"time\":\"2019-10-27 13:43:23\",\"key\":\"x:y:z\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-27 13:43:25','2') [ RunTime:0.0023s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 1 ) [ RunTime:0.0021s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 1 ) [ RunTime:0.0021s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 1 ) [ RunTime:0.0021s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 1 ) [ RunTime:0.0033s ]
+SQL: UPDATE `b_push_message` SET `resentTimes`=resentTimes+1 WHERE ( id = 1 ) [ RunTime:0.0021s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`,`resentInterval`) VALUES ('749','passenger_order','{\"type\":\"passenger_order\",\"driverId\":\"749\",\"cont\":{\"appellation_origin\":\"\\u5929\\u6d25\\u5e02\\u5357\\u5f00\\u533a\\u4eba\\u6c11\\u653f\\u5e9c(\\u7ea2\\u65d7\\u8def\\u4e1c)\",\"appellation_destination\":\"\",\"distance\":\"2.4\",\"time\":\"2019-10-27 13:45:59\",\"key\":\"749:46268:e4ed9275c77f689c209b4fdc912965f5\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-27 13:46:01','2') [ RunTime:0.0055s ]
+SQL: INSERT INTO `b_push_message` (`driverId`,`type`,`message`,`lastSendTime`,`resentInterval`) VALUES ('749','passenger_order','{\"type\":\"passenger_order\",\"driverId\":\"749\",\"cont\":{\"appellation_origin\":\"\\u5929\\u6d25\\u5e02\\u5357\\u5f00\\u533a\\u4eba\\u6c11\\u653f\\u5e9c(\\u7ea2\\u65d7\\u8def\\u4e1c)\",\"appellation_destination\":\"\",\"distance\":\"2.4\",\"time\":\"2019-10-27 15:08:39\",\"key\":\"749:46268:d70fc4c141c4a7778fdd847c5efdd3cb\"},\"message\":\"\\u4e58\\u5ba2\\u4ee5\\u4e0b\\u5355\\uff0c\\u8bf7\\u53ca\\u65f6\\u63a5\\u5355\",\"message_code\":\"0\"}','2019-10-27 15:08:41','2') [ RunTime:0.0021s ]
+

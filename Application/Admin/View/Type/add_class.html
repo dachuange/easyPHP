@@ -1,0 +1,120 @@
+<include file="Public:head" /><include file="Public:logo" /><include file="Public:up" /><include file="Public:left" />
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    $('.form-horizontal').validate({
+
+      rules:{
+
+        name:{required:true},
+
+      },
+
+      messages:{
+
+        name:{required:"请输入客户名"}, 
+
+      },
+
+      errorPlacement: function (error, element) {
+
+        layer.tips(error[0].innerText,element, {
+
+              tips: [2, 'red'],
+
+              time: 4000,
+
+              tipsMore:true,
+
+            })
+
+        },
+
+      onkeyup: false,
+
+    });
+
+  });  
+
+</script> 
+
+<div id="content">
+
+    <div id="content-header">
+
+        <div id="breadcrumb"> 
+
+            <a href="" title="首页" class="tip-bottom"><i class="icon-home"></i>首页</a> 
+
+            <a href="#" class="current">新增分类</a> 
+        </div>
+
+        <h1>新增分类</h1>
+
+    </div>  
+    <hr>
+
+    <div class="container-fluid">
+
+        <div class="widget-box">
+
+            <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                <h5>新增分类</h5> 
+            </div>
+
+            <script type="text/javascript" src="/Public/Admin/static/uploadify/jquery.uploadify.min.js"></script>
+
+            <form action="{:U('Member/insert')}" method="post" class="form-horizontal">
+                <div class="widget-content nopadding">
+
+                    <div class="control-group">
+
+                        <label class="control-label">分类名称</label>
+
+                        <div class="controls">
+                            <input type="text" name="name" value="" class="text input-large"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">分类（默认顶级分类）</label>
+                        <div class="controls">
+                            <select name="fatherid">
+                                <option value="0">选择父级分类</option>
+                                    <volist name="classify" id="classify">
+                                        <option value="{$classify.id}" >{$classify.name}</option>
+                                    </volist>
+                            </select>                           
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">状态</label>
+                        <div class="controls">
+                            <select name="state">
+                                <option value="Y" >启用</option>                                
+                                <option value="N" >禁用</option>                                
+                            </select>                              
+
+                        </div>
+                    </div>    
+                    <div class="control-group">
+
+                        <label class="control-label">关键字</label>
+
+                        <div class="controls">
+                            <input type="text" name="post_type" value="type" class="text input-large" readonly="readonly"/>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+
+                        <button class="btn btn-info ajax-post" id="submit" type="submit" target-form="form-horizontal" style="margin-right:10px;">确定</button>
+                        <button onclick="javascript:location.href='{:U(\"index\")}';return false;" class="btn btn-danger" style="margin-right:10px;">返回</button>            
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<include file="Public:foot" />

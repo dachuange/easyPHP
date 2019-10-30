@@ -1,0 +1,1156 @@
+2019-09-12 01:07:00 pid:1 Error: Cannot use object of type Workerman\Connection\TcpConnection as array in D:\auto_new\test.php:14
+Stack trace:
+#0 D:\auto_new\vendor\workerman\workerman\Worker.php(2449): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Worker->acceptConnection(Resource id #22)
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#3 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#5 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#9 D:\auto_new\test.php(45): Workerman\Worker::runAll()
+#10 {main}
+2019-09-12 01:07:00 pid:1 Worker process terminated
+2019-09-12 01:16:07 pid:1 Error: Closure object cannot have properties in D:\auto_new\test.php:14
+Stack trace:
+#0 D:\auto_new\vendor\workerman\workerman\Worker.php(2449): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Worker->acceptConnection(Resource id #22)
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#3 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#5 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#9 D:\auto_new\test.php(45): Workerman\Worker::runAll()
+#10 {main}
+2019-09-12 01:16:07 pid:1 Worker process terminated
+2019-09-12 01:17:18 pid:1 Error: Closure object cannot have properties in D:\auto_new\test.php:14
+Stack trace:
+#0 D:\auto_new\vendor\workerman\workerman\Worker.php(2449): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Worker->acceptConnection(Resource id #22)
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#3 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#5 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#9 D:\auto_new\test.php(45): Workerman\Worker::runAll()
+#10 {main}
+2019-09-12 01:17:18 pid:1 Worker process terminated
+2019-09-12 01:17:36 pid:1 Error: Cannot use object of type Closure as array in D:\auto_new\test.php:14
+Stack trace:
+#0 D:\auto_new\vendor\workerman\workerman\Worker.php(2449): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Worker->acceptConnection(Resource id #22)
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#3 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#5 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#9 D:\auto_new\test.php(45): Workerman\Worker::runAll()
+#10 {main}
+2019-09-12 01:17:36 pid:1 Worker process terminated
+2019-09-12 01:20:51 pid:1 Error: Closure object cannot have properties in D:\auto_new\test.php:14
+Stack trace:
+#0 D:\auto_new\vendor\workerman\workerman\Worker.php(2449): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Worker->acceptConnection(Resource id #22)
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#3 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#5 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#9 D:\auto_new\test.php(45): Workerman\Worker::runAll()
+#10 {main}
+2019-09-12 01:20:51 pid:1 Worker process terminated
+2019-09-12 11:33:40 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 30 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(30): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(57): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:33:40 pid:1 Worker process terminated
+2019-09-12 11:34:38 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 30 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(30): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(57): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:34:38 pid:1 Worker process terminated
+2019-09-12 11:35:11 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 29 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(29): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(56): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:35:11 pid:1 Worker process terminated
+2019-09-12 11:37:46 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 30 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(30): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(57): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:37:46 pid:1 Worker process terminated
+2019-09-12 11:50:54 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 30 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(30): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(58): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:50:54 pid:1 Worker process terminated
+2019-09-12 11:51:14 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 30 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(30): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(58): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:51:14 pid:1 Worker process terminated
+2019-09-12 11:51:43 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 31 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(31): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(59): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:51:43 pid:1 Worker process terminated
+2019-09-12 11:52:39 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 31 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(31): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(59): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:52:39 pid:1 Worker process terminated
+2019-09-12 11:53:42 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 30 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(30): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(58): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:53:42 pid:1 Worker process terminated
+2019-09-12 11:54:02 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 30 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(30): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(58): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:54:02 pid:1 Worker process terminated
+2019-09-12 11:54:12 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 30 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(30): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(58): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:54:12 pid:1 Worker process terminated
+2019-09-12 11:54:40 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 33 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(33): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(61): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:54:40 pid:1 Worker process terminated
+2019-09-12 11:55:18 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 33 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(33): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(61): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:55:18 pid:1 Worker process terminated
+2019-09-12 11:56:51 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 34 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(34): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(62): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 11:56:51 pid:1 Worker process terminated
+2019-09-12 04:01:08 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\test.php on line 54 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\test.php(54): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): {closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\test.php(82): Workerman\Worker::runAll()
+#11 {main}
+2019-09-12 04:01:08 pid:1 Worker process terminated
+2019-09-12 12:03:29 pid:1 TypeError: Argument 1 passed to Clue\React\Redis\Factory::__construct() must implement interface React\EventLoop\LoopInterface, null given, called in D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php on line 26 and defined in D:\auto_new\vendor\clue\redis-react\src\Factory.php:26
+Stack trace:
+#0 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(26): Clue\React\Redis\Factory->__construct(NULL)
+#1 D:\auto_new\vendor\workerman\workerman\Connection\TcpConnection.php(658): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection), '{"name":"jim","...')
+#2 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#3 D:\auto_new\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#4 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto_new\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto_new\vendor\workerman\workerman\Worker.php(2382): Workerman\Events\React\Base->loop()
+#7 D:\auto_new\vendor\workerman\workerman\Worker.php(1353): Workerman\Worker->run()
+#8 D:\auto_new\vendor\workerman\workerman\Worker.php(1296): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto_new\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\auto_new\Application\Home_V2\Controller\WebSocketController.class.php(54): Workerman\Worker::runAll()
+#11 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#12 D:\auto_new\ThinkPHP\Library\Think\App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#13 D:\auto_new\ThinkPHP\Library\Think\App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#14 D:\auto_new\ThinkPHP\Library\Think\App.class.php(204): Think\App::exec()
+#15 D:\auto_new\ThinkPHP\Library\Think\Think.class.php(120): Think\App::run()
+#16 D:\auto_new\ThinkPHP\ThinkPHP.php(97): Think\Think::start()
+#17 D:\auto_new\index.php(28): require('D:\\auto_new\\Thi...')
+#18 {main}
+2019-09-12 12:03:29 pid:1 Worker process terminated
+2019-09-12 13:25:05 pid:1 Worker process terminated
+2019-09-12 13:49:57 pid:1 Worker process terminated
+2019-09-18 05:20:25 pid:32720 Workerman[2.php] start in DEBUG mode
+2019-09-18 05:20:31 pid:32720 Workerman[2.php] stopping ...
+2019-09-18 05:20:31 pid:32720 Workerman[2.php] has been stopped
+2019-09-18 05:20:35 pid:32733 Workerman[2.php] start in DEBUG mode
+2019-09-18 05:20:41 pid:32733 Workerman[2.php] stopping ...
+2019-09-18 05:20:41 pid:32733 Workerman[2.php] has been stopped
+2019-09-18 05:21:21 pid:309 Workerman[2.php] start in DEBUG mode
+2019-09-18 05:21:24 pid:309 Workerman[2.php] stopping ...
+2019-09-18 05:21:24 pid:309 Workerman[2.php] has been stopped
+2019-09-18 14:04:23 pid:2976 Workerman[index.php] start in DEBUG mode
+2019-09-18 14:04:30 pid:2976 Workerman[index.php] stopping ...
+2019-09-18 14:04:30 pid:2976 Workerman[index.php] has been stopped
+2019-09-18 17:53:15 pid:22013 Workerman[index.php] start in DEBUG mode
+2019-09-18 17:53:20 pid:22013 Workerman[index.php] stopping ...
+2019-09-18 17:53:20 pid:22013 Workerman[index.php] has been stopped
+2019-09-18 17:53:44 pid:22058 Workerman[index.php] start in DEBUG mode
+2019-09-18 17:53:48 pid:22058 Workerman[index.php] stopping ...
+2019-09-18 17:53:49 pid:22058 Workerman[index.php] has been stopped
+2019-09-19 10:20:27 pid:7876 Workerman[index.php] start in DEBUG mode
+2019-09-19 10:22:59 pid:7876 Workerman[index.php] stopping ...
+2019-09-19 10:22:59 pid:7876 Workerman[index.php] has been stopped
+2019-09-19 10:23:03 pid:8148 Workerman[index.php] stop 
+2019-09-19 10:23:03 pid:8148 Workerman[index.php] not run
+2019-09-19 10:23:11 pid:8156 Workerman[index.php] start in DEBUG mode
+2019-09-19 10:23:33 pid:8156 Workerman[index.php] stopping ...
+2019-09-19 10:23:33 pid:8156 Workerman[index.php] has been stopped
+2019-09-19 10:23:35 pid:8197 Workerman[index.php] start in DEBUG mode
+2019-09-19 10:59:10 pid:8197 Workerman[index.php] stopping ...
+2019-09-19 10:59:10 pid:8197 Workerman[index.php] has been stopped
+2019-09-19 10:59:12 pid:10928 Workerman[index.php] start in DEBUG mode
+2019-09-19 11:23:59 pid:10928 Workerman[index.php] stopping ...
+2019-09-19 11:23:59 pid:10928 Workerman[index.php] has been stopped
+2019-09-19 11:24:01 pid:12617 Workerman[index.php] start in DEBUG mode
+2019-09-19 13:20:10 pid:18914 Workerman[index.php] start in DEBUG mode
+2019-09-19 13:20:10 pid:18914 Workerman[index.php] already running
+2019-09-19 13:20:16 pid:18921 Workerman[index.php] stop 
+2019-09-19 13:20:16 pid:18921 Workerman[index.php] is stopping ...
+2019-09-19 13:20:16 pid:12617 Workerman[index.php] stopping ...
+2019-09-19 13:20:16 pid:12617 Workerman[index.php] has been stopped
+2019-09-19 13:20:16 pid:18921 Workerman[index.php] stop success
+2019-09-19 13:20:22 pid:18927 Workerman[index.php] start in DEBUG mode
+2019-09-19 13:20:26 pid:18927 Workerman[index.php] stopping ...
+2019-09-19 13:20:26 pid:18927 Workerman[index.php] has been stopped
+2019-09-19 23:02:38 pid:16286 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:05:57 pid:16286 Workerman[index.php] stopping ...
+2019-09-19 23:05:57 pid:16286 Workerman[index.php] has been stopped
+2019-09-19 23:06:07 pid:16490 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:06:18 pid:16490 Workerman[index.php] stopping ...
+2019-09-19 23:06:18 pid:16490 Workerman[index.php] has been stopped
+2019-09-19 23:07:30 pid:16576 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:07:34 pid:16576 worker[none:16579] exit with status 65280
+2019-09-19 23:08:12 pid:16576 Workerman[index.php] stopping ...
+2019-09-19 23:08:12 pid:16576 Workerman[index.php] has been stopped
+2019-09-19 23:08:17 pid:16621 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:08:19 pid:16621 worker[none:16625] exit with status 65280
+2019-09-19 23:08:41 pid:16621 Workerman[index.php] stopping ...
+2019-09-19 23:08:41 pid:16621 Workerman[index.php] has been stopped
+2019-09-19 23:20:40 pid:17268 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:22:10 pid:17268 Workerman[index.php] stopping ...
+2019-09-19 23:22:10 pid:17268 Workerman[index.php] has been stopped
+2019-09-19 23:22:19 pid:17354 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:22:34 pid:17371 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:22:34 pid:17371 Workerman[index.php] already running
+2019-09-19 23:33:29 pid:17948 Workerman[index.php] reload 
+2019-09-19 23:33:29 pid:17354 Workerman[index.php] reloading
+2019-09-19 23:33:41 pid:17964 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:33:41 pid:17964 Workerman[index.php] already running
+2019-09-19 23:34:05 pid:17354 Workerman[index.php] stopping ...
+2019-09-19 23:34:06 pid:17354 Workerman[index.php] has been stopped
+2019-09-19 23:34:29 pid:18007 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:34:33 pid:18007 worker[none:18011] exit with status 65280
+2019-09-19 23:36:13 pid:18007 Workerman[index.php] stopping ...
+2019-09-19 23:36:13 pid:18007 Workerman[index.php] has been stopped
+2019-09-19 23:36:15 pid:18108 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:36:18 pid:18108 worker[none:18110] exit with status 65280
+2019-09-19 23:37:05 pid:18108 Workerman[index.php] stopping ...
+2019-09-19 23:37:05 pid:18108 Workerman[index.php] has been stopped
+2019-09-19 23:37:08 pid:18157 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:37:43 pid:18157 Workerman[index.php] stopping ...
+2019-09-19 23:37:43 pid:18157 Workerman[index.php] has been stopped
+2019-09-19 23:37:45 pid:18193 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:38:19 pid:18193 Workerman[index.php] stopping ...
+2019-09-19 23:38:19 pid:18193 Workerman[index.php] has been stopped
+2019-09-19 23:39:22 pid:18276 Workerman[index.php] start in DEBUG mode
+2019-09-19 23:39:27 pid:18276 worker[none:18278] exit with status 65280
+2019-09-19 23:39:30 pid:18276 Workerman[index.php] stopping ...
+2019-09-19 23:39:30 pid:18276 Workerman[index.php] has been stopped
+2019-09-20 00:02:35 pid:19471 Workerman[index.php] start in DEBUG mode
+2019-09-20 00:03:16 pid:19471 Workerman[index.php] stopping ...
+2019-09-20 00:03:16 pid:19471 Workerman[index.php] has been stopped
+2019-09-20 00:03:24 pid:19516 Workerman[index.php] start in DEBUG mode
+2019-09-20 00:03:51 pid:19516 Workerman[index.php] stopping ...
+2019-09-20 00:03:51 pid:19516 Workerman[index.php] has been stopped
+2019-09-20 00:04:24 pid:19592 Workerman[index.php] start in DEBUG mode
+2019-09-20 00:04:28 pid:19592 worker[none:19596] exit with status 65280
+2019-09-20 00:04:46 pid:19592 Workerman[index.php] stopping ...
+2019-09-20 00:04:46 pid:19592 Workerman[index.php] has been stopped
+2019-09-20 03:44:29 pid:30730 Workerman[index.php] start in DEBUG mode
+2019-09-20 03:49:32 pid:30730 Workerman[index.php] stopping ...
+2019-09-20 03:49:32 pid:30730 Workerman[index.php] has been stopped
+2019-09-20 03:57:23 pid:30840 Workerman[index.php] start in DEBUG mode
+2019-09-20 04:00:29 pid:30840 Workerman[index.php] stopping ...
+2019-09-20 04:00:29 pid:30840 Workerman[index.php] has been stopped
+2019-09-20 04:00:49 pid:30871 Workerman[index.php] start in DEBUG mode
+2019-09-20 04:03:04 pid:30871 Workerman[index.php] stopping ...
+2019-09-20 04:03:04 pid:30871 Workerman[index.php] has been stopped
+2019-09-20 09:48:04 pid:31306 Workerman[index.php] start in DEBUG mode
+2019-09-20 09:49:18 pid:31306 Workerman[index.php] stopping ...
+2019-09-20 09:49:18 pid:31306 Workerman[index.php] has been stopped
+2019-09-20 09:49:32 pid:31314 Workerman[index.php] start in DEBUG mode
+2019-09-20 09:57:29 pid:31314 Workerman[index.php] stopping ...
+2019-09-20 09:57:29 pid:31314 Workerman[index.php] has been stopped
+2019-09-20 10:04:22 pid:31368 Workerman[index.php] start in DEBUG mode
+2019-09-20 10:29:54 pid:31368 Workerman[index.php] stopping ...
+2019-09-20 10:29:54 pid:31368 Workerman[index.php] has been stopped
+2019-09-20 10:30:36 pid:31430 Workerman[index.php] start in DEBUG mode
+2019-09-20 11:06:14 pid:31430 Workerman[index.php] stopping ...
+2019-09-20 11:06:14 pid:31430 Workerman[index.php] has been stopped
+2019-09-20 16:20:38 pid:32579 Workerman[index.php] start in DEBUG mode
+2019-09-21 00:14:51 pid:879 Workerman[index.php] start in DEBUG mode
+2019-09-21 00:14:51 pid:879 Workerman[index.php] already running
+2019-09-21 00:15:19 pid:32579 Workerman[index.php] stopping ...
+2019-09-21 00:15:19 pid:32579 Workerman[index.php] has been stopped
+2019-09-21 00:15:27 pid:883 Workerman[index.php] start in DEBUG mode
+2019-09-21 00:17:40 pid:883 Workerman[index.php] stopping ...
+2019-09-21 00:17:40 pid:883 Workerman[index.php] has been stopped
+2019-09-21 00:19:26 pid:895 Workerman[index.php] start in DEBUG mode
+2019-09-21 00:22:54 pid:895 Workerman[index.php] stopping ...
+2019-09-21 00:22:54 pid:895 Workerman[index.php] has been stopped
+2019-09-21 00:24:19 pid:908 Workerman[index.php] start in DEBUG mode
+2019-09-21 00:26:54 pid:908 Workerman[index.php] stopping ...
+2019-09-21 00:26:55 pid:908 Workerman[index.php] has been stopped
+2019-09-21 00:27:13 pid:936 Workerman[index.php] start in DEBUG mode
+2019-09-22 13:00:41 pid:936 Workerman[index.php] stopping ...
+2019-09-22 13:01:21 pid:936 Workerman[index.php] stopping ...
+2019-09-22 13:01:51 pid:936 Workerman[index.php] stopping ...
+2019-09-22 13:02:41 pid:5218 Workerman[index.php] stop 
+2019-09-22 13:02:41 pid:5218 Workerman[index.php] is stopping ...
+2019-09-22 13:02:41 pid:936 Workerman[index.php] stopping ...
+2019-09-22 13:02:41 pid:936 Workerman[index.php] has been stopped
+2019-09-22 13:02:41 pid:5218 Workerman[index.php] stop success
+2019-09-22 13:02:54 pid:5221 Workerman[index.php] start in DEBUG mode
+2019-09-22 13:03:55 pid:5221 Workerman[index.php] stopping ...
+2019-09-22 13:03:55 pid:5221 Workerman[index.php] has been stopped
+2019-09-22 13:05:38 pid:5237 Workerman[index.php] start in DEBUG mode
+2019-09-22 13:07:51 pid:5237 Workerman[index.php] stopping ...
+2019-09-22 13:07:51 pid:5237 Workerman[index.php] has been stopped
+2019-09-22 13:08:13 pid:5254 Workerman[index.php] start in DEBUG mode
+2019-09-22 13:08:26 pid:5254 Workerman[index.php] stopping ...
+2019-09-22 13:08:52 pid:5267 Workerman[index.php] start in DEBUG mode
+2019-09-22 13:08:52 pid:5267 Workerman[index.php] already running
+2019-09-22 13:09:18 pid:5254 Workerman[index.php] stopping ...
+2019-09-22 13:09:41 pid:5272 Workerman[index.php] stop 
+2019-09-22 13:09:41 pid:5272 Workerman[index.php] is stopping ...
+2019-09-22 13:09:41 pid:5254 Workerman[index.php] stopping ...
+2019-09-22 13:09:41 pid:5254 Workerman[index.php] has been stopped
+2019-09-22 13:09:41 pid:5272 Workerman[index.php] stop success
+2019-09-22 13:10:17 pid:5289 Workerman[index.php] start in DEBUG mode
+2019-09-22 13:16:11 pid:5341 Workerman[index.php] stop 
+2019-09-22 13:16:11 pid:5341 Workerman[index.php] is stopping ...
+2019-09-22 13:16:11 pid:5289 Workerman[index.php] stopping ...
+2019-09-22 13:16:11 pid:5289 Workerman[index.php] has been stopped
+2019-09-22 13:16:11 pid:5341 Workerman[index.php] stop success
+2019-09-22 13:16:16 pid:5343 Workerman[index.php] start in DEBUG mode
+2019-09-22 13:17:15 pid:5343 Workerman[index.php] stopping ...
+2019-09-22 13:17:15 pid:5343 Workerman[index.php] has been stopped
+2019-09-22 13:17:17 pid:5358 Workerman[index.php] start in DEBUG mode
+2019-09-22 13:19:03 pid:5358 Workerman[index.php] stopping ...
+2019-09-22 13:19:03 pid:5358 Workerman[index.php] has been stopped
+2019-09-23 16:31:36 pid:9473 Workerman[index.php] start in DEBUG mode
+2019-09-23 16:48:03 pid:9473 Workerman[index.php] stopping ...
+2019-09-23 16:48:03 pid:9473 Workerman[index.php] has been stopped
+2019-09-24 11:01:23 pid:14380 Workerman[index.php] start in DEBUG mode
+2019-09-24 11:15:49 pid:14380 Workerman[index.php] stopping ...
+2019-09-24 11:15:50 pid:14380 Workerman[index.php] has been stopped
+2019-09-24 11:19:17 pid:15053 Workerman[index.php] start in DEBUG mode
+2019-09-24 11:19:40 pid:15053 Workerman[index.php] stopping ...
+2019-09-24 11:19:40 pid:15053 Workerman[index.php] has been stopped
+2019-09-24 11:19:41 pid:15072 Workerman[index.php] start in DEBUG mode
+2019-09-24 11:36:56 pid:15072 Workerman[index.php] stopping ...
+2019-09-24 11:36:56 pid:15072 Workerman[index.php] has been stopped
+2019-09-24 11:36:58 pid:15668 Workerman[index.php] start in DEBUG mode
+2019-09-24 11:38:02 pid:15668 Workerman[index.php] stopping ...
+2019-09-24 11:38:02 pid:15668 Workerman[index.php] has been stopped
+2019-09-24 11:38:17 pid:15715 Workerman[index.php] start in DEBUG mode
+2019-09-24 11:38:29 pid:15715 Workerman[index.php] stopping ...
+2019-09-24 11:38:29 pid:15715 Workerman[index.php] has been stopped
+2019-09-24 11:39:38 pid:15762 Workerman[index.php] start in DEBUG mode
+2019-09-24 11:43:47 pid:15762 Workerman[index.php] stopping ...
+2019-09-24 11:43:47 pid:15762 Workerman[index.php] has been stopped
+2019-09-24 13:53:52 pid:17392 Workerman[index.php] start in DEBUG mode
+2019-09-24 13:57:14 pid:17397 Worker[17397] process terminated
+2019-09-24 13:57:14 pid:17396 Worker[17396] process terminated
+2019-09-24 13:59:55 pid:17392 Workerman[index.php] stopping ...
+2019-09-24 13:59:56 pid:17392 Workerman[index.php] has been stopped
+2019-09-24 13:59:59 pid:17441 Workerman[index.php] start in DEBUG mode
+2019-09-24 14:04:56 pid:17441 Workerman[index.php] stopping ...
+2019-09-24 14:04:56 pid:17441 Workerman[index.php] has been stopped
+2019-09-24 14:05:05 pid:17486 Workerman[index.php] start in DEBUG mode
+2019-09-24 14:12:40 pid:17486 Workerman[index.php] stopping ...
+2019-09-24 14:12:40 pid:17486 Workerman[index.php] has been stopped
+2019-09-24 14:12:42 pid:17578 Workerman[index.php] start in DEBUG mode
+2019-09-24 14:17:16 pid:17578 Workerman[index.php] stopping ...
+2019-09-24 14:17:16 pid:17578 Workerman[index.php] has been stopped
+2019-09-24 14:18:14 pid:17632 Workerman[index.php] start in DEBUG mode
+2019-09-24 14:27:04 pid:17632 Workerman[index.php] stopping ...
+2019-09-24 14:27:04 pid:17632 Workerman[index.php] has been stopped
+2019-09-24 14:27:06 pid:17652 Workerman[index.php] start in DEBUG mode
+2019-09-24 14:27:11 pid:17652 Workerman[index.php] stopping ...
+2019-09-24 14:27:11 pid:17652 Workerman[index.php] has been stopped
+2019-09-24 14:27:17 pid:17658 Workerman[index.php] start in DEBUG mode
+2019-09-24 14:30:57 pid:17658 Workerman[index.php] stopping ...
+2019-09-24 14:30:57 pid:17658 Workerman[index.php] has been stopped
+2019-09-24 14:31:55 pid:17696 Workerman[index.php] start in DEBUG mode
+2019-09-24 14:32:21 pid:17696 Workerman[index.php] stopping ...
+2019-09-24 14:32:21 pid:17696 Workerman[index.php] has been stopped
+2019-09-24 14:33:19 pid:17724 Workerman[index.php] start in DEBUG mode
+2019-09-24 14:35:28 pid:17724 Workerman[index.php] stopping ...
+2019-09-24 14:35:28 pid:17724 Workerman[index.php] has been stopped
+2019-09-24 14:35:54 pid:17770 Workerman[index.php] start in DEBUG mode
+2019-09-24 14:38:42 pid:17770 Workerman[index.php] stopping ...
+2019-09-24 14:38:42 pid:17770 Workerman[index.php] has been stopped
+2019-09-24 14:38:43 pid:17819 Workerman[index.php] start in DEBUG mode
+2019-09-24 14:44:58 pid:17819 Workerman[index.php] stopping ...
+2019-09-24 14:44:58 pid:17819 Workerman[index.php] has been stopped
+2019-09-24 14:45:06 pid:17929 Workerman[index.php] start in DEBUG mode
+2019-09-24 14:54:16 pid:17929 Workerman[index.php] stopping ...
+2019-09-24 14:54:16 pid:17929 Workerman[index.php] has been stopped
+2019-09-24 14:54:18 pid:18002 Workerman[index.php] start in DEBUG mode
+2019-09-24 15:02:28 pid:18002 Workerman[index.php] stopping ...
+2019-09-24 15:02:28 pid:18002 Workerman[index.php] has been stopped
+2019-09-24 15:02:29 pid:18049 Workerman[index.php] start in DEBUG mode
+2019-09-24 15:02:35 pid:18049 Workerman[index.php] stopping ...
+2019-09-24 15:02:35 pid:18049 Workerman[index.php] has been stopped
+2019-09-24 15:07:32 pid:18098 Workerman[index.php] start in DEBUG mode
+2019-09-24 15:11:31 pid:18098 Workerman[index.php] stopping ...
+2019-09-24 15:11:31 pid:18098 Workerman[index.php] has been stopped
+2019-09-24 15:11:32 pid:18109 Workerman[index.php] start in DEBUG mode
+2019-09-24 15:18:30 pid:18109 Workerman[index.php] stopping ...
+2019-09-24 15:18:30 pid:18109 Workerman[index.php] has been stopped
+2019-09-24 15:18:51 pid:18163 Workerman[index.php] start in DEBUG mode
+2019-09-24 15:20:14 pid:18163 Workerman[index.php] stopping ...
+2019-09-24 15:20:14 pid:18163 Workerman[index.php] has been stopped
+2019-09-24 15:20:16 pid:18178 Workerman[index.php] start in DEBUG mode
+2019-09-24 15:21:27 pid:18178 Workerman[index.php] stopping ...
+2019-09-24 15:21:27 pid:18178 Workerman[index.php] has been stopped
+2019-09-24 15:21:29 pid:18185 Workerman[index.php] start in DEBUG mode
+2019-09-24 15:28:38 pid:18185 Workerman[index.php] stopping ...
+2019-09-24 15:28:38 pid:18185 Workerman[index.php] has been stopped
+2019-09-24 15:28:48 pid:18191 Workerman[index.php] start in DEBUG mode
+2019-09-24 15:37:46 pid:18191 Workerman[index.php] stopping ...
+2019-09-24 15:37:46 pid:18191 Workerman[index.php] has been stopped
+2019-09-24 15:37:47 pid:18293 Workerman[index.php] start in DEBUG mode
+2019-09-24 15:39:12 pid:18293 Workerman[index.php] stopping ...
+2019-09-24 15:39:12 pid:18293 Workerman[index.php] has been stopped
+2019-09-24 15:39:20 pid:18316 Workerman[index.php] start in DEBUG mode
+2019-09-24 15:40:47 pid:18316 Workerman[index.php] stopping ...
+2019-09-24 15:40:47 pid:18316 Workerman[index.php] has been stopped
+2019-09-24 15:40:48 pid:18342 Workerman[index.php] start in DEBUG mode
+2019-09-24 16:38:04 pid:18342 Workerman[index.php] stopping ...
+2019-09-24 16:38:04 pid:18342 Workerman[index.php] has been stopped
+2019-09-24 16:39:09 pid:18880 Workerman[index.php] start in DEBUG mode
+2019-09-24 16:40:00 pid:18880 Workerman[index.php] stopping ...
+2019-09-24 16:40:00 pid:18880 Workerman[index.php] has been stopped
+2019-09-24 16:40:23 pid:18892 Workerman[index.php] start in DEBUG mode
+2019-09-24 16:42:39 pid:18892 Workerman[index.php] stopping ...
+2019-09-24 16:42:39 pid:18892 Workerman[index.php] has been stopped
+2019-09-24 16:42:40 pid:18904 Workerman[index.php] start in DEBUG mode
+2019-09-24 16:42:42 pid:18904 Workerman[index.php] stopping ...
+2019-09-24 16:42:42 pid:18904 Workerman[index.php] has been stopped
+2019-09-24 16:42:52 pid:18912 Workerman[index.php] start in DEBUG mode
+2019-09-24 16:43:38 pid:18914 Worker[18914] process terminated
+2019-09-24 16:44:16 pid:18912 Workerman[index.php] stopping ...
+2019-09-24 16:44:16 pid:18912 Workerman[index.php] has been stopped
+2019-09-24 16:44:17 pid:18933 Workerman[index.php] start in DEBUG mode
+2019-09-24 16:46:18 pid:18934 Worker[18934] process terminated
+2019-09-24 16:47:57 pid:18933 Workerman[index.php] stopping ...
+2019-09-24 16:47:57 pid:18933 Workerman[index.php] has been stopped
+2019-09-24 16:47:58 pid:18990 Workerman[index.php] start in DEBUG mode
+2019-09-24 16:48:15 pid:18993 Worker[18993] process terminated
+2019-09-24 16:48:25 pid:18990 Workerman[index.php] stopping ...
+2019-09-24 16:48:25 pid:18990 Workerman[index.php] has been stopped
+2019-09-24 16:48:27 pid:19004 Workerman[index.php] start in DEBUG mode
+2019-09-24 16:48:37 pid:19009 Worker[19009] process terminated
+2019-09-24 16:49:07 pid:19004 Workerman[index.php] stopping ...
+2019-09-24 16:49:07 pid:19004 Workerman[index.php] has been stopped
+2019-09-24 16:49:13 pid:19024 Workerman[index.php] start in DEBUG mode
+2019-09-24 16:55:40 pid:19024 Workerman[index.php] stopping ...
+2019-09-24 16:55:40 pid:19024 Workerman[index.php] has been stopped
+2019-09-24 16:55:41 pid:19157 Workerman[index.php] start in DEBUG mode
+2019-09-24 16:57:28 pid:19157 Workerman[index.php] stopping ...
+2019-09-24 16:57:28 pid:19157 Workerman[index.php] has been stopped
+2019-09-24 16:57:36 pid:19164 Workerman[index.php] start in DEBUG mode
+2019-09-24 16:59:33 pid:19164 Workerman[index.php] stopping ...
+2019-09-24 16:59:33 pid:19164 Workerman[index.php] has been stopped
+2019-09-24 16:59:51 pid:19171 Workerman[index.php] start in DEBUG mode
+2019-09-24 17:01:25 pid:19171 Workerman[index.php] stopping ...
+2019-09-24 17:01:25 pid:19171 Workerman[index.php] has been stopped
+2019-09-24 17:01:26 pid:19200 Workerman[index.php] start in DEBUG mode
+2019-09-24 17:30:06 pid:19200 Workerman[index.php] stopping ...
+2019-09-24 17:30:06 pid:19200 Workerman[index.php] has been stopped
+2019-09-24 17:30:19 pid:19654 Workerman[index.php] start in DEBUG mode
+2019-09-24 17:41:05 pid:19654 Workerman[index.php] stopping ...
+2019-09-24 17:41:05 pid:19654 Workerman[index.php] has been stopped
+2019-09-24 17:41:12 pid:19780 Workerman[index.php] start in DEBUG mode
+2019-09-24 17:41:22 pid:19780 Workerman[index.php] stopping ...
+2019-09-24 17:41:22 pid:19780 Workerman[index.php] has been stopped
+2019-09-24 17:41:40 pid:19789 Workerman[index.php] start in DEBUG mode
+2019-09-24 17:43:56 pid:19789 Workerman[index.php] stopping ...
+2019-09-24 17:43:56 pid:19789 Workerman[index.php] has been stopped
+2019-09-24 17:44:03 pid:19814 Workerman[index.php] start in DEBUG mode
+2019-09-24 17:45:50 pid:19814 Workerman[index.php] stopping ...
+2019-09-24 17:45:51 pid:19814 Workerman[index.php] has been stopped
+2019-09-24 17:46:07 pid:19826 Workerman[index.php] start in DEBUG mode
+2019-09-24 17:47:13 pid:19826 Workerman[index.php] stopping ...
+2019-09-24 17:47:13 pid:19826 Workerman[index.php] has been stopped
+2019-09-24 17:49:11 pid:19838 Workerman[index.php] start in DEBUG mode
+2019-09-24 17:49:48 pid:19838 Workerman[index.php] stopping ...
+2019-09-24 17:49:48 pid:19838 Workerman[index.php] has been stopped
+2019-09-24 17:52:36 pid:19852 Workerman[index.php] start in DEBUG mode
+2019-09-24 18:47:44 pid:19852 Workerman[index.php] stopping ...
+2019-09-24 18:49:01 pid:20080 Workerman[index.php] stop 
+2019-09-24 18:49:01 pid:20080 Workerman[index.php] is stopping ...
+2019-09-24 18:49:01 pid:19852 Workerman[index.php] stopping ...
+2019-09-24 18:49:01 pid:19852 Workerman[index.php] has been stopped
+2019-09-24 18:49:01 pid:20080 Workerman[index.php] stop success
+2019-09-24 19:18:46 pid:20415 Workerman[index.php] start in DEBUG mode
+2019-09-24 19:18:47 pid:20415 Workerman[index.php] stopping ...
+2019-09-24 19:18:47 pid:20415 Workerman[index.php] has been stopped
+2019-09-24 19:37:18 pid:20552 Workerman[index.php] start in DEBUG mode
+2019-09-24 19:37:26 pid:20552 Workerman[index.php] stopping ...
+2019-09-24 19:37:26 pid:20552 Workerman[index.php] has been stopped
+2019-09-24 19:37:27 pid:20558 Workerman[index.php] start in DEBUG mode
+2019-09-24 19:39:13 pid:20558 Workerman[index.php] stopping ...
+2019-09-24 19:39:13 pid:20558 Workerman[index.php] has been stopped
+2019-09-24 19:39:14 pid:20567 Workerman[index.php] start in DEBUG mode
+2019-09-24 19:44:39 pid:20604 Workerman[index.php] stop 
+2019-09-24 19:44:39 pid:20604 Workerman[index.php] is stopping ...
+2019-09-24 19:44:39 pid:20567 Workerman[index.php] stopping ...
+2019-09-24 19:44:39 pid:20567 Workerman[index.php] has been stopped
+2019-09-24 19:44:40 pid:20604 Workerman[index.php] stop success
+2019-09-24 19:46:26 pid:20617 Workerman[index.php] start in DEBUG mode
+2019-09-24 19:46:34 pid:20617 Workerman[index.php] stopping ...
+2019-09-24 19:46:34 pid:20617 Workerman[index.php] has been stopped
+2019-09-24 19:47:18 pid:20625 Workerman[index.php] start in DEBUG mode
+2019-09-26 01:27:54 pid:26768 Error: Call to a member function unsubscribe() on null in /phpstudy/www/Application/Home_V2/Controller/WebSocketController.class.php:104
+Stack trace:
+#0 /phpstudy/www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /phpstudy/www/vendor/workerman/workerman/Connection/TcpConnection.php(776): Workerman\Connection\TcpConnection->destroy()
+#2 /phpstudy/www/vendor/workerman/workerman/Connection/TcpConnection.php(581): Workerman\Connection\TcpConnection->doSslHandshake(Resource id #63)
+#3 /phpstudy/www/vendor/react/event-loop/src/StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #63)
+#4 /phpstudy/www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(537369)
+#5 /phpstudy/www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#6 /phpstudy/www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#7 /phpstudy/www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#8 /phpstudy/www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#9 /phpstudy/www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /phpstudy/www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#11 /phpstudy/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /phpstudy/www/Application/Home_V2/Controller/WebSocketController.class.php(145): Workerman\Worker::runAll()
+#13 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#14 /phpstudy/www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#15 /phpstudy/www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#16 /phpstudy/www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#17 /phpstudy/www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#18 /phpstudy/www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#19 /phpstudy/www/index.php(28): require('/phpstudy/www/T...')
+#20 {main}
+2019-09-26 01:27:54 pid:26768 Worker[26768] process terminated
+2019-09-26 01:27:54 pid:26767 worker[none:26768] exit with status 64000
+2019-09-27 15:00:59 pid:26772 Error: Call to a member function unsubscribe() on null in /phpstudy/www/Application/Home_V2/Controller/WebSocketController.class.php:104
+Stack trace:
+#0 /phpstudy/www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /phpstudy/www/vendor/workerman/workerman/Connection/TcpConnection.php(776): Workerman\Connection\TcpConnection->destroy()
+#2 /phpstudy/www/vendor/workerman/workerman/Connection/TcpConnection.php(581): Workerman\Connection\TcpConnection->doSslHandshake(Resource id #63)
+#3 /phpstudy/www/vendor/react/event-loop/src/StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #63)
+#4 /phpstudy/www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(383388)
+#5 /phpstudy/www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#6 /phpstudy/www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#7 /phpstudy/www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#8 /phpstudy/www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#9 /phpstudy/www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /phpstudy/www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#11 /phpstudy/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /phpstudy/www/Application/Home_V2/Controller/WebSocketController.class.php(145): Workerman\Worker::runAll()
+#13 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#14 /phpstudy/www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#15 /phpstudy/www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#16 /phpstudy/www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#17 /phpstudy/www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#18 /phpstudy/www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#19 /phpstudy/www/index.php(28): require('/phpstudy/www/T...')
+#20 {main}
+2019-09-27 15:00:59 pid:26772 Worker[26772] process terminated
+2019-09-27 15:00:59 pid:26767 worker[none:26772] exit with status 64000
+2019-09-27 16:55:51 pid:5206 Workerman[index.php] stop 
+2019-09-27 16:55:51 pid:5206 Workerman[index.php] not run
+2019-09-27 16:55:54 pid:5207 Workerman[index.php] start in DEBUG mode
+2019-09-27 16:55:59 pid:5207 Workerman[index.php] stopping ...
+2019-09-27 16:55:59 pid:5207 Workerman[index.php] has been stopped
+2019-09-27 16:56:02 pid:5214 Workerman[index.php] stop 
+2019-09-27 16:56:02 pid:5214 Workerman[index.php] not run
+2019-09-27 16:56:25 pid:26767 Workerman[index.php] stopping ...
+2019-09-27 16:56:47 pid:5217 Workerman[index.php] start in DEBUG mode
+2019-09-27 16:58:51 pid:26773 worker[26773] remains 0 connection(s)
+2019-09-28 15:44:05 pid:5219 Error: Call to a member function unsubscribe() on null in /phpstudy/www/Application/Home_V2/Controller/WebSocketController.class.php:104
+Stack trace:
+#0 /phpstudy/www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /phpstudy/www/vendor/workerman/workerman/Connection/TcpConnection.php(776): Workerman\Connection\TcpConnection->destroy()
+#2 /phpstudy/www/vendor/workerman/workerman/Connection/TcpConnection.php(581): Workerman\Connection\TcpConnection->doSslHandshake(Resource id #65)
+#3 /phpstudy/www/vendor/react/event-loop/src/StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #65)
+#4 /phpstudy/www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(396334)
+#5 /phpstudy/www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#6 /phpstudy/www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#7 /phpstudy/www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#8 /phpstudy/www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#9 /phpstudy/www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /phpstudy/www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#11 /phpstudy/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /phpstudy/www/Application/Home_V2/Controller/WebSocketController.class.php(148): Workerman\Worker::runAll()
+#13 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#14 /phpstudy/www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#15 /phpstudy/www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#16 /phpstudy/www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#17 /phpstudy/www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#18 /phpstudy/www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#19 /phpstudy/www/index.php(28): require('/phpstudy/www/T...')
+#20 {main}
+2019-09-28 15:44:05 pid:5219 Worker[5219] process terminated
+2019-09-28 15:44:05 pid:5217 worker[none:5219] exit with status 64000
+2019-10-02 10:55:39 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to undefined function pcntl_alarm() in D:\auto\vendor\workerman\workerman\Lib\Timer.php:174
+Stack trace:
+#0 D:\auto\1.php(17): Workerman\Lib\Timer::delAll()
+#1 D:\auto\vendor\workerman\workerman\Events\React\Base.php(77): {closure}()
+#2 D:\auto\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\auto\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\auto\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\auto\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\auto\vendor\workerman\workerman\Worker.php(2383): Workerman\Events\React\Base->loop()
+#7 D:\auto\vendor\workerman\workerman\Worker.php(1354): Workerman\Worker->run()
+#8 D:\auto\vendor\workerman\workerman\Worker.php(1297): Workerman\Worker::forkWorkersForWindows()
+#9 D:\auto\vendor\workerman\w in D:\auto\vendor\workerman\workerman\Lib\Timer.php on line 174"
+2019-10-02 11:07:07 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught ArgumentCountError: Too few arguments to function {closure}(), 0 passed in D:\auto\vendor\workerman\workerman\Events\React\Base.php on line 77 and exactly 1 expected in D:\auto\1.php:13
+Stack trace:
+#0 D:\auto\vendor\workerman\workerman\Events\React\Base.php(77): {closure}()
+#1 D:\auto\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#2 D:\auto\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#3 D:\auto\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#4 D:\auto\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#5 D:\auto\vendor\workerman\workerman\Worker.php(2383): Workerman\Events\React\Base->loop()
+#6 D:\auto\vendor\workerman\workerman\Worker.php(1354): Workerman\Worker->run()
+#7 D:\auto\vendor\workerman\workerman\Worker.php(1297): Workerman\Worker::forkWorkersForWindows() in D:\auto\1.php on line 13"
+2019-10-03 15:44:32 pid:1 Error: Class 'Timer' not found in D:\auto\1.php:9
+Stack trace:
+#0 D:\auto\vendor\workerman\workerman\Connection\TcpConnection.php(681): {closure}(Object(Workerman\Connection\TcpConnection), 'This is a test ...')
+#1 D:\auto\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #32)
+#2 D:\auto\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#3 D:\auto\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#4 D:\auto\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#5 D:\auto\vendor\workerman\workerman\Worker.php(2383): Workerman\Events\React\Base->loop()
+#6 D:\auto\vendor\workerman\workerman\Worker.php(1354): Workerman\Worker->run()
+#7 D:\auto\vendor\workerman\workerman\Worker.php(1297): Workerman\Worker::forkWorkersForWindows()
+#8 D:\auto\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#9 D:\auto\1.php(21): Workerman\Worker::runAll()
+#10 {main}
+2019-10-03 15:44:32 pid:1 Worker process terminated
+2019-10-03 15:45:11 pid:1 Error: Class 'Timer' not found in D:\auto\1.php:9
+Stack trace:
+#0 D:\auto\vendor\workerman\workerman\Connection\TcpConnection.php(681): {closure}(Object(Workerman\Connection\TcpConnection), 'This is a test ...')
+#1 D:\auto\vendor\react\event-loop\src\StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #32)
+#2 D:\auto\vendor\react\event-loop\src\StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#3 D:\auto\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#4 D:\auto\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#5 D:\auto\vendor\workerman\workerman\Worker.php(2383): Workerman\Events\React\Base->loop()
+#6 D:\auto\vendor\workerman\workerman\Worker.php(1354): Workerman\Worker->run()
+#7 D:\auto\vendor\workerman\workerman\Worker.php(1297): Workerman\Worker::forkWorkersForWindows()
+#8 D:\auto\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#9 D:\auto\1.php(21): Workerman\Worker::runAll()
+#10 {main}
+2019-10-03 15:45:11 pid:1 Worker process terminated
+2019-10-03 15:58:10 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function close() on null in D:\auto\1.php:15
+Stack trace:
+#0 D:\auto\vendor\workerman\workerman\Events\React\Base.php(77): {closure}()
+#1 D:\auto\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#2 D:\auto\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#3 D:\auto\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#4 D:\auto\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#5 D:\auto\vendor\workerman\workerman\Worker.php(2383): Workerman\Events\React\Base->loop()
+#6 D:\auto\vendor\workerman\workerman\Worker.php(1354): Workerman\Worker->run()
+#7 D:\auto\vendor\workerman\workerman\Worker.php(1297): Workerman\Worker::forkWorkersForWindows()
+#8 D:\auto\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#9 D:\auto\1.php(23): Workerm in D:\auto\1.php on line 15"
+2019-10-26 12:30:42 pid:18442 Workerman[index.php] start in DEBUG mode
+2019-10-26 12:46:56 pid:18442 Workerman[index.php] stopping ...
+2019-10-26 12:46:56 pid:18442 Workerman[index.php] has been stopped
+2019-10-26 12:47:04 pid:18492 Workerman[index.php] start in DEBUG mode
+2019-10-26 12:47:07 pid:18492 Workerman[index.php] stopping ...
+2019-10-26 12:47:07 pid:18492 Workerman[index.php] has been stopped
+2019-10-26 12:47:21 pid:18500 Workerman[index.php] start in DEBUG mode
+2019-10-26 14:53:17 pid:18501 Error: Call to a member function unsubscribe() on null in /www/Application/Home_V2/Controller/WebSocketController.class.php:93
+Stack trace:
+#0 /www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /www/vendor/workerman/workerman/Connection/TcpConnection.php(724): Workerman\Connection\TcpConnection->destroy()
+#2 /www/vendor/react/event-loop/src/StreamSelectLoop.php(252): Workerman\Connection\TcpConnection->baseWrite(Resource id #136)
+#3 /www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(85398)
+#4 /www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 /www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#6 /www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#7 /www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#8 /www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#10 /www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /www/Application/Home_V2/Controller/WebSocketController.class.php(128): Workerman\Worker::runAll()
+#12 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#13 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#14 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#15 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#16 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#17 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#18 /www/index.php(28): require('/www/ThinkPHP/T...')
+#19 {main}
+2019-10-26 14:53:17 pid:18501 Worker[18501] process terminated
+2019-10-26 14:53:17 pid:18500 worker[none:18501] exit with status 64000
+2019-10-27 00:17:27 pid:18502 Error: Call to a member function unsubscribe() on null in /www/Application/Home_V2/Controller/WebSocketController.class.php:93
+Stack trace:
+#0 /www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /www/vendor/workerman/workerman/Connection/TcpConnection.php(776): Workerman\Connection\TcpConnection->destroy()
+#2 /www/vendor/workerman/workerman/Connection/TcpConnection.php(581): Workerman\Connection\TcpConnection->doSslHandshake(Resource id #157)
+#3 /www/vendor/react/event-loop/src/StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #157)
+#4 /www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(923842)
+#5 /www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#6 /www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#7 /www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#8 /www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#9 /www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#11 /www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /www/Application/Home_V2/Controller/WebSocketController.class.php(128): Workerman\Worker::runAll()
+#13 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#14 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#15 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#16 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#17 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#18 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#19 /www/index.php(28): require('/www/ThinkPHP/T...')
+#20 {main}
+2019-10-27 00:17:27 pid:18502 Worker[18502] process terminated
+2019-10-27 00:17:27 pid:18500 worker[none:18502] exit with status 64000
+2019-10-27 11:20:17 pid:18500 Workerman[index.php] stopping ...
+2019-10-27 11:20:32 pid:20074 Workerman[index.php] start in DEBUG mode
+2019-10-27 11:37:50 pid:20074 Workerman[index.php] stopping ...
+2019-10-27 11:37:50 pid:20074 Workerman[index.php] has been stopped
+2019-10-27 11:37:53 pid:20122 Workerman[index.php] start in DEBUG mode
+2019-10-27 11:42:49 pid:20122 Workerman[index.php] stopping ...
+2019-10-27 11:42:49 pid:20122 Workerman[index.php] has been stopped
+2019-10-27 11:42:53 pid:20166 Workerman[index.php] start in DEBUG mode
+2019-10-27 13:36:28 pid:20166 Workerman[index.php] stopping ...
+2019-10-27 13:36:28 pid:20166 Workerman[index.php] has been stopped
+2019-10-27 13:36:32 pid:20404 Workerman[index.php] start in DEBUG mode
+2019-10-27 18:17:01 pid:20404 Workerman[index.php] stopping ...
+2019-10-27 18:17:20 pid:20776 Workerman[index.php] start in DEBUG mode
+2019-10-28 12:21:53 pid:20778 Error: Call to a member function unsubscribe() on null in /www/Application/Home_V2/Controller/WebSocketController.class.php:92
+Stack trace:
+#0 /www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /www/vendor/workerman/workerman/Connection/TcpConnection.php(776): Workerman\Connection\TcpConnection->destroy()
+#2 /www/vendor/workerman/workerman/Connection/TcpConnection.php(581): Workerman\Connection\TcpConnection->doSslHandshake(Resource id #132)
+#3 /www/vendor/react/event-loop/src/StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #132)
+#4 /www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(710457)
+#5 /www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#6 /www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#7 /www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#8 /www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#9 /www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#11 /www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /www/Application/Home_V2/Controller/WebSocketController.class.php(131): Workerman\Worker::runAll()
+#13 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#14 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#15 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#16 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#17 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#18 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#19 /www/index.php(28): require('/www/ThinkPHP/T...')
+#20 {main}
+2019-10-28 12:21:53 pid:20778 Worker[20778] process terminated
+2019-10-28 12:21:53 pid:20776 worker[none:20778] exit with status 64000
+2019-10-28 14:00:02 pid:20777 Error: Call to a member function unsubscribe() on null in /www/Application/Home_V2/Controller/WebSocketController.class.php:92
+Stack trace:
+#0 /www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /www/vendor/workerman/workerman/Connection/TcpConnection.php(776): Workerman\Connection\TcpConnection->destroy()
+#2 /www/vendor/workerman/workerman/Connection/TcpConnection.php(581): Workerman\Connection\TcpConnection->doSslHandshake(Resource id #137)
+#3 /www/vendor/react/event-loop/src/StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #137)
+#4 /www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(998217)
+#5 /www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#6 /www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#7 /www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#8 /www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#9 /www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#11 /www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /www/Application/Home_V2/Controller/WebSocketController.class.php(131): Workerman\Worker::runAll()
+#13 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#14 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#15 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#16 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#17 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#18 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#19 /www/index.php(28): require('/www/ThinkPHP/T...')
+#20 {main}
+2019-10-28 14:00:02 pid:20777 Worker[20777] process terminated
+2019-10-28 14:00:02 pid:20776 worker[none:20777] exit with status 64000
+2019-10-28 14:22:58 pid:20779 Error: Call to a member function unsubscribe() on null in /www/Application/Home_V2/Controller/WebSocketController.class.php:92
+Stack trace:
+#0 /www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /www/vendor/workerman/workerman/Connection/TcpConnection.php(776): Workerman\Connection\TcpConnection->destroy()
+#2 /www/vendor/workerman/workerman/Connection/TcpConnection.php(581): Workerman\Connection\TcpConnection->doSslHandshake(Resource id #66)
+#3 /www/vendor/react/event-loop/src/StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #66)
+#4 /www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(172295)
+#5 /www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#6 /www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#7 /www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#8 /www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#9 /www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#11 /www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /www/Application/Home_V2/Controller/WebSocketController.class.php(131): Workerman\Worker::runAll()
+#13 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#14 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#15 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#16 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#17 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#18 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#19 /www/index.php(28): require('/www/ThinkPHP/T...')
+#20 {main}
+2019-10-28 14:22:58 pid:20779 Worker[20779] process terminated
+2019-10-28 14:22:58 pid:20776 worker[none:20779] exit with status 64000
+2019-10-29 00:08:01 pid:20776 Workerman[index.php] stopping ...
+2019-10-29 00:08:20 pid:26328 Workerman[index.php] start in DEBUG mode
+2019-10-29 04:45:10 pid:26331 Error: Call to a member function unsubscribe() on null in /www/Application/Home_V2/Controller/WebSocketController.class.php:92
+Stack trace:
+#0 /www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /www/vendor/workerman/workerman/Connection/TcpConnection.php(776): Workerman\Connection\TcpConnection->destroy()
+#2 /www/vendor/workerman/workerman/Connection/TcpConnection.php(581): Workerman\Connection\TcpConnection->doSslHandshake(Resource id #66)
+#3 /www/vendor/react/event-loop/src/StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #66)
+#4 /www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(772731)
+#5 /www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#6 /www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#7 /www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#8 /www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#9 /www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#11 /www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /www/Application/Home_V2/Controller/WebSocketController.class.php(131): Workerman\Worker::runAll()
+#13 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#14 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#15 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#16 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#17 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#18 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#19 /www/index.php(28): require('/www/ThinkPHP/T...')
+#20 {main}
+2019-10-29 04:45:10 pid:26331 Worker[26331] process terminated
+2019-10-29 04:45:10 pid:26328 worker[none:26331] exit with status 64000
+2019-10-29 04:53:13 pid:26329 Error: Call to a member function unsubscribe() on null in /www/Application/Home_V2/Controller/WebSocketController.class.php:92
+Stack trace:
+#0 /www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /www/vendor/workerman/workerman/Connection/TcpConnection.php(776): Workerman\Connection\TcpConnection->destroy()
+#2 /www/vendor/workerman/workerman/Connection/TcpConnection.php(581): Workerman\Connection\TcpConnection->doSslHandshake(Resource id #66)
+#3 /www/vendor/react/event-loop/src/StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #66)
+#4 /www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(871878)
+#5 /www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#6 /www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#7 /www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#8 /www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#9 /www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#11 /www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /www/Application/Home_V2/Controller/WebSocketController.class.php(131): Workerman\Worker::runAll()
+#13 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#14 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#15 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#16 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#17 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#18 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#19 /www/index.php(28): require('/www/ThinkPHP/T...')
+#20 {main}
+2019-10-29 04:53:13 pid:26329 Worker[26329] process terminated
+2019-10-29 04:53:13 pid:26328 worker[none:26329] exit with status 64000
+2019-10-29 15:27:22 pid:26635 Error: Call to a member function unsubscribe() on null in /www/Application/Home_V2/Controller/WebSocketController.class.php:92
+Stack trace:
+#0 /www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /www/vendor/workerman/workerman/Connection/TcpConnection.php(724): Workerman\Connection\TcpConnection->destroy()
+#2 /www/vendor/react/event-loop/src/StreamSelectLoop.php(252): Workerman\Connection\TcpConnection->baseWrite(Resource id #326)
+#3 /www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(436556)
+#4 /www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 /www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#6 /www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#7 /www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#8 /www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#10 /www/vendor/workerman/workerman/Worker.php(1625): Workerman\Worker::forkWorkers()
+#11 /www/vendor/workerman/workerman/Worker.php(1574): Workerman\Worker::monitorWorkersForLinux()
+#12 /www/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /www/Application/Home_V2/Controller/WebSocketController.class.php(131): Workerman\Worker::runAll()
+#14 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#15 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#16 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#17 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#18 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#19 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#20 /www/index.php(28): require('/www/ThinkPHP/T...')
+#21 {main}
+2019-10-29 15:27:22 pid:26635 Worker[26635] process terminated
+2019-10-29 15:27:22 pid:26328 worker[none:26635] exit with status 64000
+2019-10-29 19:15:05 pid:26330 Error: Call to a member function unsubscribe() on null in /www/Application/Home_V2/Controller/WebSocketController.class.php:92
+Stack trace:
+#0 /www/vendor/workerman/workerman/Connection/TcpConnection.php(949): Home_V2\Controller\WebSocketController->Home_V2\Controller\{closure}(Object(Workerman\Connection\TcpConnection))
+#1 /www/vendor/workerman/workerman/Connection/TcpConnection.php(776): Workerman\Connection\TcpConnection->destroy()
+#2 /www/vendor/workerman/workerman/Connection/TcpConnection.php(581): Workerman\Connection\TcpConnection->doSslHandshake(Resource id #404)
+#3 /www/vendor/react/event-loop/src/StreamSelectLoop.php(244): Workerman\Connection\TcpConnection->baseRead(Resource id #404)
+#4 /www/vendor/react/event-loop/src/StreamSelectLoop.php(211): React\EventLoop\StreamSelectLoop->waitForStreamActivity(579097)
+#5 /www/vendor/workerman/workerman/Events/React/Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#6 /www/vendor/workerman/workerman/Events/React/Base.php(135): Workerman\Events\React\Base->run()
+#7 /www/vendor/workerman/workerman/Worker.php(2383): Workerman\Events\React\Base->loop()
+#8 /www/vendor/workerman/workerman/Worker.php(1491): Workerman\Worker->run()
+#9 /www/vendor/workerman/workerman/Worker.php(1321): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /www/vendor/workerman/workerman/Worker.php(1295): Workerman\Worker::forkWorkersForLinux()
+#11 /www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /www/Application/Home_V2/Controller/WebSocketController.class.php(131): Workerman\Worker::runAll()
+#13 [internal function]: Home_V2\Controller\WebSocketController->runCli()
+#14 /www/ThinkPHP/Library/Think/App.class.php(173): ReflectionMethod->invoke(Object(Home_V2\Controller\WebSocketController))
+#15 /www/ThinkPHP/Library/Think/App.class.php(110): Think\App::invokeAction(Object(Home_V2\Controller\WebSocketController), 'runCli')
+#16 /www/ThinkPHP/Library/Think/App.class.php(204): Think\App::exec()
+#17 /www/ThinkPHP/Library/Think/Think.class.php(120): Think\App::run()
+#18 /www/ThinkPHP/ThinkPHP.php(97): Think\Think::start()
+#19 /www/index.php(28): require('/www/ThinkPHP/T...')
+#20 {main}
+2019-10-29 19:15:05 pid:26330 Worker[26330] process terminated
+2019-10-29 19:15:05 pid:26328 worker[none:26330] exit with status 64000

@@ -1,0 +1,49 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="__PUBLIC__/home/css/invite_list.css" media="all">
+		<link rel="stylesheet" href="__PUBLIC__/home/css/alert.css" media="all">
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+		<title>邀请列表</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="page-content">
+				<div class="test">
+					<button type="button" class="btn">累计邀请{$msg.count}人</button>
+					<div class="list">
+						<div class="cont">
+							<div class="one">受邀人头像</div>
+							<div class="two">受邀人昵称</div>
+							<div class="three">我的优惠券</div>
+						</div>
+						<volist name="msg.list" id="vo">
+						<div class="cont1">
+							<div class="one">
+								<image src="{$vo.headimgurl}" class="photo"></image>
+							</div>
+							<div class="two">{$vo.nickname}</div>
+							<div class="three">{$vo.amount}元</div>
+						</div>
+						</volist>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+	<script type="text/javascript">
+	</script>
+</html>

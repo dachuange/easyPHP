@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta name="format-detection" content="telephone=yes"/>
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="__PUBLIC__/home/css/orderinfo_detil.css" media="all">
+		<title>订单详情</title>
+	</head>
+
+	<body>
+		<div style="margin-bottom:80px">
+			<!-- 司机信息 -->
+			<input id="appId" name="appId" type="hidden" value="{$config.appId}">
+			<input id="nonceStr" name="nonceStr" type="hidden" value="{$config.nonceStr}">
+			<input id="package" name="package" type="hidden" value="{$config.package}">
+			<input id="signType" name="signType" type="hidden" value="{$config.signType}">
+			<input id="timeStamp" name="timeStamp" type="hidden" value="{$config.timeStamp}">
+			<input id="paySign" name="paySign" type="hidden" value="{$config.paySign}">
+			<input id="state" name="state" type="hidden" value="{$orderdetil.state}">
+			<div class="total1" style="margin-top:5px;">
+				<div class="total-driver">
+					<div class="driver-info">
+						<if condition="$orderdetil['avatar']  neq '' ">
+							<div class="driver-img">
+								<image style="width: 75px;height: 75px;border-radius: 50%;" src="{$orderdetil.avatar}" />
+							</div>
+							<else />
+							<div class="driver-img">
+								<image style="width: 75px;height: 75px;border-radius: 50%;" src="__PUBLIC__/home/images/driver.png" />
+							</div>
+						</if>
+						<div class="driver-detailed">
+							<div class="detailed-name">{$orderdetil.nickname}
+								<!-- <image class="star" style="width: 18px;height: 18px;display: inline-block;" src="__PUBLIC__/home/images/star.png">
+							<div class="orderTotal">5</div> -->
+							</div>
+							<div class="detailed-Cartnumber">{$orderdetil.carnum}</div>
+							<div class="detailed-cart">{$orderdetil.car_type}</div>
+						</div>
+					</div>
+					<div class="driver-message">
+						<!-- <a href="sms:{$orderdetil.phone}">
+							<div class="mas">
+								<image style="width: 35px;height: 35px;" src="__PUBLIC__/home/images/msm.png" />
+							</div>
+						</a> -->
+						<!-- <div class="mas" onclick="reload()">
+							<image style="width: 35px;height: 35px;" src="__PUBLIC__/home/images/shuaxin.png" />
+						</div> -->
+						<a href="tel:{$orderdetil.phone}">
+							<div class="phone">
+								<image style="width: 35px;height: 35px;" src="__PUBLIC__/home/images/phone.png" />
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="recommend">
+				<span>订单详情</span>
+			</div>
+			<div class="orderDetail">
+				<div class="money">
+					<span class="price">{$orderdetil.feeamount}</span>
+					<span clss="danwei">元</span>
+					<!-- <span clss="danwei" style="padding-left:25px;">元</span> -->
+				</div>
+				<div class="detail">
+					<div class="left">
+						订单状态
+					</div>
+					<div class="right">
+						{$orderdetil.state_c}
+					</div>
+				</div>
+				<div class="detail">
+					<div class="left">
+						订单编号
+					</div>
+					<div class="right">
+						{$orderdetil.order_num}
+					</div>
+				</div>
+				<div class="detail">
+					<div class="left1">
+						起点
+					</div>
+					<div class="right1">
+						{$orderdetil.saddress}
+					</div>
+				</div>
+				<div class="detail">
+					<div class="left1">
+						终点
+					</div>
+					<div class="right1">
+						{$orderdetil.eaddress}
+					</div>
+				</div>
+
+
+				<if condition="$orderdetil['operation']  neq 'taxi' ">
+					
+						<div class="detail">
+								<div class="left">
+									里程
+								</div>
+								<div class="right">
+									{$orderdetil.distance}公里
+								</div>
+							</div>
+							<div class="detail">
+									<div class="left">
+										里程费
+									</div>
+									<div class="right">
+										{$orderdetil.mileage_fee}元
+									</div>
+								</div>
+							<if condition="$orderdetil['duration_fee']  neq '0.00' ">
+								<div class="detail">
+									<div class="left">
+										时长费
+									</div>
+									<div class="right">
+										{$orderdetil.duration_fee}元
+									</div>
+								</div>
+							</if>
+					
+							<if condition="$orderdetil['start_fee']  neq '0.00' ">
+								<div class="detail">
+									<div class="left">
+										起步价
+									</div>
+									<div class="right">
+										{$orderdetil.start_fee}元
+									</div>
+								</div>
+							</if>
+					</if>
+			
+				<div class="detail">
+					<div class="left">
+						时长
+					</div>
+					<div class="right">
+						{$orderdetil.duration}
+					</div>
+				</div>
+		
+				<if condition="$orderdetil['early_peak']  neq '0.00' ">
+					<div class="detail">
+						<div class="left">
+							 早高峰加价
+						</div>
+						<div class="right">
+							{$orderdetil.early_peak}元
+						</div>
+					</div>
+				</if>
+				<if condition="$orderdetil['late_peak']  neq '0.00' ">
+					<div class="detail">
+						<div class="left">
+							晚高峰加价
+						</div>
+						<div class="right">
+							{$orderdetil.late_peak}元
+						</div>
+					</div>
+				</if>
+				<if condition="$orderdetil['out_town']  neq '0.00' ">
+					<div class="detail">
+						<div class="left">
+							出城加价
+						</div>
+						<div class="right">
+							{$orderdetil.out_town}元
+						</div>
+					</div>
+				</if>
+				<if condition="$orderdetil['edge_town']  neq '0.00' ">
+					<div class="detail">
+						<div class="left">
+							边缘区加价
+						</div>
+						<div class="right">
+							{$orderdetil.edge_town}元
+						</div>
+					</div>
+				</if>
+				<if condition="$orderdetil['night_driving_first']  neq '0.00' ">
+					<div class="detail">
+						<div class="left2">
+							夜间行车第一时段加价
+						</div>
+						<div class="right2">
+							{$orderdetil.night_driving_first}元
+						</div>
+					</div>
+				</if>
+				<if condition="$orderdetil['night_driving_second']  neq '0.00' ">
+					<div class="detail">
+						<div class="left2">
+							夜间行车第二时段加价
+						</div>
+						<div class="right2">
+							{$orderdetil.night_driving_second}元
+						</div>
+					</div>
+				</if>
+				<if condition="$orderdetil['bad_weather']  neq '0.00' ">
+					<div class="detail">
+						<div class="left">
+							 恶劣天气加价
+						</div>
+						<div class="right">
+							{$orderdetil.bad_weather}元
+						</div>
+					</div>
+				</if>
+				<if condition="$orderdetil['other']  neq '0.00' ">
+					<div class="detail">
+						<div class="left">
+							 其他类型加价
+						</div>
+						<div class="right">
+							{$orderdetil.other}元
+						</div>
+					</div>
+				</if>
+				<div class="detail">
+					<div class="left">
+						总价
+					</div>
+					<div class="right">
+						{$orderdetil.amount}元
+					</div>
+				</div>
+				<if condition="$orderdetil['wait_reward']  neq '0.00' ">
+					<div class="detail" style="color:#05CEA7;">
+						<div class="left">
+							等待奖励金
+						</div>
+						<div class="right">
+							{$orderdetil.wait_reward}元
+						</div>
+					</div>
+				</if>
+				<div class="detail" style="color:#05CEA7;">
+					<div class="left">
+						优惠券
+					</div>
+					<div class="right">
+						-{$orderdetil.s_coupon_amount}元
+					</div>
+				</div>
+			</div>
+			<!-- <div class="wode_out1" onclick="pay()" id="zhifu">支付</div> -->
+			<div class="wode_out" onclick="tousu()">投诉</div>
+		</div>
+		<input id="state" name="state" type="hidden" value="{$orderdetil.state}">
+		<input id="d_id" name="d_id" type="hidden" value="{$orderdetil.d_id}">
+		<input id="o_id" name="o_id" type="hidden" value="">
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		//订单详情
+// 		$(function() {
+// 			var state = $('#state').val();
+// 			console.log(state);
+// 			if (state == "wait_pay") {
+// 				$('#zhifu').show()
+// 			} else {
+// 				$('#zhifu').hide()
+// 			}
+// 		})
+		//支付
+		function onBridgeReady() {
+			WeixinJSBridge.invoke(
+				'getBrandWCPayRequest', {
+					"appId": $('#appId').val(), //公众号名称，由商户传入     
+					"timeStamp": $('#timeStamp').val(), //时间戳，自1970年以来的秒数     
+					"nonceStr": $('#nonceStr').val(), //随机串     
+					"package": $('#package').val(),
+					"signType": $('#signType').val(), //微信签名方式：     
+					"paySign": $('#paySign').val() //微信签名 
+				},
+				function(res) {
+					if (res.err_msg == "get_brand_wcpay_request:ok") {
+						//WeixinJSBridge.call('closeWindow');
+						window.location.href = "__ROOT__/Orderauto/payoff_coupondeception"
+					}
+				});
+		}
+
+		function pay() {
+			$.ajax({
+				url: '__APP__/Index/order_viefy', //不跨域调取url
+				type: 'post',
+				success: function(data) {
+					console.log('data', data)
+					var code = data.error_code;
+					console.log('code', code);
+					if (code == 0) {
+						//跳转大红包
+						window.location.href = "__ROOT__/Orderauto/payoff_coupondeception"
+					} else if (code == 3) {
+						//未支付调取支付接口
+						if (typeof WeixinJSBridge == "undefined") {
+							if (document.addEventListener) {
+								document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+							} else if (document.attachEvent) {
+								document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+								document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+							}
+						} else {
+							onBridgeReady();
+						}
+					}
+				}
+			});
+
+		}
+		//解析url参数
+		function GetRequest(url) {
+			// var url = location.search; //获取url中"?"符后的字串 
+			var theRequest = {};
+			if (url.indexOf("?") != -1) {
+				var str = url.substring(url.indexOf("?") + 1);
+				// var str = str.substr(1); 
+				console.log(str);
+				strs = str.split("&");
+				console.log(strs);
+				for (var i = 0; i < strs.length; i++) {
+					theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+				}
+			}
+			//console.log(theRequest);
+			var o_id = theRequest.o_id;
+			console.log('o_id', o_id)
+			var o_id = $('#o_id').val(o_id);
+		}
+		//获得URL
+		var url = window.location.href;
+		GetRequest(url);
+		//投诉
+		function tousu() {
+			var o_id = $('#o_id').val();
+			window.location.href = "__APP__/Orderauto/complaint_list?o_id=" + o_id;
+		}
+		function reload(){
+			window.location.reload();
+		}
+	</script>
+</html>

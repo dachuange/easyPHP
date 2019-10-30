@@ -1,0 +1,341 @@
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery-3.0.0.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/Admin/layui/css/layui.css">
+<link rel="stylesheet" href="__ROOT__/Public/Admin/static/ztree/zTreeStyle/zTreeStyle.css" type="text/css">
+<div class="cf" style="margin-top: 3%;margin-bottom: 3%;text-align: center;">  	
+	<button type="button" class="layui-btn layui-btn-normal layui-btn-small" id="expandAllBtn" onclick="return false;" >全部展开</button>
+	<button type="button" class="layui-btn layui-btn-warm layui-btn-small" id="getid" onclick="return false;" >获取</button>
+	<button type="button" class="layui-btn layui-btn-danger layui-btn-small" id="resetBtn" onclick="return false;" >全部折叠</button>
+</div>
+<div id="ztree_min" style="margin-left: 3%;margin-right: 3%;text-align: center;background-color: #EDEDED;border: 1px solid #9C9C9C">
+	<div class="widget-box" style="margin-left: 5%;margin-right: 5%;min-height: 400px">
+		<ul id="treeDemo" class="ztree"></ul>
+	</div>
+</div> 
+
+<script type="text/javascript" src="__ROOT__/Public/Admin/static/ztree/zTreeJs/jquery.ztree.core.js"></script>
+
+<script type="text/javascript" src="__ROOT__/Public/Admin/static/ztree/zTreeJs/jquery.ztree.excheck.js"></script>
+
+<script type="text/javascript" src="__ROOT__/Public/Admin/static/ztree/zTreeJs/jquery.ztree.exedit.js"></script>
+
+
+<SCRIPT type="text/javascript">
+    $(function(){
+		var demoMsg = {
+
+			async:"正在进行异步加载，请等一会儿再点击...",
+
+			expandAllOver: "全部展开完毕",
+
+			asyncAllOver: "后台异步加载完毕",
+
+			asyncAll: "已经异步加载完毕，不再重新加载",
+
+			expandAll: "已经异步加载完毕，使用 expandAll 方法"
+
+		}
+
+		var setting = {
+
+			async: {
+
+				enable: true,
+
+				url:"__ROOT__/admin/Cards/tree_json/pid/{$pid}",
+
+				autoParam:["id", "count"],
+
+				otherParam:{"otherParam":"zTreeAsyncTest"},
+
+				dataFilter: filter,
+
+				type: "get"
+
+			},
+			check:{
+				enable: true,
+				chkStyle: "radio",
+				radioType: "all"
+			},
+			callback: {
+				onClick: zTreeOnClick,
+
+				beforeAsync: beforeAsync,
+
+				onAsyncSuccess: onAsyncSuccess,
+
+				onAsyncError: onAsyncError
+
+			}
+
+		};
+
+		function zTreeOnClick(event,treeId,treeNode,msg) {
+			// $('#order_load').load('{:U("order_load")}',{},function(){});
+		    // alert(treeNode.notPeople);
+		};
+
+		function filter(treeId, parentNode, childNodes) {
+
+			if (!childNodes) return null;
+
+			for (var i=0, l=childNodes.length; i<l; i++) {
+
+				childNodes[i].name = childNodes[i].name.replace(/\.n/g, '.');
+
+			}
+
+			return childNodes;
+
+		}
+
+
+
+		function beforeAsync() {
+
+			curAsyncCount++;
+
+		}
+
+		
+
+		function onAsyncSuccess(event, treeId, treeNode, msg) {
+			curAsyncCount--;
+
+			if (curStatus == "expand") {
+
+				expandNodes(treeNode.children);
+
+			} else if (curStatus == "async") {
+
+				asyncNodes(treeNode.children);
+
+			}
+
+
+
+			if (curAsyncCount <= 0) {
+
+				if (curStatus != "init" && curStatus != "") {
+
+					$("#demoMsg").text((curStatus == "expand") ? demoMsg.expandAllOver : demoMsg.asyncAllOver);
+
+					asyncForAll = true;
+
+				}
+
+				curStatus = "";
+
+			}
+
+		}
+
+
+
+		function onAsyncError(event, treeId, treeNode, XMLHttpRequest, textStatus, errorThrown) {
+
+			curAsyncCount--;
+
+
+
+			if (curAsyncCount <= 0) {
+
+				curStatus = "";
+
+				if (treeNode!=null) asyncForAll = true;
+
+			}
+
+		}
+
+
+
+		var curStatus = "init", curAsyncCount = 0, asyncForAll = false,
+
+		goAsync = false;
+
+		function expandAll() {
+
+			if (!check()) {
+
+				return;
+
+			}
+
+			var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+
+			if (asyncForAll) {
+
+				$("#demoMsg").text(demoMsg.expandAll);
+
+				zTree.expandAll(true);
+
+			} else {
+
+				expandNodes(zTree.getNodes());
+
+				if (!goAsync) {
+
+					$("#demoMsg").text(demoMsg.expandAll);
+
+					curStatus = "";
+
+				}
+
+			}
+
+		}
+
+		function expandNodes(nodes) {
+
+			if (!nodes) return;
+
+			curStatus = "expand";
+
+			var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+
+			for (var i=0, l=nodes.length; i<l; i++) {
+
+				zTree.expandNode(nodes[i], true, false, false);
+
+				if (nodes[i].isParent && nodes[i].zAsync) {
+
+					expandNodes(nodes[i].children);
+
+				} else {
+
+					goAsync = true;
+
+				}
+
+			}
+
+		}
+
+
+
+		function asyncAll() {
+
+			if (!check()) {
+
+				return;
+
+			}
+
+			var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+
+			if (asyncForAll) {
+
+				$("#demoMsg").text(demoMsg.asyncAll);
+
+			} else {
+
+				asyncNodes(zTree.getNodes());
+
+				if (!goAsync) {
+
+					$("#demoMsg").text(demoMsg.asyncAll);
+
+					curStatus = "";
+
+				}
+
+			}
+
+		}
+
+		function asyncNodes(nodes) {
+
+			if (!nodes) return;
+
+			curStatus = "async";
+
+			var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+
+			for (var i=0, l=nodes.length; i<l; i++) {
+
+				if (nodes[i].isParent && nodes[i].zAsync) {
+
+					asyncNodes(nodes[i].children);
+
+				} else {
+
+					goAsync = true;
+
+					zTree.reAsyncChildNodes(nodes[i], "refresh", true);
+
+				}
+
+			}
+
+		}
+		function reset() {
+			if (!check()) {
+				return;
+			}
+			asyncForAll = false;
+			goAsync = false;
+			$("#demoMsg").text("");
+			$.fn.zTree.init($("#treeDemo"), setting);
+		}
+		function check() {
+			if (curAsyncCount > 0) {
+				$("#demoMsg").text(demoMsg.async);
+				return false;
+			}
+			return true;
+		}
+		$(document).ready(function(){
+			$.fn.zTree.init($("#treeDemo"), setting);
+			$("#expandAllBtn").bind("click", expandAll);
+			$("#asyncAllBtn").bind("click", asyncAll);
+			$("#resetBtn").bind("click", reset);
+		});
+            
+                    
+                
+		$('#getid').on('click',function(){
+			var parent_id = "";
+			var treeObj = $.fn.zTree.getZTreeObj("treeDemo");
+			var nodes = treeObj.getCheckedNodes(true);
+                        var id = "";
+                        var name = "";
+                        var isParent = "";
+			$.each(nodes,function(i,n){
+				parent_id = window.parent.$("#s_"+n.id);
+                                console.log();
+				if (parent_id.length==0) {
+					if (n.check_Child_State==-1 || n.check_Child_State==0) {
+                                                //赋予ID与Name
+                                                id = n.id;
+                                                name = n.name;
+                                                isParent = n.isParent;
+					}
+				}
+			})
+                        //显示已选项
+                        
+                        window.parent.$("#tree_min").text(name);
+                        window.parent.$("#tree_min").data("id",id);
+                        window.parent.$("#tree_min").data("isParent",isParent);
+//                        //获取批次
+//                        $.ajax({
+//                            async:false,
+//                            url: '__APP__/Admin/Cards/batch_json',
+//                            type: 'post',
+//                            dataType: 'json',
+//                            data: {'id':id},
+//                            success:function(data){
+//                                window.parent.$("#pro_batch").empty();
+//                                window.parent.$("#pro_batch").append("<option value='0'>请选择批次</option>");
+//                                for(var i=1;i<=data;i++){
+//                                    window.parent.$("#pro_batch").append("<option value='"+i+"'>第"+i+"批</option>");
+//                                }                                
+//                            }
+//                        })
+			var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+			parent.layer.close(index); //再执行关闭 
+		})
+})
+
+</SCRIPT>

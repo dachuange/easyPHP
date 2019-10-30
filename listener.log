@@ -1,0 +1,10 @@
+2019-10-24 13:52:31=>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `s_user` WHERE ( id =  ) LIMIT 1  
+2019-10-28 11:06:58=>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `s_user` WHERE ( id =  ) LIMIT 1  
+2019-10-28 16:10:13=>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `s_user` WHERE ( id =  ) LIMIT 1  
+2019-10-28 17:15:24=>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `s_user` WHERE ( id =  ) LIMIT 1  
+2019-10-28 17:38:19=>1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `s_user` WHERE ( id =  ) LIMIT 1  

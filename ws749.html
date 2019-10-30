@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+   <meta charset="utf-8">
+   <title>菜鸟教程(runoob.com)</title>
+    
+      <script type="text/javascript">
+
+      //var ws = new WebSocket("wss://www.testtaxisan.com:2020/cache?opt=listen_order_status");
+      
+      var ws = new WebSocket("wss://www.taxisanjiayi.com:2020/cache?opt=listen_order_status");
+   
+      ws.onopen = function()
+      {
+    	heartCheck.start();
+         // Web Socket 已连接上，使用 send() 方法发送数据
+         ws.send('{"driverId":"749"}');
+      };
+       
+      ws.onmessage = function (evt) 
+      { 
+         var received_msg = evt.data;
+	heartCheck.reset(); 
+         alert(received_msg);
+      };
+      
+ 
+	var heartCheck = { 
+    timeout: 20000,//20ms 
+    timeoutObj: null, 
+    reset: function(){ 
+        clearTimeout(this.timeoutObj); 
+　　　　 this.start(); 
+    }, 
+    start: function(){ 
+        this.timeoutObj = setTimeout(function(){ 
+            ws.send(1); 
+        }, this.timeout) 
+    } 
+} 
+     
+      </script>
+        
+   </head>
+   <body>
+
+   </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>暂未开放，尽情期待</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css" media="all" />
+    <script
+      type="text/javascript"
+      src="__PUBLIC__/home/js/jquery.min.js"
+    ></script>
+    <script
+      src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <!-- 	<script type="text/javascript" src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script> -->
+    <style type="text/css">
+      html {
+        font-size: 10px;
+      }
+
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        background: #f4f5f6;
+        background-size: cover;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        font-family: "Microsoft YaHei";
+      }
+    </style>
+    <script>
+      //当前定位
+      /* var geolocation = new qq.maps.Geolocation("X5JBZ-YS53I-5FFG2-5YZ72-HNS46-CQBBW", "myapp");
+		var positionNum = 0;
+		var options = {
+			timeout: 8000
+		};
+		function showPosition(position) {
+			var adCode = position.adCode; //邮政编码
+			var nation = position.nation; //中国
+			var city = position.city; //城市
+			var addr = position.addr; //详细地址
+			var lat = position.lat; //
+			var lng = position.lng; //火星坐标 //TODO 实现业务代码逻辑 
+			$('#s_lat').val(lat);
+			$('#s_lng').val(lng);
+			if(lat!='' && lng!=''){
+				init()
+			}
+		};
+		function showErr() {
+			//TODO 如果出错了调用此方法 
+		}; */
+    </script>
+  </head>
+
+  <body onload="init()" id="con">
+    <div style="margin-top: 15vh;" class="full-img-box">
+      <img src="__PUBLIC__/home/images/ban.png" alt="暂未开放，尽情期待" />
+      <div style="font-size:4.3vw;text-align: center;">
+		十月二日正式上线
+	  </div>
+	  <div style="font-size:4.3vw;text-align: center;">
+			打车有优惠，邀请好友送红包
+		  </div>
+    </div>
+  </body>
+  <script>
+    var browserRule = /^.*((iPhone)|(iPad)|(Safari))+.*$/;
+    if (browserRule.test(navigator.userAgent)) {
+      window.onpageshow = function(event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      };
+    }
+  </script>
+  <script type="text/javascript">
+    var login = $("#login").val(); //判断是否显示遮罩层
+
+    function fenxiang() {
+      window.location.href = "__APP__/Index/invite_user_check";
+    }
+  </script>
+</html>

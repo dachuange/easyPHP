@@ -1,0 +1,3 @@
+<?php
+//000000000000a:20:{s:2:"id";s:1:"1";s:9:"start_fee";s:4:"5.00";s:13:"first_mileage";s:4:"1.50";s:14:"second_mileage";s:4:"2.00";s:8:"duration";s:4:"0.30";s:21:"early_peak_time_start";s:8:"06:30:00";s:19:"early_peak_time_end";s:8:"08:00:00";s:10:"early_peak";s:4:"0.00";s:20:"late_peak_time_start";s:8:"17:30:00";s:18:"late_peak_time_end";s:8:"20:00:00";s:9:"late_peak";s:4:"0.00";s:9:"edge_town";s:4:"0.00";s:16:"edge_town_second";s:4:"0.00";s:8:"out_town";s:4:"0.00";s:30:"night_driving_first_time_start";s:8:"22:00:03";s:28:"night_driving_first_time_end";s:8:"05:00:00";s:21:"night_driving_milladd";s:4:"0.20";s:11:"bad_weather";s:4:"0.00";s:5:"other";s:4:"1.00";s:9:"othertext";s:6:"暂无";}
+?>

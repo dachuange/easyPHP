@@ -1,0 +1,2312 @@
+[ 2019-10-26T00:03:48+08:00 ] 159.203.201.201 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T00:53:04+08:00 ] 185.173.35.29 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T01:31:50+08:00 ] 3.112.251.68 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T03:00:45+08:00 ] 128.14.209.178 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T03:00:46+08:00 ] 128.14.209.178 /User/user_login/openid//unionid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-10-26T03:38:51+08:00 ] 178.128.214.187 /imegesxx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+ERR: 无法加载控制器:Imegesxx
+
+[ 2019-10-26T05:00:27+08:00 ] 37.59.109.44 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T05:00:27+08:00 ] 37.59.109.44 /User/user_login/openid//unionid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+
+[ 2019-10-26T07:32:04+08:00 ] 116.249.238.223 /login.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+ERR: 无法加载控制器:Login.asp
+
+[ 2019-10-26T07:32:21+08:00 ] 116.249.238.223 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T08:31:25+08:00 ] 128.14.134.170 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T08:31:25+08:00 ] 128.14.134.170 /User/user_login/openid//unionid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+
+[ 2019-10-26T09:00:08+08:00 ] 184.105.247.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T10:06:25+08:00 ] 39.104.69.98 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T10:06:25+08:00 ] 39.104.69.98 /User/user_login/openid//unionid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+
+[ 2019-10-26T10:06:28+08:00 ] 39.104.69.98 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T10:06:28+08:00 ] 39.104.69.98 /User/user_login/openid//unionid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+
+[ 2019-10-26T11:40:11+08:00 ] 120.78.85.252 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T11:46:05+08:00 ] 47.105.201.184 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T12:31:20+08:00 ] 111.163.136.247 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+
+[ 2019-10-26T12:33:51+08:00 ] 111.163.136.247 /Appdata/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL:     select s_driver.id,s_driver.card,s_driver.name,s_driver.all_amount,s_driver.lits,s_driver.state,s_driver.maturity_date,if(s_driver.auto_fee='Y',1,0) auto_fee,s_car.car_type,s_car.carnum,s_driver.reviewed,s_driver.available,if(datediff(d_seal.unblock,NOW())>0,datediff(d_seal.unblock,NOW()),0) unblockday,s_driver.operation,
+        ifnull((select FORMAT(AVG(point),1) from d_point where d_id=s_driver.id),5) point 
+        from s_driver 
+        left join s_car on s_car.d_id = s_driver.id 
+        left join d_seal on s_driver.id = d_seal.d_id 
+         WHERE s_driver.phone = '17072040970'  [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000139s ]
+
+[ 2019-10-26T12:35:02+08:00 ] 111.163.136.247 /Appdata/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL:     select s_driver.id,s_driver.card,s_driver.name,s_driver.all_amount,s_driver.lits,s_driver.state,s_driver.maturity_date,if(s_driver.auto_fee='Y',1,0) auto_fee,s_car.car_type,s_car.carnum,s_driver.reviewed,s_driver.available,if(datediff(d_seal.unblock,NOW())>0,datediff(d_seal.unblock,NOW()),0) unblockday,s_driver.operation,
+        ifnull((select FORMAT(AVG(point),1) from d_point where d_id=s_driver.id),5) point 
+        from s_driver 
+        left join s_car on s_car.d_id = s_driver.id 
+        left join d_seal on s_driver.id = d_seal.d_id 
+         WHERE s_driver.phone = '17072040970'  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0006s ]
+SQL: UPDATE `s_driver` SET `registered_id`='34b0b82504d84e7f9d9de625079361c2' WHERE `id` = 749 [ RunTime:0.0026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000138s ]
+
+[ 2019-10-26T12:35:03+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T12:35:03+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0038s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T12:35:03+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2019-10-26T12:35:12+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T12:35:12+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2019-10-26T12:35:12+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0034s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T12:35:24+08:00 ] 111.163.136.247 /Index/index?code=021nleP81zD9lP1KLPP81mV0P81nlePU&state=gh_008a50db02b8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 31 行.
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = 'o4_yz0vzZfrHJuUnQa73-SCjsMg4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s_coupon` [ RunTime:0.0004s ]
+SQL: SELECT `u_id`,`amount` FROM `s_coupon` WHERE `u_id` = 46268 AND `user` = 'N' AND `sdate` < '2019-10-26 12:35:24' AND `edate` > '2019-10-26 12:35:24' LIMIT 1   [ RunTime:0.0145s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2019-10-26T12:35:25+08:00 ] 111.163.136.247 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-10-26T12:35:28+08:00 ] 111.163.136.247 /Appdata/getdistancelimit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-10-26T12:35:36+08:00 ] 111.163.136.247 /User/addressid_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+
+[ 2019-10-26T12:35:36+08:00 ] 111.163.136.247 /index.php/Index/wait
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: timestap /www/Application/Runtime/Cache/Home/175e9416d015e93b0ebad8a95081ad86.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2019-10-26T12:35:58+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0006s ]
+
+[ 2019-10-26T12:35:58+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0006s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0026s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-10-26T12:35:58+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-10-26T12:36:59+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T12:36:59+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0006s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T12:36:59+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2019-10-26T12:44:40+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T12:44:40+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000139s ]
+
+[ 2019-10-26T12:44:40+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0028s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T12:44:41+08:00 ] 111.163.136.247 /Appdata/getdistancelimit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-10-26T12:44:48+08:00 ] 111.163.136.247 /User/addressid_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-10-26T12:44:48+08:00 ] 111.163.136.247 /index.php/Index/wait
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined index: timestap /www/Application/Runtime/Cache/Home/175e9416d015e93b0ebad8a95081ad86.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-10-26T12:45:08+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0006s ]
+
+[ 2019-10-26T12:45:08+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000137s ]
+
+[ 2019-10-26T12:45:08+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0183s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T12:45:35+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T12:45:35+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000124s ]
+
+[ 2019-10-26T12:45:35+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0025s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T12:45:44+08:00 ] 111.163.136.247 /Appdata/getdistancelimit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-10-26T12:46:05+08:00 ] 111.163.136.247 /User/addressid_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+
+[ 2019-10-26T12:46:05+08:00 ] 111.163.136.247 /index.php/Index/wait
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: timestap /www/Application/Runtime/Cache/Home/175e9416d015e93b0ebad8a95081ad86.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-10-26T12:46:13+08:00 ] 111.163.136.247 /Orderauto/order_on/o_id/26741/start_time/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,s_user.phone u_phone,b_order.sdate,b_order.operation,s_user.headimgurl,b_order.address_id,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration,
+            s_car.car_type,s_car.carcolor,s_car.carnum,if(s_avatar_verify.verify="Y",s_avatar_verify.file,'') avatar,s_driver.card,s_driver.name,s_driver.nickname,s_driver.phone d_phone,s_driver.lits,
+                ifnull((select FORMAT(AVG(point),1) from d_point where d_id=b_order.d_id),5) point,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=b_order.d_id),0) complaint,
+                (CASE b_order.state 
+    WHEN 'on' THEN '尚未接驾' 
+    WHEN 'active' THEN '行程中' 
+    WHEN 'wait_pay' THEN '待支付' 
+    WHEN 'end' THEN '订单结束' 
+    WHEN 'cannal' THEN '订单被取消' 
+    END)  state_cn,b_order.state 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+        left join s_driver on s_driver.id = b_order.d_id 
+        left join s_car on b_order.d_id = s_car.d_id 
+        left join s_avatar_verify on s_avatar_verify.d_id = b_order.d_id 
+         WHERE b_order.id = '26741'  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-10-26T12:46:13+08:00 ] 111.163.136.247 /index.php/Orderauto/drive_dynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-26T12:46:17+08:00 ] 111.163.136.247 /index.php/Orderauto/drive_dynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-26T12:46:21+08:00 ] 111.163.136.247 /index.php/Orderauto/canecl_order?o_id=26741
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `b_cancel_order_reason` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_cancel_order_reason`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2019-10-26T04:46:26+00:00 ] 111.163.136.247 /index.php/Orderauto/canecl_order_chk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL:         select b_order.id o_id,b_order.u_id,b_order.d_id 
+            from b_order 
+             WHERE b_order.id = '26741' AND b_order.state IN ('new','on','arrived') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0007s ]
+SQL: UPDATE `b_order` SET `state`='cannal',`cancel_id`='9',`d_confirmation`='Y' WHERE `id` = 26741 [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0006s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0031s ]
+SQL: SELECT `registered_id` FROM `s_driver` WHERE `id` = 749 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0007s ]
+SQL: UPDATE `s_user` SET `state`='N' WHERE `id` = 46268 [ RunTime:0.0025s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+
+[ 2019-10-26T12:46:27+08:00 ] 111.163.136.247 /index.php/Orderauto/cencel_success
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-10-26T12:46:28+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0006s ]
+
+[ 2019-10-26T12:46:28+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000125s ]
+
+[ 2019-10-26T12:46:28+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0028s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `d_online_record` SET `edate`='1572065188',`line_time`='44' WHERE `id` = 135285 [ RunTime:0.0023s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-10-26T12:48:16+08:00 ] 111.163.136.247 /Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `s_coupon` [ RunTime:0.0005s ]
+SQL: SELECT `u_id`,`amount` FROM `s_coupon` WHERE `u_id` = 46268 AND `user` = 'N' AND `sdate` < '2019-10-26 12:48:16' AND `edate` > '2019-10-26 12:48:16' LIMIT 1   [ RunTime:0.0141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2019-10-26T12:48:44+08:00 ] 111.163.136.247 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2019-10-26T12:48:52+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T12:48:52+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000135s ]
+
+[ 2019-10-26T12:48:52+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0027s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T12:49:02+08:00 ] 111.163.136.247 /Appdata/getdistancelimit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-10-26T12:49:06+08:00 ] 111.163.136.247 /User/addressid_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-10-26T12:49:06+08:00 ] 111.163.136.247 /index.php/Index/wait
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined index: timestap /www/Application/Runtime/Cache/Home/175e9416d015e93b0ebad8a95081ad86.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2019-10-26T12:49:14+08:00 ] 111.163.136.247 /Orderauto/order_on/o_id/26742/start_time/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,s_user.phone u_phone,b_order.sdate,b_order.operation,s_user.headimgurl,b_order.address_id,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration,
+            s_car.car_type,s_car.carcolor,s_car.carnum,if(s_avatar_verify.verify="Y",s_avatar_verify.file,'') avatar,s_driver.card,s_driver.name,s_driver.nickname,s_driver.phone d_phone,s_driver.lits,
+                ifnull((select FORMAT(AVG(point),1) from d_point where d_id=b_order.d_id),5) point,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=b_order.d_id),0) complaint,
+                (CASE b_order.state 
+    WHEN 'on' THEN '尚未接驾' 
+    WHEN 'active' THEN '行程中' 
+    WHEN 'wait_pay' THEN '待支付' 
+    WHEN 'end' THEN '订单结束' 
+    WHEN 'cannal' THEN '订单被取消' 
+    END)  state_cn,b_order.state 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+        left join s_driver on s_driver.id = b_order.d_id 
+        left join s_car on b_order.d_id = s_car.d_id 
+        left join s_avatar_verify on s_avatar_verify.d_id = b_order.d_id 
+         WHERE b_order.id = '26742'  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000088s ]
+
+[ 2019-10-26T12:49:15+08:00 ] 111.163.136.247 /index.php/Orderauto/drive_dynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-26T12:49:19+08:00 ] 111.163.136.247 /index.php/Orderauto/drive_dynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-26T12:49:23+08:00 ] 111.163.136.247 /index.php/Orderauto/drive_dynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-26T12:49:27+08:00 ] 111.163.136.247 /index.php/Orderauto/drive_dynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-26T12:49:31+08:00 ] 111.163.136.247 /index.php/Orderauto/drive_dynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-26T12:49:33+08:00 ] 111.163.136.247 /index.php/Orderauto/canecl_order?o_id=26742
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `b_cancel_order_reason` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_cancel_order_reason`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-10-26T04:49:37+00:00 ] 111.163.136.247 /index.php/Orderauto/canecl_order_chk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL:         select b_order.id o_id,b_order.u_id,b_order.d_id 
+            from b_order 
+             WHERE b_order.id = '26742' AND b_order.state IN ('new','on','arrived') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0006s ]
+SQL: UPDATE `b_order` SET `state`='cannal',`cancel_id`='0',`d_confirmation`='Y' WHERE `id` = 26742 [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0005s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0019s ]
+SQL: SELECT `registered_id` FROM `s_driver` WHERE `id` = 749 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0007s ]
+SQL: UPDATE `s_user` SET `state`='N' WHERE `id` = 46268 [ RunTime:0.0027s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+
+[ 2019-10-26T12:49:38+08:00 ] 111.163.136.247 /index.php/Orderauto/cencel_success
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-10-26T12:49:38+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0006s ]
+
+[ 2019-10-26T12:49:39+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0006s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0041s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `d_online_record` SET `edate`='1572065379',`line_time`='36' WHERE `id` = 135286 [ RunTime:0.0023s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T12:49:39+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2019-10-26T12:49:50+08:00 ] 111.163.136.247 /Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `s_coupon` [ RunTime:0.0005s ]
+SQL: SELECT `u_id`,`amount` FROM `s_coupon` WHERE `u_id` = 46268 AND `user` = 'N' AND `sdate` < '2019-10-26 12:49:50' AND `edate` > '2019-10-26 12:49:50' LIMIT 1   [ RunTime:0.0142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000116s ]
+
+[ 2019-10-26T12:49:52+08:00 ] 111.163.136.247 /User/addressid_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+
+[ 2019-10-26T12:49:52+08:00 ] 111.163.136.247 /index.php/Index/wait
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined index: timestap /www/Application/Runtime/Cache/Home/175e9416d015e93b0ebad8a95081ad86.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2019-10-26T12:50:06+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T12:50:07+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0008s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0031s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T12:50:07+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2019-10-26T12:50:07+08:00 ] 111.163.136.247 /Appdata/getdistancelimit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+
+[ 2019-10-26T12:50:15+08:00 ] 111.163.136.247 /User/addressid_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+
+[ 2019-10-26T12:50:15+08:00 ] 111.163.136.247 /index.php/Index/wait
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined index: timestap /www/Application/Runtime/Cache/Home/175e9416d015e93b0ebad8a95081ad86.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2019-10-26T12:50:22+08:00 ] 111.163.136.247 /Orderauto/order_on/o_id/26743/start_time/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,s_user.phone u_phone,b_order.sdate,b_order.operation,s_user.headimgurl,b_order.address_id,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration,
+            s_car.car_type,s_car.carcolor,s_car.carnum,if(s_avatar_verify.verify="Y",s_avatar_verify.file,'') avatar,s_driver.card,s_driver.name,s_driver.nickname,s_driver.phone d_phone,s_driver.lits,
+                ifnull((select FORMAT(AVG(point),1) from d_point where d_id=b_order.d_id),5) point,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=b_order.d_id),0) complaint,
+                (CASE b_order.state 
+    WHEN 'on' THEN '尚未接驾' 
+    WHEN 'active' THEN '行程中' 
+    WHEN 'wait_pay' THEN '待支付' 
+    WHEN 'end' THEN '订单结束' 
+    WHEN 'cannal' THEN '订单被取消' 
+    END)  state_cn,b_order.state 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+        left join s_driver on s_driver.id = b_order.d_id 
+        left join s_car on b_order.d_id = s_car.d_id 
+        left join s_avatar_verify on s_avatar_verify.d_id = b_order.d_id 
+         WHERE b_order.id = '26743'  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-10-26T12:50:23+08:00 ] 111.163.136.247 /index.php/Orderauto/drive_dynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-26T12:50:25+08:00 ] 111.163.136.247 /index.php/Orderauto/canecl_order?o_id=26743
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `b_cancel_order_reason` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_cancel_order_reason`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2019-10-26T04:50:30+00:00 ] 111.163.136.247 /index.php/Orderauto/canecl_order_chk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL:         select b_order.id o_id,b_order.u_id,b_order.d_id 
+            from b_order 
+             WHERE b_order.id = '26743' AND b_order.state IN ('new','on','arrived') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0007s ]
+SQL: UPDATE `b_order` SET `state`='cannal',`cancel_id`='9',`d_confirmation`='Y' WHERE `id` = 26743 [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0005s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0021s ]
+SQL: SELECT `registered_id` FROM `s_driver` WHERE `id` = 749 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+SQL: UPDATE `s_user` SET `state`='N' WHERE `id` = 46268 [ RunTime:0.0026s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+
+[ 2019-10-26T12:50:31+08:00 ] 111.163.136.247 /index.php/Orderauto/cencel_success
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2019-10-26T12:50:32+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T12:50:32+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2019-10-26T12:50:32+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0008s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0030s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `d_online_record` SET `edate`='1572065432',`line_time`='24' WHERE `id` = 135287 [ RunTime:0.0023s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T12:51:14+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0006s ]
+
+[ 2019-10-26T12:51:14+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2019-10-26T12:51:14+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0034s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+
+[ 2019-10-26T13:06:42+08:00 ] 111.163.136.247 /Appdata/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL:     select s_driver.id,s_driver.card,s_driver.name,s_driver.all_amount,s_driver.lits,s_driver.state,s_driver.maturity_date,if(s_driver.auto_fee='Y',1,0) auto_fee,s_car.car_type,s_car.carnum,s_driver.reviewed,s_driver.available,if(datediff(d_seal.unblock,NOW())>0,datediff(d_seal.unblock,NOW()),0) unblockday,s_driver.operation,
+        ifnull((select FORMAT(AVG(point),1) from d_point where d_id=s_driver.id),5) point 
+        from s_driver 
+        left join s_car on s_car.d_id = s_driver.id 
+        left join d_seal on s_driver.id = d_seal.d_id 
+         WHERE s_driver.phone = '17072040970'  [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000139s ]
+
+[ 2019-10-26T13:07:39+08:00 ] 111.163.136.247 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+
+[ 2019-10-26T13:08:05+08:00 ] 111.163.136.247 /Appdata/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL:     select s_driver.id,s_driver.card,s_driver.name,s_driver.all_amount,s_driver.lits,s_driver.state,s_driver.maturity_date,if(s_driver.auto_fee='Y',1,0) auto_fee,s_car.car_type,s_car.carnum,s_driver.reviewed,s_driver.available,if(datediff(d_seal.unblock,NOW())>0,datediff(d_seal.unblock,NOW()),0) unblockday,s_driver.operation,
+        ifnull((select FORMAT(AVG(point),1) from d_point where d_id=s_driver.id),5) point 
+        from s_driver 
+        left join s_car on s_car.d_id = s_driver.id 
+        left join d_seal on s_driver.id = d_seal.d_id 
+         WHERE s_driver.phone = '17072040970'  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0006s ]
+SQL: UPDATE `s_driver` SET `registered_id`='34b0b82504d84e7f9d9de625079361c2' WHERE `id` = 749 [ RunTime:0.0032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000130s ]
+
+[ 2019-10-26T13:08:06+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T13:08:06+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2019-10-26T13:08:06+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0042s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T13:08:55+08:00 ] 111.163.136.247 /Index/index?code=0610Siqc0AZI4B17BTtc0oS4qc00Siq1&state=gh_008a50db02b8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 31 行.
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = 'o4_yz0vzZfrHJuUnQa73-SCjsMg4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `s_coupon` [ RunTime:0.0003s ]
+SQL: SELECT `u_id`,`amount` FROM `s_coupon` WHERE `u_id` = 46268 AND `user` = 'N' AND `sdate` < '2019-10-26 13:08:55' AND `edate` > '2019-10-26 13:08:55' LIMIT 1   [ RunTime:0.0142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000089s ]
+
+[ 2019-10-26T13:08:55+08:00 ] 111.163.136.247 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+
+[ 2019-10-26T13:08:56+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T13:08:56+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2019-10-26T13:08:56+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0008s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0032s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T13:09:05+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0006s ]
+
+[ 2019-10-26T13:09:05+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0006s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0041s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-10-26T13:09:05+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2019-10-26T13:09:06+08:00 ] 111.163.136.247 /Appdata/getdistancelimit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+
+[ 2019-10-26T13:09:22+08:00 ] 111.163.136.247 /User/addressid_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+
+[ 2019-10-26T13:09:22+08:00 ] 111.163.136.247 /index.php/Index/wait
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: timestap /www/Application/Runtime/Cache/Home/175e9416d015e93b0ebad8a95081ad86.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-10-26T13:10:00+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T13:10:00+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0063s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-10-26T13:10:00+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2019-10-26T13:10:10+08:00 ] 111.163.136.247 /Appdata/getdistancelimit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+
+[ 2019-10-26T13:10:33+08:00 ] 111.163.136.247 /User/addressid_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+
+[ 2019-10-26T13:10:33+08:00 ] 111.163.136.247 /index.php/Index/wait
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined index: timestap /www/Application/Runtime/Cache/Home/175e9416d015e93b0ebad8a95081ad86.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-10-26T13:11:30+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T13:11:30+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000137s ]
+
+[ 2019-10-26T13:11:30+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0027s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-10-26T13:11:36+08:00 ] 111.163.136.247 /Appdata/getdistancelimit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+
+[ 2019-10-26T13:11:45+08:00 ] 111.163.136.247 /User/addressid_check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-10-26T13:11:45+08:00 ] 111.163.136.247 /index.php/Index/wait
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined index: timestap /www/Application/Runtime/Cache/Home/175e9416d015e93b0ebad8a95081ad86.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2019-10-26T13:11:53+08:00 ] 111.163.136.247 /Orderauto/order_on/o_id/26744/start_time/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,s_user.phone u_phone,b_order.sdate,b_order.operation,s_user.headimgurl,b_order.address_id,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration,
+            s_car.car_type,s_car.carcolor,s_car.carnum,if(s_avatar_verify.verify="Y",s_avatar_verify.file,'') avatar,s_driver.card,s_driver.name,s_driver.nickname,s_driver.phone d_phone,s_driver.lits,
+                ifnull((select FORMAT(AVG(point),1) from d_point where d_id=b_order.d_id),5) point,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=b_order.d_id),0) complaint,
+                (CASE b_order.state 
+    WHEN 'on' THEN '尚未接驾' 
+    WHEN 'active' THEN '行程中' 
+    WHEN 'wait_pay' THEN '待支付' 
+    WHEN 'end' THEN '订单结束' 
+    WHEN 'cannal' THEN '订单被取消' 
+    END)  state_cn,b_order.state 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+        left join s_driver on s_driver.id = b_order.d_id 
+        left join s_car on b_order.d_id = s_car.d_id 
+        left join s_avatar_verify on s_avatar_verify.d_id = b_order.d_id 
+         WHERE b_order.id = '26744'  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000088s ]
+
+[ 2019-10-26T13:11:53+08:00 ] 111.163.136.247 /index.php/Orderauto/drive_dynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-26T13:11:57+08:00 ] 111.163.136.247 /index.php/Orderauto/drive_dynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-26T13:12:01+08:00 ] 111.163.136.247 /index.php/Orderauto/drive_dynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `m_user_wait_reward_set` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `m_user_wait_reward_set` WHERE `address_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-10-26T13:12:05+08:00 ] 111.163.136.247 /index.php/Orderauto/canecl_order?o_id=26744
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `b_cancel_order_reason` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_cancel_order_reason`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-10-26T05:12:09+00:00 ] 111.163.136.247 /index.php/Orderauto/canecl_order_chk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL:         select b_order.id o_id,b_order.u_id,b_order.d_id 
+            from b_order 
+             WHERE b_order.id = '26744' AND b_order.state IN ('new','on','arrived') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0007s ]
+SQL: UPDATE `b_order` SET `state`='cannal',`cancel_id`='9',`d_confirmation`='Y' WHERE `id` = 26744 [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0005s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0028s ]
+SQL: SELECT `registered_id` FROM `s_driver` WHERE `id` = 749 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 31 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+SQL: UPDATE `s_user` SET `state`='N' WHERE `id` = 46268 [ RunTime:0.0024s ]
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+
+[ 2019-10-26T13:12:10+08:00 ] 111.163.136.247 /index.php/Orderauto/cencel_success
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-10-26T13:12:11+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T13:12:11+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-10-26T13:12:11+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0006s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0029s ]
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `d_online_record` SET `edate`='1572066731',`line_time`='35' WHERE `id` = 135290 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-10-26T13:21:34+08:00 ] 103.125.216.16 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T13:35:15+08:00 ] 111.163.136.247 /Appdata/order_verification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL:     select b_order.id o_id,b_order.u_id,b_order.d_id,b_order.s_lat,b_order.s_lng,b_order.saddress,
+            b_order.e_lat,b_order.e_lng,b_order.eaddress,b_order.state,s_user.phone,b_order.sdate,b_order.operation,s_user.headimgurl,
+            b_order.mileage_fee,b_order.duration_fee,b_order.amount,b_order.distance,b_order.duration 
+        from b_order 
+        left join s_user on s_user.id = b_order.u_id 
+         WHERE b_order.d_id = '749' AND b_order.d_confirmation = 'N' AND b_order.state IN ('new','on','arrived','active','wait_pay')  [ RunTime:0.0007s ]
+
+[ 2019-10-26T13:35:16+08:00 ] 111.163.136.247 /Appdata/homePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/85d225028143ad369dd20f1597565241.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `s_driver` [ RunTime:0.0007s ]
+SQL: UPDATE `s_driver` SET `state`='off' WHERE `id` = 749 [ RunTime:0.0028s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/f76e3a8a2edddc7f9ba7ac55cba07d1c.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `address_id` FROM `s_driver` WHERE ( id = 749 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `d_online_record` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `d_online_record` WHERE `d_id` = 749 AND `edate` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/173fa121da3b5226578fdcb7b0ce8a2b.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL:     select count(s_driver.id) count_today_order,ifnull(SUM(b_order.amount),0) sum_amount,s_driver.lits,s_driver.maturity_date,ifnull((select FORMAT(AVG(point),1) from d_point where d_id=749),5) point,s_driver.operation,
+                ifnull((select COUNT(s_complaint.id) from s_complaint where d_id=749),0) complaint 
+        from  s_driver 
+        left join b_order on s_driver.id = b_order.d_id 
+         WHERE s_driver.id = '749' AND b_order.state = 'end' AND b_order.sdate > '2019-10-26 00:00:00'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `b_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_order` WHERE `d_id` = 749 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(line_time) AS tp_sum FROM `d_online_record` WHERE `d_id` = 749 AND `sdate` > 1572019200 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-26T13:35:16+08:00 ] 111.163.136.247 /Appdata/gethomeinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2019-10-26T13:42:05+08:00 ] 77.247.108.53 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T13:42:07+08:00 ] 77.247.108.53 /User/user_login/openid//unionid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+
+[ 2019-10-26T20:49:37+08:00 ] 111.164.232.9 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+
+[ 2019-10-26T20:49:37+08:00 ] 111.164.232.9 /User/user_login/openid//unionid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-10-26T20:49:37+08:00 ] 111.164.232.9 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-10-26T21:36:01+08:00 ] 209.17.96.26 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `s_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 66 行.
+SQL: SELECT `id`,`phone`,`openid` FROM `s_user` WHERE `unionid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: openid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: unionid /www/Application/Home/Controller/IndexController.class.php 第 68 行.
+

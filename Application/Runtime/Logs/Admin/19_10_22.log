@@ -1,0 +1,82 @@
+[ 2019-10-22T19:22:33+08:00 ] 111.163.133.41 /admin/Index/admin_verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [2] mkdir(): Permission denied /www/ThinkPHP/Library/Think/Controller.class.php 第 221 行.
+
+[ 2019-10-22T19:23:02+08:00 ] 111.163.133.41 /admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `account` = 'admin' AND `password` = '6c0dd8bac76d3618040d1a119ea8502f' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] mkdir(): Permission denied /www/ThinkPHP/Library/Think/Controller.class.php 第 221 行.
+
+[ 2019-10-22T19:23:02+08:00 ] 111.163.133.41 /admin/Index/admin_verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2019-10-22T19:23:04+08:00 ] 111.163.133.41 /admin/Phone/getudsekinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `m_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `m_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable:  /www/Application/Admin/Common/function.php 第 48 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 44 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/1fad3b90910ef42191e639a3f67261e6.php): No such file or directory /www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [8] Use of undefined constant CURL_SSLVERSION_SSL - assumed 'CURL_SSLVERSION_SSL' /www/Application/Common/Common/function.php 第 58 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be integer, string given /www/Application/Common/Common/function.php 第 58 行.
+NOTIC: [2] mkdir(): Permission denied /www/ThinkPHP/Library/Think/Controller.class.php 第 221 行.
+
+[ 2019-10-22T19:23:08+08:00 ] 111.163.133.41 /admin/Driver/driver_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined variable: where /www/Application/Admin/Controller/DriverController.class.php 第 52 行.
+SQL: 			select count(s_driver.id) num from s_driver  
+                          [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: where /www/Application/Admin/Controller/DriverController.class.php 第 85 行.
+SQL: 			select s_driver.id d_id,s_driver.card,s_driver.name,s_driver.sdate,s_driver.maturity_date,s_driver.phone,s_driver.operation,s_driver.address_id,(CASE s_driver.reviewed 
+        WHEN 'Y' THEN '审核通过' 
+        WHEN 'O' THEN '审核中' 
+        WHEN 'N' THEN '审核未通过' 
+        END)  reviewed_cn,
+            (CASE s_driver.state 
+        WHEN 'off' THEN '关闭' 
+        WHEN 'stand' THEN '待接单' 
+        WHEN 'running' THEN '行程中' 
+        END)  state_cn,
+            (CASE s_driver.available 
+        WHEN 'Y' THEN '正常' 
+        WHEN 'snap_prohibited' THEN '临时封禁' 
+        WHEN 'lasting_prohibited' THEN '永久分封禁' 
+        END)  available,s_driver.available available_pd,s_car.car_type,s_car.carcolor,s_car.carnum,CONCAT(s_driver.card,s_driver.name,s_driver.phone) search,
+		0 as invitCount  
+                        from s_driver 
+                        left join s_car on s_driver.id = s_car.d_id 
+                         
+                        order by s_driver.id desc 
+                        limit 0,10  [ RunTime:0.1141s ]
+NOTIC: [2] mkdir(): Permission denied /www/ThinkPHP/Library/Think/Controller.class.php 第 221 行.
+

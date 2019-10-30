@@ -1,0 +1,156 @@
+<include file="Public:head" /><include file="Public:logo" /><include file="Public:up" /><include file="Public:left" />
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    $('.form-horizontal').validate({
+      rules:{
+        p_name:{required:true},
+        sdate:{required:true},
+        userid:{min:1},
+        beneficiary:{required:true},
+        money:{required:true},
+        money_date:{required:true},
+        typeid:{min:1},
+      },
+      messages:{
+        p_name:{required:"请输入标题"}, 
+        sdate:{required:"请选择保单日期"},
+        userid:{min:"请选择用户"},
+        beneficiary:{required:"请输入受益人"},
+        money:{required:"请输入每期需交金额"},
+        money_date:{required:"请输入需交费的日期"},
+        typeid:{min:"请选择保单类别"},
+      },
+      errorPlacement: function (error, element) {
+        layer.tips(error[0].innerText,element, {
+              tips: [2, 'red'],
+              time: 4000,
+              tipsMore:true,
+            })
+        },
+      onkeyup: false,
+    });
+  });
+</script>
+<div id="content">
+    <div id="content-header">
+        <div id="breadcrumb"> 
+            <a href="" title="首页" class="tip-bottom"><i class="icon-home"></i>首页</a> 
+            <a href="#" class="current">保单</a> 
+        </div>
+        <h1>新增保单</h1> 
+    </div>  
+    <hr>
+    <div class="container-fluid">
+        <div class="widget-box">
+            <div class="widget-title">
+                <span class="icon"> <i class="icon-align-justify"></i> </span>
+                <h5>保单信息</h5> 
+            </div>
+            <script type="text/javascript" src="/Public/Admin/static/uploadify/jquery.uploadify.min.js"></script>
+            <form action="{:U('Member/insert')}" method="post" class="form-horizontal">
+                <div class="widget-content nopadding">
+                    <div class="control-group">
+                        <label class="control-label">保单标题</label>
+                        <div class="controls">
+                            <input type="text" name="p_name" value="" class="text input-large"/>                              
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">保单类型</label>
+                        <div class="controls">
+                            <select name="typeid">
+                                <option value="0">选择类型</option>
+                                <volist name="type" id="type">
+                                    <option value="{$type.id}">{$type.name}</option>
+                                </volist>                      
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">生效时间</label>
+                        <div class="controls">
+                            <input type="date" name="sdate" value="" class="text input-large"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">投保人</label>
+                        <div class="controls">
+                            <select name="userid">
+                                <option value="0">选择投保人</option>
+                                <volist name="classify" id="classify">
+                                    <option value="{$classify.id}">{$classify.name}</option>
+                                </volist>                      
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">受益人</label>
+                        <div class="controls">
+                            <input type="text" name="beneficiary" value="" class="text input-large"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">每年交费金额</label>
+                        <div class="controls">
+                            <input type="text" name="money" value="" class="text input-large"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">交费日期</label>
+                        <div class="controls">
+                            <input type="date" name="money_date" value="" class="text input-large"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">需交年限</label>
+                        <div class="controls">
+                            <input type="number" name="age_limit" value="" class="text input-large" placeholder="不填则为无年限限制"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">备注</label>
+                        <div class="controls">
+                            <input type="text" name="remark" value="" class="text input-large" placeholder="可为空"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">关键字（非录入）</label>
+                        <div class="controls">
+                            <input type="text" name="post_type" value="policy" class="text input-large" readonly="readonly"/>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="widget-title">
+                        <span class="icon"> <i class="icon-align-justify"></i> </span>
+                        <h5>付款银行</h5>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">银行卡号</label>
+                        <div class="controls">
+                            <input type="text" name="bankcard" value="" class="text input-large"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">银行名</label>
+                        <div class="controls">
+                            <input type="text" name="bankname" value="" class="text input-large"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">卡持有者姓名</label>
+                        <div class="controls">
+                            <input type="text" name="bankpeople" value="" class="text input-large"/>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn btn-info ajax-post" id="submit" type="submit" target-form="form-horizontal" style="margin-right:10px;">确定</button>
+                        <button onclick="javascript:location.href='{:U(\"index\")}';return false;" class="btn btn-danger" style="margin-right:10px;">返回</button>            
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<include file="Public:foot" />

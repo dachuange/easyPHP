@@ -1,0 +1,93 @@
+<include file="Public:head" /> <include file="Public:logo" /> <include file="Public:up" /> <include file="Public:left" />
+
+<script type="text/javascript">
+$(function(){
+  $('.form-horizontal').validate({
+    messages: {
+      old_pwd:{
+        required: "请输入原密码",
+        remote: "原密码错误",
+      },
+      pwd: {
+        required: "请输入新密码",
+        minlength: "密码长度不能小于 6 ",
+        maxlength: "密码长度不能大于 16 "
+      },
+      pwd2: {
+        required: "请重复输入新密码",
+        minlength: "密码长度不能小于 6 ",
+        maxlength: "密码长度不能大于 16 ",
+        equalTo: "两次密码输入不一致"
+      }
+    },
+    submitHandler:function(form) {
+      ajax_form_min('修改成功，请重新登陆','{:U("Center/pwd_chk")}',"__ROOT__/admin/index");
+    },
+    errorPlacement: function (error, element) {
+      layer.tips(error[0].innerText,element, {
+        tips: [2, 'red'],
+        time: 1500,
+        tipsMore:true,
+      })
+    },
+    onkeyup: false,
+  })
+})
+
+</script> 
+
+<div id="content">
+
+  <div id="content-header">
+
+    <div id="breadcrumb"> <a href="" title="首页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">修改密码</a> </div>
+
+    <h1>修改密码</h1>
+
+  </div>
+
+  <hr>
+
+  <div class="container-fluid">
+
+    <div class="widget-box">
+
+      <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+
+        <h5>修改密码</h5>
+
+      </div>
+
+      <form action="__URL__/pwd_chk" method="post" class="form-horizontal" enctype="multipart/form-data">
+
+        <div class="widget-content nopadding">
+          <div class="control-group" style="padding-bottom: 1%">
+            <label class="control-label">原密码</label>
+            <div class="controls">
+              <input type="password" name="old_pwd" value="" style="width: 15%" required=true remote="{:U('check_pwd')}">
+            </div>
+            <label class="control-label">新密码</label>
+            <div class="controls">
+              <input type="password" name="pwd" value="" style="width: 15%" required=true minlength='6' maxlength='16' id="pwd_fir">
+            </div>
+            <label class="control-label">重复输入</label>
+            <div class="controls">
+              <input type="password" name="pwd2" value="" style="width: 15%" required=true minlength='6' maxlength='16' equalTo="#pwd_fir">
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-info ajax-post" id="submit" type="submit" target-form="form-horizontal" style="margin-right:10px;">确定</button>
+            <button onclick="javascript:history.back(-1);return false;" class="btn btn-danger" style="margin-right:10px;">返回</button>
+
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+<include file="Public:foot" /> 

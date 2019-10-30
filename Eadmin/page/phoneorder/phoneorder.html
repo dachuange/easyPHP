@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>电话叫单</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="../../css/public.css" media="all" />
+
+
+	<style type="text/css">
+		body,
+		html {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			font-family: "微软雅黑";
+			font-size: 14px;
+		}
+
+		#l-map {
+			height: 500px;
+			width: 100%;
+		}
+
+		#r-result {
+			width: 100%;
+		}
+
+		.cont {
+			width: 100%;
+			display: flex;
+		}
+
+		.left {
+			-webkit-flex: 0 0 25%;
+			-webkit-box-flex: 0;
+			flex: 0 0 50%;
+		}
+
+		.right {
+			-webkit-flex: 0 0 25%;
+			-webkit-box-flex: 0;
+			flex: 0 0 50%;
+		}
+
+		.changyong li {
+			float: left;
+			height: 35px;
+			line-height: 35px;
+			padding: 0 10px;
+			border: 1px solid #ccc;
+			border-radius: 8px;
+			margin: 0 10px 10px 10px;
+			cursor: pointer;
+		}
+
+		.on1 {
+			background-color: #009688;
+			color: #fff;
+		}
+	</style>
+	<script type="text/javascript"
+		src="https://api.map.baidu.com/api?v=2.0&ak=Cg6GIDFs6h0NAan5CA5GxIDScopVviOg"></script>
+</head>
+
+<body  class="childrenBody">
+	<blockquote class="layui-elem-quote quoteBox">
+		<form class="layui-form">
+			<div class="layui-inline">
+				<div class="layui-input-inline">
+					<div id="r-result">
+						<input type="text" class="layui-input searchVal" id="suggestId" placeholder="请输入地址"
+							style="width:250px;" />
+					</div>
+				</div>
+				<div class="layui-input-inline">
+					<input type="text" class="layui-input searchVal" id="phone" placeholder="请输入电话" />
+				</div>
+				<a class="layui-btn search_btn" data-type="reload" id="jcwy" onclick="setPlace()">发单</a>
+				<a class="layui-btn search_btn" data-type="reload" onclick="reset()">重置</a>
+				<a class="layui-btn search_btn" data-type="reload" onclick="addPlace()">添加常用地址</a>
+				<a class="layui-btn search_btn" data-type="reload" onclick="delPlace()">删除常用地址</a>
+			</div>
+		</form>
+	</blockquote>
+	<!-- 常用地址标签 -->
+	<!-- <ul class="changyong" id="addressList">
+		</ul> -->
+	<div class="cont">
+		<div class="left">
+			<!-- 常用地址标签 -->
+			<ul class="changyong" id="addressList">
+			</ul>
+			<div id="l-map"></div>
+			<div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
+		</div>
+		<div class="right">
+			<form class="layui-form" style="width:80%;">
+				<!-- <input type="text" id="o_id" style="display: none;"> -->
+				<div class="layui-row layui-form-item">
+					<div class="layui-col-md6">
+						<label class="layui-form-label">司机工号:</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input userName" id="card" lay-verify="required"
+								readonly="true">
+						</div>
+					</div>
+					<div class="layui-col-md6">
+						<label class="layui-form-label">司机姓名:</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input userName" id="name" lay-verify="required"
+								readonly="true">
+						</div>
+					</div>
+				</div>
+				<div class="layui-row layui-form-item">
+					<div class="layui-col-md6">
+						<label class="layui-form-label">司机昵称:</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input userName" id="nickname" lay-verify="required"
+								readonly="true">
+						</div>
+					</div>
+					<div class="layui-col-md6">
+						<label class="layui-form-label">车牌号:</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input userName" id="carnum" lay-verify="required"
+								readonly="true">
+						</div>
+					</div>
+				</div>
+
+				<div class="layui-row layui-form-item">
+					<div class="layui-col-md6">
+						<label class="layui-form-label">车辆颜色:</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input userName" id="carcolor" lay-verify="required"
+								readonly="true">
+						</div>
+					</div>
+					<div class="layui-col-md6">
+						<label class="layui-form-label">车辆类型:</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input userName" id="car_type" lay-verify="required"
+								readonly="true">
+						</div>
+					</div>
+				</div>
+
+				<div class="layui-row layui-form-item">
+					<div class="layui-col-md6">
+						<label class="layui-form-label">司机电话:</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input userName" id="sphone" lay-verify="required"
+								readonly="true">
+						</div>
+					</div>
+					<div class="layui-col-md6">
+						<label class="layui-form-label">距司机公里:</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input userName" id="distance" lay-verify="required"
+								readonly="true">
+						</div>
+					</div>
+				</div>
+
+
+				<!-- <a class="layui-btn search_btn" data-type="reload" onclick="look()" style="width:40%;margin-left:30%;">查看订单</a> -->
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/Url.js"></script>
+	<script type="text/javascript" src="../../js/phoneorder.js"></script>
+<script type="text/javascript" src="../../layui/layui.js"></script>
+
+
+	<script type="text/javascript">
+		var map = new BMap.Map("l-map");
+
+		$(function () {
+			var url = window.globalConfig.api; //接口地址
+			var id = localStorage.getItem("userid");
+			var token = localStorage.getItem("token");
+			//获取token
+			$.ajax({
+				url: url + '/admin/Index/admin_verify',
+				type: "POST",
+				data: {
+					id: id,
+					token: token
+				},
+				dataType: "json",
+				success: function (data) {
+					console.log('token', data)
+					var code = data.error_code;
+					if (code == -101) {
+						top.location.href = '../login/login.html';
+					}
+				},
+			})
+	
+
+			//获取地图
+			$.ajax({
+				url: url + '/admin/Index/getadmin_area',
+				type: "POST",
+				data: {
+					id: id,
+					token: token
+				},
+				dataType: "json",
+				success: function (data) {
+					console.log('area', data)
+					var code = data.error_code;
+					var lng = parseFloat(data.center.lng)
+					var lat = parseFloat(data.center.lat)
+					map.centerAndZoom(new BMap.Point(lng, lat), 14);
+
+					if (code == -101) {
+						top.location.href = '../login/login.html';
+					}
+				},
+			})
+		})
+		// 百度地图API功能
+		function G(id) {
+			return document.getElementById(id);
+		}
+
+
+		var ac = new BMap.Autocomplete( //建立一个自动完成的对象
+			{
+				"input": "suggestId",
+				"location": map
+			});
+
+		ac.addEventListener("onhighlight", function (e) { //鼠标放在下拉列表上的事件
+			var str = "";
+			var _value = e.fromitem.value;
+			var value = "";
+			if (e.fromitem.index > -1) {
+				value = _value.province + _value.city + _value.district + _value.street + _value.business;
+			}
+			str = "FromItem<br />index = " + e.fromitem.index + "<br />value = " + value;
+
+			value = "";
+			if (e.toitem.index > -1) {
+				_value = e.toitem.value;
+				value = _value.province + _value.city + _value.district + _value.street + _value.business;
+			}
+			str += "<br />ToItem<br />index = " + e.toitem.index + "<br />value = " + value;
+			G("searchResultPanel").innerHTML = str;
+		});
+
+		var myValue;
+		ac.addEventListener("onconfirm", function (e) { //鼠标点击下拉列表后的事件
+			var _value = e.item.value;
+			myValue = _value.province + _value.city + _value.district + _value.street + _value.business;
+			G("searchResultPanel").innerHTML = "onconfirm<br />index = " + e.item.index + "<br />myValue = " + myValue;
+
+			//setPlace();
+		});
+
+		function setPlace() {
+			$("#jcwy").removeAttr("onclick");
+			var id = localStorage.getItem("userid");
+			var token = localStorage.getItem("token");
+			var url = window.globalConfig.api; //接口地址
+			var phone = $('#phone').val();
+			var s_local = $('#suggestId').val();
+			if (phone == "") {
+				$("#jcwy").attr("onclick", "setPlace()");
+				alert("手机号不能为空");
+				return false;
+			}
+			var myreg = /^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$/;
+			if (!(myreg.test(phone))) {
+				$("#jcwy").attr("onclick", "setPlace()");
+				alert("手机号码有误，请重填");
+				return false;
+			}
+			if (s_local == "") {
+				$("#jcwy").attr("onclick", "setPlace()");
+				alert("起点不能为空");
+				return false;
+			}
+			//等待弹框
+			layui.use('layer', function () {
+				var layer = layui.layer;
+				var loading = layer.load(0, {
+					shade: false,
+					time: 2 * 1000
+				});
+			});
+			map.clearOverlays(); //清除地图上所有覆盖物
+			function myFun() {
+				if (local.getResults() != undefined) {
+					var pp = local.getResults().getPoi(0).point; //获取第一个智能搜索的结果
+					console.log('pp', pp)
+					var lat = pp.lat;
+					console.log('纬度', lat)
+					var lng = pp.lng;
+					console.log('经度', lng)
+					map.centerAndZoom(pp, 18);
+					map.addOverlay(new BMap.Marker(pp)); //添加标注	
+				} else {
+					var lat = localStorage.getItem("lat");
+					console.log('纬度', lat)
+					var lng = localStorage.getItem("lng");
+					console.log('经度', lng)
+					var point = new BMap.Point(lng, lat);
+					map.centerAndZoom(point, 14);
+					map.addOverlay(new BMap.Marker(point)); //添加标注	
+				}
+				$.ajax({
+					url: url + '/Home_V2/pobp',
+					type: "POST",
+					data: {
+						phone: phone,
+						s_lat: lat,
+						s_lng: lng,
+						s_local: s_local,
+						id: id,
+						token: token
+					},
+					dataType: "json",
+					success: function (data) {
+						$("#jcwy").attr("onclick", "setPlace()");
+						console.log(data)
+						if (data.message_code == 0) {
+							alert(data.message)
+							layer.close(loading);
+							var data = data.cont;
+							console.log('driver', data)
+							$('#name').val(data.name);
+							$('#nickname').val(data.nickname);
+							$('#card').val(data.card);
+							$('#sphone').val(data.phone);
+							$('#car_type').val(data.car_type);
+							$('#carcolor').val(data.carcolor);
+							$('#carnum').val(data.carnum);
+							$('#lits').val(data.lits);
+							$('#distance').val(data.distance);
+							$('#o_id').val(data.o_id);
+							localStorage.removeItem("viewid"); //移除所有的缓存数据
+							localStorage.removeItem("lng"); //移除所有的缓存数据
+							localStorage.removeItem("lat"); //移除所有的缓存数据
+						} else if (data.message_code == -1) {
+							$("#jcwy").attr("onclick", "setPlace()");
+							alert(data.message);
+							layer.close(loading);
+							localStorage.removeItem("viewid"); //移除所有的缓存数据
+							localStorage.removeItem("lng"); //移除所有的缓存数据
+							localStorage.removeItem("lat"); //移除所有的缓存数据
+							window.location.reload();
+						}
+					}
+				});
+			}
+			var local = new BMap.LocalSearch(map, { //智能搜索
+				onSearchComplete: myFun
+			});
+			local.search(myValue);
+		}
+		//添加常用标签
+		function addPlace() {
+			var id = localStorage.getItem("userid");
+			var token = localStorage.getItem("token");
+			var url = window.globalConfig.api; //接口地址
+			var s_local = $('#suggestId').val(); //常用地址名称
+			if (s_local == "") {
+				alert("常用地址不能为空");
+				return false;
+			}
+			map.clearOverlays(); //清除地图上所有覆盖物
+			function myFun() {
+				var pp = local.getResults().getPoi(0).point; //获取第一个智能搜索的结果
+				console.log('经纬度', pp)
+				var lat = pp.lat;
+				console.log('纬度', lat)
+				var lng = pp.lng;
+				console.log('经度', lng)
+				map.centerAndZoom(pp, 18);
+				map.addOverlay(new BMap.Marker(pp)); //添加标注
+				$.ajax({
+					url: url + '/admin/Order/add_address_view',
+					type: "POST",
+					data: {
+						id: id,
+						token: token,
+						lat: lat,
+						lng: lng,
+						view: s_local,
+					},
+					dataType: "json",
+					success: function (data) {
+						console.log(data)
+						if (data.error_code == 0) {
+							alert("常用地址添加成功")
+							window.location.reload();
+						} else if (data.error_code == -101) {
+							top.location.href = '../login/login.html';
+						} else if (data.error_code == -402) {
+							top.location.href = '../login/login.html';
+						} else if (data.error_code == -1) {
+							alert("该常用地址已添加成功")
+							window.location.reload();
+						}
+					}
+				});
+			}
+			var local = new BMap.LocalSearch(map, { //智能搜索
+				onSearchComplete: myFun
+			});
+			local.search(myValue);
+		}
+		//切换样式
+		$('.changyong').on('click', 'li', function () {
+			$(this).siblings('li').removeClass('on1'); // 删除其他li的边框样式
+			$(this).addClass('on1'); // 为当前li添加边框样式
+			var type = this.innerHTML;
+			console.log(type)
+			localStorage.setItem("type", type)
+			$('#suggestId').val(type);
+			var viewid = $(this).data("viewid");
+			console.log(viewid);
+			localStorage.setItem("viewid", viewid)
+			var lng = $(this).data("lng");
+			console.log(lng);
+			localStorage.setItem("lng", lng)
+			var lat = $(this).data("lat");
+			console.log(lat);
+			localStorage.setItem("lat", lat)
+		});
+
+		// function look() {
+		// 	var o_id = $('#o_id').val();
+		// 	window.location.href = '../order/orderInfo.html?o_id=' + o_id;
+		// }
+		//重置按钮
+		function reset() {
+			window.location.reload();
+		}
+	</script>
+</body>
+
+</html>

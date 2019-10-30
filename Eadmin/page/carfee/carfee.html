@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>车费设置</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../../css/public.css" media="all" />
+		<style type="text/css">
+			.changyong li {
+				float: left;
+				height: 35px;
+				line-height: 35px;
+				padding: 0 10px;
+				border: 1px solid #ccc;
+				border-radius: 8px;
+				margin: 0 10px 10px 10px;
+				cursor: pointer;
+			}
+
+			.on1 {
+				background-color: #009688;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body class="childrenBody">
+		<div class="layui-form">
+			<ul class="changyong" id="addressList">
+			</ul>
+		</div>
+		<script type="text/javascript" src="../../js/Url.js"></script>
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../layui/layui.js"></script>
+		<script type="text/javascript" src="carfee.js"></script>
+		<script>
+			//切换样式
+			$('.changyong').on('click', 'li', function() {
+				$(this).siblings('li').removeClass('on1'); // 删除其他li的边框样式
+				$(this).addClass('on1'); // 为当前li添加边框样式
+                var address_id = $(this).data("address_id");
+                console.log('address_id',address_id);
+                var area_name = $(this).data("area_name");
+                console.log('area_name',area_name);
+				if(address_id==1){
+					//跳转到宝坻计费页面
+					var url = "carfeeList.html?address_id=" + address_id+'&area_name='+area_name
+					window.open(url);//打开新的页面
+				}
+				if(address_id==2){
+					//跳转到沧州计费页面
+					var url = "ccarfeeList.html?address_id=" + address_id+'&area_name='+area_name
+					window.open(url);//打开新的页面
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<link rel="stylesheet" href="__PUBLIC__/home/css/drive_relogin.css" media="all">
+	<link rel="stylesheet" href="__PUBLIC__/home/css/form.css" media="all">
+
+	<link rel="stylesheet" href="__PUBLIC__/home/css/alert.css" media="all">
+	<style>
+		.disable {
+			pointer-events: none;
+		}
+	</style>
+	<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<title>e达司机注册</title>
+</head>
+
+<body>
+	<!-- 未注册 -->
+	<div class="content" id="content">
+		<form class="resetpassform" id="reset-form">
+			<input id="token" name="" type="hidden" value="">
+			<input id="appId" name="appId" type="hidden" value="{$config.appId}">
+			<input id="timestamp" name="timestamp" type="hidden" value="{$config.timestamp}">
+			<input id="nonceStr" name="nonceStr" type="hidden" value="{$config.nonceStr}">
+			<input id="signature" name="signature" type="hidden" value="{$config.signature}">
+			<input id="reviewed" name="reviewed" type="hidden" value="{$relogin.reviewed}">
+			<input id="unionid" name="unionid" type="hidden" value="{$relogin.unionid}">
+			<input id="d_id" name="d_id" type="hidden" value="{$relogin.d_id}">
+			<input id="card_img_z" name="" type="hidden" value="">
+			<input id="card_img_f" name="" type="hidden" value="">
+			<input id="js_img" name="" type="hidden" value="">
+			<input id="xs_img" name="" type="hidden" value="">
+			<input id="car_pe_img" name="" type="hidden" value="">
+			<input id="insurance_img" name="" type="hidden" value="">
+			<input id="urgent_img" name="" type="hidden" value="">
+			<input id="account_book_img" name="" type="hidden" value="">
+			<input id="close" name="close" type="hidden" value="{$close}">
+
+			<div class='form-area'>
+				<div class="form-title">
+					<image src="__PUBLIC__/home/images/geren.png" class="null" style="width:13px;height:13px;"></image>
+					<span style="font-size: 0.9rem;">个人信息</span>
+				</div>
+
+				<div class="input-item">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						注册地区：
+					</label>
+					<select id="m_address" class="name1">
+						<volist name="m_address" id="vo">
+							<option value="{$vo.address_id}">{$vo.area_name}</option>
+						</volist>
+					</select>
+				</div>
+
+
+				<div class="input-item">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						运营方式：
+					</label>
+					<select id="operation" class="name1">
+						<option value="unchoose">请选择</option>
+						<option value="car">非出租车</option>
+						<option value="taxi">出租车</option>
+
+					</select>
+				</div>
+
+
+
+				<div class="input-item">
+					<label class="wenben">
+						<span class="xiushi">*</span>
+						手机号：
+					</label>
+					<input type="tel" maxlength="11" class="name" id="phone" name="phone" onblur="phone0();">
+				</div>
+
+
+				<div class="input-item">
+					<label class="wenben">
+						<span class="xiushi">*</span>
+						验证码：
+					</label>
+					<input type="number" oninput="if(value.length>6) value=value.slice(0,6)" class="phoneCode"
+						id="phoneCode" name="phoneCode" placeholder="" style="width:45%;">
+					<div class="right">
+						<button type="button" id="sendVerCode" class="anniu" onclick="sendVerCode1()">获取验证码</button>
+					</div>
+				</div>
+
+
+
+				<div class="input-item">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						真实姓名：
+					</label>
+					<input type="text" class="name1" id="name" name="name" placeholder="请填写与身份证一致">
+				</div>
+
+
+
+				<div class="input-item">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						身份证号：
+					</label>
+					<input type="text" class="name1" id="sfzh" name="sfzh" onblur="sfzh1();">
+				</div>
+
+
+				<div class="input-item">
+					<label class="wenben2">
+						<span class="xiushi">*</span>
+						紧急联系人电话：
+					</label>
+					<input type="tel" maxlength="11" class="name2" id="jjlxr" name="jjlxr" onblur="phone1();">
+				</div>
+				<div class="input-item">
+					<label class="wenben1">
+						<!-- <span class="xiushi">*</span> -->
+						邀请者工号：
+					</label>
+					<input type="text" class="name1" id="invite_card" name="invite_card">
+				</div>
+			</div>
+
+			<div class='form-area'>
+				<div class="form-title">
+					<image src="__PUBLIC__/home/images/cheliang.png" class="null" style="width:15px;height:13px;">
+					</image>
+					<span style="font-size: 0.9rem;">车辆信息</span>
+				</div>
+				<div class="input-item">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						车牌号码：
+					</label>
+					<input type="text" class="name1" id="chepai" name="chepai" maxlength="8" onblur="chepai1();"
+						onchange="chepai1();">
+				</div>
+
+				<div class="input-item">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						车辆颜色：
+					</label>
+					<!-- 	<input type="text" maxlength="11" class="name1" id="" name=""> -->
+					<select id="color" class="name1">
+						<option value="">请选择车辆颜色</option>
+						<option value="白色">白色</option>
+						<option value="黑色">黑色</option>
+						<option value="红色">红色</option>
+						<option value="灰色">灰色</option>
+						<option value="橙色">橙色</option>
+						<option value="绿色">绿色</option>
+						<option value="银色">银色</option>
+						<option value="黄色">黄色</option>
+						<option value="金色">金色</option>
+						<option value="蓝色">蓝色</option>
+						<option value="棕色">棕色</option>
+						<option value="紫色">紫色</option>
+						<option value="其他">其他</option>
+					</select>
+				</div>
+				<div class="input-item">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						车辆类别：
+					</label>
+					<input type="text" class="name1" id="type" placeholder="例如:大众">
+					<!-- <select id="type" class="name1">
+							<option value="1">请选择车辆类别</option>
+							<option value="">小轿车</option>
+							<option value="">SUV</option>
+							<option value="">小型面包</option>
+							<option value="">商务车</option>
+							<option value="">其他</option>
+						</select> -->
+				</div>
+
+
+			</div>
+
+
+
+
+
+		</form>
+		<div class="form-area">
+			<div class="form-title">
+				<image src="__PUBLIC__/home/images/zhaopian.png" class="null" style="width:15px;height:13px;"></image>
+				<span style="font-size: 0.9rem;">车辆照片</span>
+			</div>
+			<!-- 照片-->
+			<div class="id_img_wp">
+				<input type="file" accept="image/*" onchange="getzImg(this)" style="display:none" value="" id="img_z" />
+				<input type="file" accept="image/*" onchange="getfImg(this)" value="" id="img_f" style="display:none" />
+				<div class="img_wp" onclick="takePicture('card_img_z')">
+					<img src="__PUBLIC__/home/images/zbg.png" id="zmz" />
+					<p class="img_intro">身份证正面照</p>
+				</div>
+
+				<div class="img_wp" onclick="takePicture('card_img_f')">
+					<img src="__PUBLIC__/home/images/zbg.png" id="fmz" />
+					<p class="img_intro">身份证反面照</p>
+				</div>
+				<div class="cf"></div>
+			</div>
+			<div class="id_img_wp">
+				<input type="file" accept="image/*" onchange="getzImg(this)" style="display:none" value="" id="img_z" />
+				<input type="file" accept="image/*" onchange="getfImg(this)" value="" id="img_f" style="display:none" />
+				<div class="img_wp" onclick="takePicture('js_img')">
+					<img src="__PUBLIC__/home/images/zbg.png" id="jsz" />
+					<p class="img_intro">驾驶证照片</p>
+				</div>
+
+				<div class="img_wp" onclick="takePicture('xs_img')">
+					<img src="__PUBLIC__/home/images/zbg.png" id="xsz" />
+					<p class="img_intro">行驶证照片</p>
+				</div>
+				<div class="cf"></div>
+			</div>
+
+
+			<div class="id_img_wp">
+				<input type="file" accept="image/*" onchange="getzImg(this)" style="display:none" value="" id="img_z" />
+				<input type="file" accept="image/*" onchange="getfImg(this)" value="" id="img_f" style="display:none" />
+				<div class="img_wp" onclick="takePicture('car_pe_img')">
+					<img src="__PUBLIC__/home/images/zbg.png" id="rcz" />
+					<p class="img_intro">人车合影照片</p>
+				</div>
+
+				<div class="img_wp" onclick="takePicture('insurance_img')">
+					<img src="__PUBLIC__/home/images/zbg.png" id="bxz" />
+					<p class="img_intro">车辆保险单</p>
+				</div>
+				<div class="cf"></div>
+			</div>
+		</div>
+
+
+		<div class="form-area">
+			<div class="form-title">
+				<image src="__PUBLIC__/home/images/zhaopian.png" class="null" style="width:15px;height:13px;"></image>
+				<span style="font-size: 0.9rem;">附加信息</span>
+			</div>
+			<div class="id_img_wp">
+				<input type="file" accept="image/*" onchange="getzImg(this)" style="display:none" value="" id="img_z" />
+				<input type="file" accept="image/*" onchange="getfImg(this)" value="" id="img_f" style="display:none" />
+				<div class="img_wp" onclick="takePicture('account_book_img')">
+					<img src="__PUBLIC__/home/images/zbg.png" id="hkb" />
+					<p class="img_intro">户口本照片</p>
+				</div>
+
+				<div class="img_wp" onclick="takePicture('urgent_img')">
+					<img src="__PUBLIC__/home/images/zbg.png" id="sfz" />
+					<p class="img_intro">紧急联系人身份证</p>
+				</div>
+				<div class="cf"></div>
+			</div>
+			<div style="width:90%;margin:5%;color:#999;font-size: 0.9rem;">其附加信息为父母、妻子、子女的身份证和其户口本首页二选其一</div>
+
+		</div>
+
+
+
+		<div style="text-align:left;margin-left: 10vw;margin-top: 2vh;;color: red;font-size: 0.9rem;">请务必核实信息正确，请谨慎填写资料
+		</div>
+		<div class="form-group">
+			<button type="button" onclick="save()" class="xiugai">确认提交</button>
+		</div>
+	</div>
+	<!-- 已注册 -->
+	<div class="content1" id="content1">
+		<form class="resetpassform" id="reset-form">
+			<div class="form-area">
+				<div class="form-title">
+					<image src="__PUBLIC__/home/images/geren.png" class="null" style="width:13px;height:13px;"></image>
+					<span style="font-size: 0.9rem;">个人信息</span>
+				</div>
+				<div class="input-item">
+					<label class="wenben">
+						<span class="xiushi">*</span>
+						注册地区：
+					</label>
+					<input type="text" class="name" id="" name="" disabled="disabled" readonly="true"
+						value="{$relogin.area_name}">
+				</div>
+				<div class="input-item">
+					<label class="wenben">
+						<span class="xiushi">*</span>
+						运营方式
+					</label>
+					<input type="text" class="name" id="" name="" disabled="disabled" readonly="true"
+						value="{$relogin.operation}">
+				</div>
+				<div class="username">
+					<label class="wenben">
+						<span class="xiushi">*</span>
+						注册地区：
+					</label>
+					<input type="text" class="name" id="" name="" disabled="disabled" readonly="true"
+						value="{$relogin.area_name}">
+				</div>
+				<div class="username">
+					<label class="wenben">
+						<span class="xiushi">*</span>
+						手机号：
+					</label>
+					<input type="number" class="name" id="" name="" disabled="disabled" readonly="true"
+						value="{$relogin.phone}">
+				</div>
+				<div class="username">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						真实姓名：
+					</label>
+					<input type="text" class="name1" id="" name="" disabled="disabled" readonly="true"
+						value="{$relogin.name}">
+				</div>
+
+				<div class="username">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						身份证号：
+					</label>
+					<input type="text" class="name1" id="" name="" disabled="disabled" readonly="true"
+						value="{$relogin.idcard}">
+				</div>
+				<div class="username">
+					<label class="wenben2">
+						<span class="xiushi">*</span>
+						紧急联系人电话：
+					</label>
+					<input type="text" class="name2" id="" name="" disabled="disabled" readonly="true"
+						value="{$relogin.urgent_phone}">
+				</div>
+				<div class="username">
+					<label class="wenben1">
+						<!-- <span class="xiushi">*</span> -->
+						邀请者工号：
+					</label>
+					<input type="text" class="name1" id="" name="" disabled="disabled" readonly="true"
+						value="{$relogin.invite_card}">
+				</div>
+
+			</div>
+
+			<div class="form-area">
+
+				<div class="form-title">
+					<image src="__PUBLIC__/home/images/cheliang.png" class="null" style="width:15px;height:13px;">
+					</image>
+					<span style="font-size: 0.9rem;">车辆照片</span>
+				</div>
+				<div class="username">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						车牌号码：
+					</label>
+					<input type="text" class="name1" id="" name="" disabled="disabled" readonly="true"
+						value="{$relogin.carnum}">
+				</div>
+				<div class="username">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						车辆颜色：
+					</label>
+					<input type="text" class="name1" id="" name="" disabled="disabled" readonly="true"
+						value="{$relogin.carcolor}">
+				</div>
+				<div class="username">
+					<label class="wenben1">
+						<span class="xiushi">*</span>
+						车辆类别：
+					</label>
+					<input type="text" class="name1" id="" name="" disabled="disabled" readonly="true"
+						value="{$relogin.car_type}">
+				</div>
+			</div>
+
+
+		</form>
+		<div class="form-area">
+
+
+			<div class="form-title">
+				<image src="__PUBLIC__/home/images/zhaopian.png" class="null" style="width:15px;height:13px;"></image>
+				<span style="font-size: 0.9rem;">车辆信息</span>
+			</div>
+
+			<div class="id_img_wp">
+				<input type="file" accept="image/*" onchange="getzImg(this)" style="display:none" value="" id="img_z" />
+				<input type="file" accept="image/*" onchange="getfImg(this)" value="" id="img_f" style="display:none" />
+				<div class="img_wp">
+					<img src="{$relogin.card_img_z}" />
+					<p class="img_intro">身份证正面照</p>
+				</div>
+
+				<div class="img_wp">
+					<img src="{$relogin.card_img_f}" />
+					<p class="img_intro">身份证反面照</p>
+				</div>
+				<div class="cf"></div>
+			</div>
+
+			<div class="id_img_wp">
+				<input type="file" accept="image/*" onchange="getzImg(this)" style="display:none" value="" id="img_z" />
+				<input type="file" accept="image/*" onchange="getfImg(this)" value="" id="img_f" style="display:none" />
+				<div class="img_wp">
+					<img src="{$relogin.js_img}" />
+					<p class="img_intro">驾驶证照片</p>
+				</div>
+
+				<div class="img_wp">
+					<img src="{$relogin.xs_img}" />
+					<p class="img_intro">行驶证照片</p>
+				</div>
+				<div class="cf"></div>
+			</div>
+			<div class="id_img_wp">
+				<input type="file" accept="image/*" onchange="getzImg(this)" style="display:none" value="" id="img_z" />
+				<input type="file" accept="image/*" onchange="getfImg(this)" value="" id="img_f" style="display:none" />
+				<div class="img_wp">
+					<img src="{$relogin.car_pe_img}" />
+					<p class="img_intro">人车合影照片</p>
+				</div>
+
+				<div class="img_wp">
+					<img src="{$relogin.insurance_img}" />
+					<p class="img_intro">车辆保险单</p>
+				</div>
+				<div class="cf"></div>
+			</div>
+		</div>
+
+		<!-- 照片-->
+
+
+
+		<div class="form-area">
+			<div class="form-title">
+				<image src="__PUBLIC__/home/images/zhaopian.png" class="null" style="width:15px;height:13px;"></image>
+				<span style="font-size: 0.9rem;">选填信息</span>
+			</div>
+			<div class="id_img_wp">
+				<input type="file" accept="image/*" onchange="getzImg(this)" style="display:none" value="" id="img_z" />
+				<input type="file" accept="image/*" onchange="getfImg(this)" value="" id="img_f" style="display:none" />
+				<div class="img_wp">
+					<img src="{$relogin.account_book_img}" id="" />
+					<p class="img_intro">户口本照片</p>
+				</div>
+
+				<div class="img_wp">
+					<img src="{$relogin.urgent_img}" id="" />
+					<p class="img_intro">紧急联系人身份证</p>
+				</div>
+				<div class="cf"></div>
+			</div>
+		</div>
+
+
+
+	</div>
+</body>
+<script type="text/javascript">
+	function phone0() {
+		//弹框
+		var toast = function (params) {
+			var el = document.createElement("div");
+			el.setAttribute("id", "toast");
+			el.innerHTML = params.message;
+			document.body.appendChild(el);
+			el.classList.add("fadeIn");
+			setTimeout(function () {
+				el.classList.remove("fadeIn");
+				el.classList.add("fadeOut");
+				el.addEventListener("animationend", function () {
+					el.classList.add("hide");
+				});
+			}, params.time);
+		};
+		var phone = $('#phone').val();
+		if (phone == "") {
+			//alert("手机号不能为空");
+			toast({
+				message: "手机号不能为空",
+				time: 1500
+			});
+			return false;
+		}
+		if (phone.length != 11) {
+			toast({
+				message: "手机号位数不正确",
+				time: 1500
+			});
+			return false;
+		}
+		var myreg = /^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6,7])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$/;
+		if (!(myreg.test(phone))) {
+			//alert("手机号码有误，请重填");
+			toast({
+				message: "手机号码有误，请重填",
+				time: 1500
+			});
+			return false;
+		}
+	}
+
+	function sfzh1() {
+		//弹框
+		var toast = function (params) {
+			var el = document.createElement("div");
+			el.setAttribute("id", "toast");
+			el.innerHTML = params.message;
+			document.body.appendChild(el);
+			el.classList.add("fadeIn");
+			setTimeout(function () {
+				el.classList.remove("fadeIn");
+				el.classList.add("fadeOut");
+				el.addEventListener("animationend", function () {
+					el.classList.add("hide");
+				});
+			}, params.time);
+		};
+		var sfzh = $('#sfzh').val();
+		var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+		if (reg.test(sfzh) === false) {
+			//alert("身份证输入不合法");
+			toast({
+				message: "身份证输入不合法",
+				time: 1500
+			});
+			return false;
+		}
+	}
+
+	function phone1() {
+		//弹框
+		var toast = function (params) {
+			var el = document.createElement("div");
+			el.setAttribute("id", "toast");
+			el.innerHTML = params.message;
+			document.body.appendChild(el);
+			el.classList.add("fadeIn");
+			setTimeout(function () {
+				el.classList.remove("fadeIn");
+				el.classList.add("fadeOut");
+				el.addEventListener("animationend", function () {
+					el.classList.add("hide");
+				});
+			}, params.time);
+		};
+		var oldphone = $('#phone').val();
+		var phone = $('#jjlxr').val();
+		if (phone == oldphone) {
+			//alert("紧急联系人手机号不能为空");
+			toast({
+				message: "紧急联系人手机号不能和绑定手机号一样",
+				time: 1500
+			});
+			return false;
+		}
+		if (phone.length != 11) {
+			toast({
+				message: "手机号位数不正确",
+				time: 1500
+			});
+			return false;
+		}
+		if (phone == "") {
+			//alert("紧急联系人手机号不能为空");
+			toast({
+				message: "紧急联系人手机号不能为空",
+				time: 1500
+			});
+			return false;
+		}
+		var myreg = /^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6,7])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$/;
+		if (!(myreg.test(phone))) {
+			//alert("紧急联系人手机号码有误，请重填");
+			toast({
+				message: "紧急联系人手机号码有误，请重填",
+				time: 1500
+			});
+			return false;
+		}
+	}
+
+	function chepai1() {
+		//弹框
+		var toast = function (params) {
+			var el = document.createElement("div");
+			el.setAttribute("id", "toast");
+			el.innerHTML = params.message;
+			document.body.appendChild(el);
+			el.classList.add("fadeIn");
+			setTimeout(function () {
+				el.classList.remove("fadeIn");
+				el.classList.add("fadeOut");
+				el.addEventListener("animationend", function () {
+					el.classList.add("hide");
+				});
+			}, params.time);
+		};
+		var chepai = $('#chepai').val();
+		if (chepai.length != 7 && chepai.length != 8) {
+			toast({
+				message: '车牌号长度有误！',
+				time: 1500
+			})
+			return false;
+		}
+		var pattPlateNumber =
+			/^(([京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领][A-Z](([0-9]{5}[DF])|([DF]([A-HJ-NP-Z0-9])[0-9]{4})))|([京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领][A-Z][A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳使领]))$/;
+		if (!(pattPlateNumber.test(chepai))) {
+			//alert("车牌输入不合法");
+			toast({
+				message: "车牌输入不合法",
+				time: 1500
+			});
+			return false;
+		}
+	}
+	/* 微信配置 */
+	var appId = $('#appId').val();
+	var timestamp = $('#timestamp').val();
+	var nonceStr = $('#nonceStr').val();
+	var signature = $('#signature').val();
+	wx.config({
+		debug: false, //调试模式   当为tru时，开启调试模式 
+		appId: appId,
+		timestamp: timestamp.toString(), //签名时间戳
+		nonceStr: nonceStr, //生成签名的随机串 
+		signature: signature, //签名                    
+		jsApiList: ['chooseImage', 'uploadImage'],
+		success: function () {
+			alert("配置成功")
+		},
+		fail: function () {
+			alert("配置失败")
+		}
+	});
+	//
+	wx.ready(function () {
+		// 在这里调用 API
+		wx.checkJsApi({
+			jsApiList: [
+				'chooseImage',
+				'uploadImage'
+			],
+			success: function (res) {
+				console.log(JSON.stringify(res));
+			}
+		});
+	});
+	//调取摄像头和相册
+	function takePicture(nums) {
+		wx.chooseImage({
+			count: 1,
+			needResult: 1,
+			sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有  
+			sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有  
+			success: function (data) {
+				localIds = data.localIds[0]; // 返回选定照片的本地ID列表，localId可以作为img标签的src属性显示图片                           
+				var num1 = nums;
+				if (num1 == 'card_img_z') {
+					$('#zmz').attr("src", localIds)
+				} else if (num1 == 'card_img_f') {
+					$('#fmz').attr("src", localIds)
+				} else if (num1 == 'js_img') {
+					$('#jsz').attr("src", localIds)
+				} else if (num1 == 'xs_img') {
+					$('#xsz').attr("src", localIds)
+				} else if (num1 == 'car_pe_img') {
+					$('#rcz').attr("src", localIds)
+				} else if (num1 == 'insurance_img') {
+					$('#bxz').attr("src", localIds)
+				} else if (num1 == 'urgent_img') {
+					$('#sfz').attr("src", localIds)
+				} else if (num1 == 'account_book_img') {
+					$('#hkb').attr("src", localIds)
+				}
+				wxuploadImage(localIds, num1);
+			},
+			fail: function (res) {
+				alterShowMessage("操作提示", JSON.stringify(res), "1", "确定", "", "", "");
+			}
+		});
+	}
+	//上传到微信服务器
+	function wxuploadImage(e, num) {
+		wx.uploadImage({
+			localId: e, // 需要上传的图片的本地ID，由chooseImage接口获得  
+			isShowProgressTips: 1, // 默认为1，显示进度提示  
+			success: function (res) {
+				mediaId = res.serverId; //serverId                    
+				$('#mediaId').val(mediaId);
+				unionid = $('#unionid').val(); //unionid
+				num1 = num; //imgkey
+				$.ajax({
+					url: '__APP__/User/add_drive_img',
+					type: "POST",
+					data: {
+						serverId: mediaId,
+						unionid: unionid,
+						imgkey: num1
+					},
+					dataType: "json",
+					success: function (data) {
+						console.log('data', data)
+						var code = data.error_code;
+						console.log('code', code);
+						if (code == 0) {
+							var path = data.path;
+							//alert(path)
+							if (num1 == 'card_img_z') {
+								$('#card_img_z').val(path)
+							} else if (num1 == 'card_img_f') {
+								$('#card_img_f').val(path)
+							} else if (num1 == 'js_img') {
+								$('#js_img').val(path)
+							} else if (num1 == 'xs_img') {
+								$('#xs_img').val(path)
+							} else if (num1 == 'car_pe_img') {
+								$('#car_pe_img').val(path)
+							} else if (num1 == 'insurance_img') {
+								$('#insurance_img').val(path)
+							} else if (num1 == 'urgent_img') {
+								$('#urgent_img').val(path)
+							} else if (num1 == 'account_book_img') {
+								$('#account_book_img').val(path)
+							}
+						}
+					}
+				});
+			},
+			fail: function (error) {
+				picPath = '';
+				localIds = '';
+				alert(Json.stringify(error));
+			}
+		});
+	}
+	//发送短信验证码
+	function sendVerCode1() {
+		// 禁用点击事件
+		$("#sendVerCode").addClass("disable");
+		// 提交业务
+		//弹框
+		var toast = function (params) {
+			var el = document.createElement("div");
+			el.setAttribute("id", "toast");
+			el.innerHTML = params.message;
+			document.body.appendChild(el);
+			el.classList.add("fadeIn");
+			setTimeout(function () {
+				el.classList.remove("fadeIn");
+				el.classList.add("fadeOut");
+				el.addEventListener("animationend", function () {
+					el.classList.add("hide");
+				});
+			}, params.time);
+		};
+		var phone = $('#phone').val();
+		var token = $('#token').val();
+		if (phone == "") {
+			$("#sendVerCode").removeClass("disable");
+			toast({
+				message: "手机号不能为空",
+				time: 1500
+			});
+			return false;
+		}
+		if (phone.length != 11) {
+			$("#sendVerCode").removeClass("disable");
+			toast({
+				message: "手机号位数不正确",
+				time: 1500
+			});
+			return false;
+		}
+		var myreg = /^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6,7])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$/;
+		if (!(myreg.test(phone))) {
+			$("#sendVerCode").removeClass("disable");
+			toast({
+				message: "手机号码有误，请重填",
+				time: 1500
+			});
+			return false;
+		}
+		//发送验证码
+		if (phone != "") {
+			$.ajax({
+				//url:' http://39.98.43.249/User/token',//跨域调取URL
+				url: '__APP__/User/token', //不跨域调取url
+				type: 'post',
+				//data:'id='+id,
+				success: function (data) {
+					console.log('data', data)
+					var token = data.token;
+					console.log('token', token)
+					$('#token').val(token);
+					$.ajax({
+						url: '__APP__/User/getyzm',
+						type: "POST",
+						data: {
+							token: token,
+							phone: phone
+						},
+						dataType: "json",
+						async: 'false',
+						success: function (data) {
+							if (data.error_code == 0) {
+								let count = 60;
+								const countDown = setInterval(() => {
+									if (count === 0) {
+										$("#sendVerCode").removeClass("disable");
+										$('#sendVerCode').text('获取验证码').removeAttr('disabled');
+										$('#sendVerCode').css({
+											background: '#05CEA7',
+											color: '#fff',
+										});
+										clearInterval(countDown);
+									} else {
+										count--;
+										$('#sendVerCode').attr('disabled', true);
+										$('#sendVerCode').css({
+											background: '#d8d8d8',
+											color: '#707070',
+										});
+										$('#sendVerCode').text('重新发送(' + count + ')');
+									}
+								}, 1000);
+
+								toast({
+									message: "验证码已下发，请注意查收",
+									time: 1500
+								});
+								return false;
+							}
+							if (data.error_code == 1) {
+								$("#sendVerCode").removeClass("disable");
+								toast({
+									message: "号码无效",
+									time: 1500
+								});
+								return false;
+							} else if (data.error_code == 2) {
+								$("#sendVerCode").removeClass("disable");
+								toast({
+									message: "该号码达到上限",
+									time: 1500
+								});
+								return false;
+							} else if (data.error_code == -501) {
+								$("#sendVerCode").removeClass("disable");
+								toast({
+									message: data.code,
+									time: 1500
+								});
+								return false;
+							} else if (data.error_code == -1012) {
+								$("#sendVerCode").removeClass("disable");
+								toast({
+									message: "验证码已失效",
+									time: 1500
+								});
+								return false;
+							}
+						}
+					});
+				},
+			})
+		};
+	}
+	//保存
+	function save() {
+		//弹框
+		var toast = function (params) {
+			var el = document.createElement("div");
+			el.setAttribute("id", "toast");
+			el.innerHTML = params.message;
+			document.body.appendChild(el);
+			el.classList.add("fadeIn");
+			setTimeout(function () {
+				el.classList.remove("fadeIn");
+				el.classList.add("fadeOut");
+				el.addEventListener("animationend", function () {
+					el.classList.add("hide");
+				});
+			}, params.time);
+		};
+		var d_id = $('#d_id').val();
+
+		var unionid = $('#unionid').val();
+		var phone = $('#phone').val();
+		var phoneCode = $('#phoneCode').val();
+		var name = $('#name').val();
+		var sfzh = $('#sfzh').val();
+		var chepai = $('#chepai').val();
+		var color = $("#color option:selected").val();
+		var m_address = $("#m_address option:selected").val();
+		var operation = $("#operation option:selected").val();
+
+		//var type = $("#type option:selected").text();
+		var type = $('#type').val();
+		var jjlxr = $('#jjlxr').val();
+		var invite_card = $('#invite_card').val();
+		if (name == '') {
+			//alert('姓名不能为空');
+			window.scrollTo(0, 0);
+			toast({
+				message: "姓名不能为空",
+				time: 1500
+			});
+			return false
+		}
+		if (operation == 'unchoose') {
+			window.scrollTo(0, 0);
+			toast({
+				message: "请选择运营方式",
+				time: 1500
+			});
+			return false
+		}
+		if (sfzh == '') {
+			//alert('身份证号不能为空');
+			window.scrollTo(0, 0);
+			toast({
+				message: "身份证号不能为空",
+				time: 1500
+			});
+			return false
+		}
+		if (chepai == '') {
+			//alert('车牌不能为空');
+			window.scrollTo(0, 0);
+			toast({
+				message: "车牌不能为空",
+				time: 1500
+			});
+			return false
+		}
+		if (color == '') {
+			//alert('车辆颜色不能为空');
+			window.scrollTo(0, 0);
+			toast({
+				message: "车辆颜色不能为空",
+				time: 1500
+			});
+			return false
+		}
+		if (type == '') {
+			window.scrollTo(0, 0);
+			//alert('车辆型号不能为空');
+			toast({
+				message: "车辆型号不能为空",
+				time: 1500
+			});
+			return false
+		}
+		var card_img_z = $('#card_img_z').val()
+		var card_img_f = $('#card_img_f').val()
+		var js_img = $('#js_img').val()
+		var xs_img = $('#xs_img').val()
+		var car_pe_img = $('#car_pe_img').val()
+		var insurance_img = $('#insurance_img').val()
+		var urgent_img = $('#urgent_img').val()
+		var account_book_img = $('#account_book_img').val()
+		if (urgent_img == '' && account_book_img == '') {
+			window.scrollTo(0, 0);
+			toast({
+				message: "紧急联系人身份证和户口本必须上传其中一张",
+				time: 1500
+			});
+			return false
+		}
+		$.ajax({
+			url: '__APP__/Index/drive_relogin_chk', //不跨域调取url
+			type: 'post',
+			async: 'false',
+			data: {
+				d_id: d_id,
+				operation: operation,
+				unionid: unionid,
+				phone: phone,
+				yzm: phoneCode,
+				name: name,
+				idcard: sfzh,
+				urgent_phone: jjlxr,
+				car_type: type,
+				carcolor: color,
+				carnum: chepai,
+				card_img_z: card_img_z,
+				card_img_f: card_img_f,
+				js_img: js_img,
+				xs_img: xs_img,
+				car_pe_img: car_pe_img,
+				insurance_img: insurance_img,
+				urgent_img: urgent_img,
+				account_book_img: account_book_img,
+				invite_card: invite_card,
+				address_id: m_address
+			},
+			success: function (data) {
+				console.log('data', data)
+				var code = data.error_code;
+				console.log('code', code);
+				if (code == 0) {
+					window.scrollTo(0, 0);
+					//alert("注册成功")
+					toast({
+						message: "注册成功",
+						time: 1100
+					});
+					setTimeout(function () {
+						WeixinJSBridge.call('closeWindow');
+					}, 1200);
+				} else if (code == -1011) {
+					window.scrollTo(0, 0);
+					//alert("验证码不正确")
+					toast({
+						message: "验证码不正确",
+						time: 1500
+					});
+				} else if (code == -406) {
+					window.scrollTo(0, 0);
+					//alert("工号不存在")
+					toast({
+						message: "工号不存在",
+						time: 1500
+					});
+				} else if (code == -401) {
+					window.scrollTo(0, 0);
+					var message = data.message;
+					if (message == 'card_img_z') {
+						//alert('身份证正面为空')
+						toast({
+							message: "身份证正面为空",
+							time: 1500
+						});
+					} else if (message == 'card_img_f') {
+						window.scrollTo(0, 0);
+						//alert('身份证反面为空')
+						toast({
+							message: "身份证反面为空",
+							time: 1500
+						});
+					} else if (message == 'js_img') {
+						//window.scrollTo(0,0);  
+						//alert('驾驶证为空')
+						toast({
+							message: "驾驶证为空",
+							time: 1500
+						});
+					} else if (message == 'xs_img') {
+						//window.scrollTo(0,0);  
+						//alert('行驶证为空')
+						toast({
+							message: "行驶证为空",
+							time: 1500
+						});
+					} else if (message == 'car_pe_img') {
+						//window.scrollTo(0,0);  
+						//alert('人车合影为空')
+						toast({
+							message: "人车合影为空",
+							time: 1500
+						});
+					} else if (message == 'insurance_img') {
+						//window.scrollTo(0,0);  
+						//alert('保险为空')
+						toast({
+							message: "保险为空",
+							time: 1500
+						});
+					} else if (message == 'urgent_img') {
+						//window.scrollTo(0,0);  
+						//alert('紧急联系人身份证为空')
+						toast({
+							message: "紧急联系人身份证为空",
+							time: 1500
+						});
+					} else if (message == 'account_book_img') {
+						//window.scrollTo(0,0);  
+						//alert('户口本为空')
+						toast({
+							message: "户口本为空",
+							time: 1500
+						});
+					}
+				} else {
+					//window.scrollTo(0,0);  
+					//alert("注册失败")
+					toast({
+						message: "注册失败",
+						time: 1500
+					});
+				}
+			}
+		});
+	}
+	//获取token
+	function time() {
+		$.ajax({
+			//url:' http://39.98.43.249/User/token',//跨域调取URL
+			url: '__APP__/User/token', //不跨域调取url
+			type: 'post',
+			//data:'id='+id,
+			success: function (data) {
+				console.log('data', data)
+				var token = data.token;
+				console.log('token', token)
+				$('#token').val(token);
+			}
+		});
+	}
+	//每隔7200执行一次
+	$(function () {
+		//弹框
+		var toast = function (params) {
+			var el = document.createElement("div");
+			el.setAttribute("id", "toast");
+			el.innerHTML = params.message;
+			document.body.appendChild(el);
+			el.classList.add("fadeIn");
+			setTimeout(function () {
+				el.classList.remove("fadeIn");
+				el.classList.add("fadeOut");
+				el.addEventListener("animationend", function () {
+					el.classList.add("hide");
+				});
+			}, params.time);
+		};
+		//setInterval(time,7200);
+		/* 照片 */
+		$('.img_wp img').height($('.img_wp img').width() * 0.6);
+		$(window).resize(function () {
+			$('.img_wp img').height($('.img_wp img').width() * 0.6);
+		})
+		/*根据状态显示不同页面 */
+		var reviewed = $('#reviewed').val();
+		//alert(reviewed)
+		if (reviewed == "N") {
+			$('#content').show()
+			$('#content1').hide()
+		} else {
+			$('#content1').show()
+			$('#content').hide()
+		}
+		var close = $('#close').val();
+		if (close == 'close') {
+			toast({
+				message: "请重新点击司机招募",
+				time: 1100
+			});
+			setTimeout(function () {
+				WeixinJSBridge.call('closeWindow');
+			}, 1200);
+		}
+	})
+</script>
+
+</html>

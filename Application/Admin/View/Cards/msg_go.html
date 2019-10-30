@@ -1,0 +1,64 @@
+<!--<link rel="stylesheet" href="__PUBLIC__/Admin/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="__PUBLIC__/Admin/layui/css/layui.css">
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/layui/layui.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/layer/layer.js"></script>
+<div>
+    <div class="first" style="padding:10px;">
+        尊敬的客户,您好,
+    </div>
+    <div style="padding: 10px;">
+        <textarea class="layui-textarea bodys" placeholder="请输入消息内容">{$msg['msg']}</textarea>
+    </div>
+    <div style="padding: 10px;">
+        <div class="layui-form-item">
+            <label class="layui-form-label foots" style="width: 120px;">如有疑问欢迎致电</label>
+            <div class="layui-input-block" style="margin-left: 150px;">
+                <input type="text" value="{$msg['tel']}" class="layui-input tel" placeholder="请输入电话号码">
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <div style="width: 160px;margin-left: 50%;position: relative;left: -80px;">
+            <button class="layui-btn layui-btn-warm preview" style="">预览</button>
+            <button class="layui-btn layui-btn-danger release">发布</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $(".preview").click(function(){
+            var first = $(".first").text();
+            var bodys = $(".bodys").val();
+            var foots = $(".foots").text();
+            var tel = $(".tel").val();
+            
+            var count = first+" "+bodys+","+foots+":<a href='tel://"+tel+"'>"+tel+"</a>";
+            layer.alert(count, {icon:1,title:'成功'},function(index){
+                layer.close(index);
+            });
+        })
+        $(".release").click(function(){
+            var first = $(".first").text();
+            var bodys = $(".bodys").val();
+            var foots = $(".foots").text();
+            var tel = $(".tel").val();
+            
+            var msg = bodys;
+            $.ajax({
+                url:'{:U("msg_release")}',
+                type:"post",
+                dataType:"json",
+                data:{"msg":msg,"tel":tel},
+                success:function(m){
+                    if(m=="ok"){
+                        layer.alert("发布成功", {icon:1,title:'成功'},function(index){
+                            layer.close(index);
+                            location.reload();
+                        });
+                    }
+                }
+            })
+        })
+    })
+</script>

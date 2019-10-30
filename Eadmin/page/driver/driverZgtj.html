@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>司机在岗统计</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../../css/public.css" media="all" />
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script src="../../js/echarts.min.js"></script>
+		<style>
+			.content{
+				width: 80%;
+				margin-left:10%;
+				display: flex;
+				font-size: 18px;
+			}
+			.left{
+				-webkit-flex: 0 0 25%;
+				-webkit-box-flex: 0;
+				flex: 0 0 30%;
+				margin-right: 3%;
+			}
+			.center{
+				-webkit-flex: 0 0 25%;
+				-webkit-box-flex: 0;
+				flex: 0 0 30%;
+				margin-right: 3%;
+			}
+			.right{
+				-webkit-flex: 0 0 25%;
+				-webkit-box-flex: 0;
+				flex: 0 0 31%;
+				margin-right: 3%;
+			}
+		</style>
+	</head>
+	<body class="childrenBody">
+		<form class="layui-form">
+			<blockquote class="layui-elem-quote quoteBox">
+				<form class="layui-form">
+					<div class="layui-inline">
+						<div class="layui-inline">
+							<label class="layui-form-label">查询时间</label>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test1" placeholder="请选择时间">
+							</div>
+						</div>
+						<a class="layui-btn search_btn" data-type="reload">搜索</a>
+					</div>
+				</form>
+			</blockquote>
+			<!-- 为ECharts准备一个具备大小（宽高 -->
+			<div class="content" id="cont">
+				<div class="left">
+					<span>姓名:</span>
+					<span id="name"></span>
+				</div>
+				<div class="center">
+					<span>电话:</span>
+					<span id="phone"></span>
+				</div>
+				<div class="right">
+					<span>总时长:</span>
+					<span id="count"></span>
+				</div>
+			</div>
+			<div id="title" style="font-size: 15px;text-align: center;margin-top: 20px;">在岗统计（已分钟为单位）</div>
+			<div id="Main" style="width: 1200px; height: 450px;margin-top:50px;margin-left:-50px;"></div>
+			<div class="magt10 layui-right">
+				<div class="layui-input-block">
+					<button type="reset" class="layui-btn layui-btn-primary" id="window-comeback">返回上一级</button>
+				</div>
+			</div>
+		</form>
+		<script type="text/javascript" src="../../js/Url.js"></script>
+		<script type="text/javascript" src="../../layui/layui.js"></script>
+		<script type="text/javascript" src="driverZgtj.js"></script>
+		<script>
+			layui.use('laydate', function() {
+				var laydate = layui.laydate;
+				//常规用法
+				laydate.render({
+					elem: '#test1',
+					trigger: 'click',
+					// 当前日期 --添加下面这句
+					value: new Date(),
+					done: function(value, date, endDate) {
+						// console.log(value); //得到日期生成的值，如：2017-08-18
+						// console.log(date); //得到日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
+						// console.log(endDate); //得结束的日期时间对象，开启范围选择（range: true）才会返回。对象成员同上。
+					}
+				});
+			});
+		</script>
+		<script>
+			//返回上一级
+			var windowComeback = document.getElementById('window-comeback');
+			windowComeback.addEventListener('click', function() {
+				window.history.back(-1);
+			});
+		</script>
+	</body>
+</html>
